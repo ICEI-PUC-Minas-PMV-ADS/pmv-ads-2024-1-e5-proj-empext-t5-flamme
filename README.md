@@ -1,23 +1,25 @@
-# TÍTULO DO PROJETO
+# FLAMME
 
-`CURSO`
+`CURSO` Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+`DISCIPLINA` Projeto: Desenvolvimento de um Sistema Sociotécnico Inovador - Turma 05
 
-`SEMESTRE`
+`SEMESTRE` Eixo 5 - 2024/1
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Fabiana Alkmim
+* Herbert Nordson
+* Letícia Rosolem
+* Rafael Penido
+* Ramon Bicalho
+* Sarah Ellem
 
 ## Orientador
 
-* Nome completo do professor 1
+* José Wilson da Costa
 
 ## Instruções de utilização
 
