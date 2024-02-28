@@ -6,6 +6,8 @@
 
 `SEMESTRE` Eixo 5 - 2024/1
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/FLAMME-logo.jpeg)
+
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
