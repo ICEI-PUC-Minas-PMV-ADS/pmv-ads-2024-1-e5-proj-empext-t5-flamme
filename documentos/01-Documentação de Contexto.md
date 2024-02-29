@@ -1,6 +1,11 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O empreendimento FLAMME, especializado em velas aromáticas artesanais, foi fundado por Marina Penido Rabello. Inicialmente, surgiu como um hobby e, consequentemente, transformou-se em um negócio próspero. O atendimento da FLAMME é realizado tanto em uma loja física, compartilhando espaço por meio de uma permuta com a sogra, quanto de forma online, através de redes sociais como Instagram e Whatsapp.
+
+O propósito principal é proporcionar aos clientes de Sete Lagoas e região a melhor experiência com suas velas, destacando a aromatização do ambiente como o principal atrativo dos produtos expostos. Além disso, a FLAMME oferece em seu catálogo a comercialização de velas personalizadas, atendendo a encomendas específicas de customização, modelo e evento conforme a necessidade do(a) cliente para uma ocasião especial e/ou comemorativa.
+
+À medida que as demandas crescem, a FLAMME precisa aprimorar o gerenciamento do seu fluxo de pedidos e informações com seus clientes. O aplicativo móvel da FLAMME será um recurso valioso para apoiar Marina, facilitando o acesso às informações e pedidos de forma prática em seu dia a dia.
+
 
 ## Problema
 
