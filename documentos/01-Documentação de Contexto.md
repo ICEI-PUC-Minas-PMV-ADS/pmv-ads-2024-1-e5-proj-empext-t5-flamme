@@ -9,7 +9,7 @@ O propósito principal é proporcionar aos clientes de Sete Lagoas e região a m
 
 ## Problema
 
-Há uma dificuldade na gestão de informações e pedidos feitos aos seus clientes no empreendimento FLAMME, pois ela não dispõe de uma plataforma própria que possa facilitar o contato mais fácil entre seus clientes e difundir as informações de maneira eficiente. Isso é crucial para evitar a perda de pedidos devido à demora e/ou falta de atenção na espera por parte do cliente, o que consequentemente pode prejudicar o aumento das encomendas de velas personalizadas.
+Há uma dificuldade na gestão de informações e pedidos feitos aos seus clientes no empreendimento FLAMME, pois não dispõe de uma plataforma própria que possa facilitar o contato mais fácil entre seus clientes e difundir as informações de maneira eficiente. Isso é crucial para evitar a perda de pedidos devido à demora e/ou falta de atenção na espera por parte do cliente, o que consequentemente pode prejudicar o aumento das encomendas de velas personalizadas.
 
 ## Objetivos
 
