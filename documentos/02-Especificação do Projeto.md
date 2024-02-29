@@ -25,30 +25,28 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001 | O sistema deve permitir que o usuário tenha acesso ao catálogo das velas aromáticas | ALTA |
+|RF-002| O sistema deve permitir que o usuário escolha o aroma, quantidade e modelo das velas, bem como para qual finalidade/tipo de evento  | ALTA |
+|RF-003| O sistema deve permitir que o usuário realize o pedido e o pagamento de velas aromáticas | ALTA | 
+|RF-004| O sistema deve permitir o cadastro de usuários | ALTA |
+|RF-005| O sistema deve permitir o login de usuários  | ALTA |
+|RF-006| O sistema deve permitir a atualização dos dados dos usuários cadastrados | MÉDIA |
+|RF-007| O sistema deve permitir que o usuário entre em contato de forma direta com o vendedor via WhatsApp a qualquer momento para sanar dúvidas | ALTA |
+|RF-008| O sistema deve informar ao usuário o prazo de entrega de 5 dias úteis de limite | MÉDIA |
+|RF-009| O sistema deve redirecionar o usuário e o pedido já finalizado ao WhatsApp do vendedor  | ALTA |
+|RF-010| O sistema deve notificar ao usuário via e-mail quando o seu pedido for recebido pelo vendedor, bem como em processo de confecção e enviado | MÉDIA |
+|RF-011| O sistema deve permitir que o administrador realize o gerenciamento das velas (CRUD)  | ALTA |
+|RF-012| O sistema deve permitir que o administrador tenha acesso a gestão dos pedidos feitos  | ALTA |
+|RF-013| O sistema deve permitir que o administrador receba via WhatsApp o chat do cliente com o pedido já finalizado | ALTA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-001| O sistema deve ser feito usando práticas de UX e IxD | ALTA | 
+|RNF-002| O sistema deve ser responsivo para rodar em um dispositivos móvel  | ALTA | 
+|RNF-003| O sistema deve ser disponibilizado publicamente no GitHub |  ALTA | 
+|RNF-004| O sistema deve facilitar e agilizar as vendas do parceiro |  ALTA | 
 
 ## Restrições
 
@@ -57,13 +55,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|02| Deve ser desenvolvido um módulo de back-end |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
