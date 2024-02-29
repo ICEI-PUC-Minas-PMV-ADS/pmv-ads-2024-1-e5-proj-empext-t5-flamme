@@ -25,12 +25,8 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Marina possui uma valiosa experiência prática desde o início do negócio como um hobby até a comercialização em escala maior, demonstrando habilidades em produção, vendas e parcerias estratégicas com gráficas e lojas físicas, atualmente ela possui um expositor na loja de sua sogra, uma parceria com uma gráfica e realiza as suas vendas por conta própria pela internet de maneira direta através do Instagram e WhatsApp, o que demanda muito tempo do seu dia conversando com os clientes. 
+A sua experiência demonstra um potencial significativo para expansão e diversificação do negócio, além da demanda crescente do mercado, com consumidores cada vez mais interessados em criar ambientes acolhedores e relaxantes em suas casas e espaços comerciais, porém ela precisa de uma forma mais prática e organizada de gerenciar suas vendas. Assim, a implementação de práticas de gestão diretas e eficazes torna-se essencial para garantir o sucesso e a estabilidade do seu negócio.
 
 ## Relação com a Extensão Universitária
 
