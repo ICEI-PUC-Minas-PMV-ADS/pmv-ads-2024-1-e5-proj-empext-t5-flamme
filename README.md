@@ -2,7 +2,7 @@
 
 `CURSO` Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA` Projeto: Desenvolvimento de um Sistema Sociotécnico Inovador - Turma 05
+`DISCIPLINA` Projeto: Desenvolvimento de um Sistema Sociotécnico Inovador - Turma 05 (Grupo 6)
 
 `SEMESTRE` Eixo 5 - 2024/1
 
