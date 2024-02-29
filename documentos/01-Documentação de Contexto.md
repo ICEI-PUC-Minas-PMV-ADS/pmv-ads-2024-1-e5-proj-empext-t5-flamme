@@ -8,12 +8,13 @@ Há uma dificuldade na gestão de informações e pedidos feitos aos seus client
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo da FLAMME é proporcionar uma experiência de compra conveniente e satisfatória para os clientes. Busca-se atrair novos clientes oferecendo uma ampla variedade de produtos de alta qualidade, desde velas tradicionais até opções personalizadas. Além disso, prioriza-se a segurança das transações online, garantindo a proteção dos dados pessoais e financeiros dos clientes. O compromisso com a excelência também se reflete no suporte ao cliente responsivo e eficiente, pronto para ajudar com qualquer dúvida ou problema. Por meio de estratégias de promoção e marketing online, busca-se aumentar a visibilidade e atrair mais clientes em potencial. A análise contínua de dados permite entender melhor o comportamento do cliente e fazer ajustes estratégicos para melhorar ainda mais a experiência de compra. Em resumo, a loja online de velas se esforça para oferecer não apenas produtos excepcionais, mas também uma jornada de compra memorável e satisfatória para todos os clientes
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+### Objetivos específicos
+
+- Criar uma aplicação móvel com interface intuitiva para compra e venda de velas personalizadas;
+- Implementar funcionalidades que permitam o acompanhamento das transações;
+
 
 ## Justificativa
 
