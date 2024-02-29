@@ -12,7 +12,7 @@ o	Descreva brevemente a arquitetura definida para o projeto e as tecnologias a s
 
 ## Project Model Canvas
 
-![project-model-canvas.png](img/project-model-canvas.png)
+![project-model-canvas-.png](img/project-model-canvas-.png)
 
 ## Requisitos
 
