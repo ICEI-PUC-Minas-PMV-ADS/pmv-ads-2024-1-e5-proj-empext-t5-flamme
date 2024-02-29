@@ -33,4 +33,8 @@ Relacionar a situação-problema da organização com o impacto social esperado 
 
 ## Descrição do Parceiro
 
-Apresente uma descrição resumida sobre a organização onde o projeto será desenvolvido para que possa ser compreendido o cenário sistema sociotécnico.
+A empresa FLAMME velas atua no ramo de aromatização de ambientes e produtos personalizados através da fabricação de velas. O setor de velas aromatizadas registrou um aumento médio anual de 30%, demonstrando um interesse crescente por produtos feitos à mão, exclusivos e de alta qualidade. Buscando atender ao mercado, a empresária iniciou suas atividades através de demandas menores, com a repercussão do trabalho ela começou atender demandas de sete lagoas e região.
+
+Atualmente, a empresa FLAMME atua em duas frentes: venda de velas aromatizadas em loja física e vendas de velas personalizadas em loja online através da disponibilização de um catálogo. A venda de velas personalizadas é feita via instagram, o cliente acessa a rede social da empresa para acessar o catálogo e entrar em contato com a vendedora para fazer seu pedido.
+
+A introdução do aplicativo de vendas online reflete a necessidade da empresária de fazer a gestão de suas vendas, melhorar  a comunicação com seu cliente de forma padronizada e aumentar a sua escala de vendas. A parceria entre a empresa e a equipe responsável pelo projeto visa criar um aplicativo que facilite a venda de velas aromatizadas, contribuindo para o crescimento da empresa FLAMME e gestão do seu portfólio de clientes e produtos.
