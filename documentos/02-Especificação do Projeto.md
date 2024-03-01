@@ -1,7 +1,5 @@
 # Especificações do Projeto
 
-## Arquitetura e Tecnologias
-
 ## Project Model Canvas
 
 ![project-model-canvas-.png](img/project-model-canvas-.png)
@@ -53,6 +51,13 @@ O diagrama de casos de uso é o próximo passo após a elicitação de requisito
 
 ![UseCaseDiagram1.png](img/UseCaseDiagram1.png)
 
+## Diagrama de Classes
+
+O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
+
+![ClassDiagram.png](img/ClassDiagram.png)
+
+
 ## Modelo ER (Projeto Conceitual)
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
@@ -63,5 +68,6 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/5c78fadf-a409-4434-a5f4-8c9d65edb706)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/c6861c38-6434-49d3-b047-a1ba581cc486)
+
 
