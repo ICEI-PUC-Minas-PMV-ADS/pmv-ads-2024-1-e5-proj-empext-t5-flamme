@@ -1,6 +1,6 @@
 # Introdução
 
-O empreendimento FLAMME, especializado em velas aromáticas artesanais, foi fundado por Marina Penido Rabello. Inicialmente, surgiu como um hobby e, consequentemente, transformou-se em um negócio próspero. O atendimento da FLAMME é realizado tanto em uma loja física, compartilhando espaço por meio de uma permuta com a sogra, quanto de forma online, através de redes sociais como Instagram e Whatsapp.
+O empreendimento FLAMME, especializado em velas aromáticas artesanais, foi fundado por Marina Penido Rabelo. Inicialmente, surgiu como um hobby e, consequentemente, transformou-se em um negócio próspero. O atendimento da FLAMME é realizado tanto em uma loja física, compartilhando espaço por meio de uma permuta com a sogra, quanto de forma online, através de redes sociais como Instagram e Whatsapp.
 
 O propósito principal é proporcionar aos clientes de Sete Lagoas e região a melhor experiência com suas velas, destacando a aromatização do ambiente como o principal atrativo dos produtos expostos. Além disso, a FLAMME oferece em seu catálogo a comercialização de velas personalizadas, atendendo a encomendas específicas de customização, modelo e evento conforme a necessidade do(a) cliente para uma ocasião especial e/ou comemorativa.
 
