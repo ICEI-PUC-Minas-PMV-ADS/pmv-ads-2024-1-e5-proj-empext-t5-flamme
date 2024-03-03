@@ -29,7 +29,9 @@ Sua experiência demonstra um potencial significativo para expansão e diversifi
 
 ## Relação com a Extensão Universitária
 
-Relacionar a situação-problema da organização com o impacto social esperado com a implantação do sistema sociotécnico.
+Este projeto está diretamente vinculado à Extensão Universitária e visa atender à necessidade de modernização e automatização na gestão de catálogos e vendas de FLAMME velas. Utilizaremos os conhecimentos adquiridos nos períodos anteriores do curso de Análise e Desenvolvimento de Sistemas na Pontifícia Universidade Católica de Minas Gerais para resolver este problema de forma prática, indo além da teoria.
+
+A proposta consiste em desenvolver um sistema de gestão de catálogo, vendas, compra e suporte ao cliente que auxilie a FLAMME na gestão do seu negócio. Com a automatização, os processos serão mais estruturados e serão mais precisos, os dados serão gerados com facilidade e a administração dos recursos será consideravelmente mais eficiente. Dessa forma, a FLAMME poderá alcançar seus objetivos de forma mais eficaz e assertiva. Esta abordagem reflete as competências desenvolvidas ao longo do curso, incluindo o pensamento computacional, a resolução de problemas e a compreensão da arquitetura de software, especialmente o padrão MVC.
 
 ## Descrição do Parceiro
 
