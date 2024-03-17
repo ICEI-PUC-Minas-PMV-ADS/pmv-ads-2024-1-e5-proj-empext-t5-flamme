@@ -13,18 +13,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001 | O sistema deve permitir que o usuário tenha acesso ao catálogo das velas aromáticas | ALTA |
-|RF-002| O sistema deve permitir que o usuário escolha o aroma, quantidade e modelo das velas, bem como para qual finalidade/tipo de evento  | ALTA |
-|RF-003| O sistema deve permitir que o usuário realize o pedido e o pagamento de velas aromáticas | ALTA | 
-|RF-004| O sistema deve permitir o cadastro de usuários | ALTA |
-|RF-005| O sistema deve permitir o login de usuários  | ALTA |
-|RF-006| O sistema deve permitir a atualização dos dados dos usuários cadastrados | MÉDIA |
-|RF-007| O sistema deve permitir que o usuário entre em contato de forma direta com o vendedor via WhatsApp a qualquer momento para sanar dúvidas | ALTA |
-|RF-008| O sistema deve informar ao usuário o prazo de entrega de 5 dias úteis de limite | MÉDIA |
-|RF-009| O sistema deve redirecionar o usuário e o pedido já finalizado ao WhatsApp do vendedor  | ALTA |
-|RF-010| O sistema deve notificar ao usuário via e-mail quando o seu pedido for recebido pelo vendedor, bem como em processo de confecção e enviado | MÉDIA |
-|RF-011| O sistema deve permitir que o administrador realize o gerenciamento das velas (CRUD)  | ALTA |
-|RF-012| O sistema deve permitir que o administrador tenha acesso a gestão dos pedidos feitos  | ALTA |
-|RF-013| O sistema deve permitir que o administrador receba via WhatsApp o chat do cliente com o pedido já finalizado | ALTA |
+|RF-002 | O sistema deve ter instruções sobre como funciona a venda e o envio das velas aromáticas | ALTA |
+|RF-003| O sistema deve permitir que o usuário realize o orçamento/pedido de velas aromáticas | ALTA | 
+|RF-004| O sistema deve permitir que o usuário escolha o aroma, quantidade e modelo das velas, bem como para qual finalidade/tipo de evento  | ALTA |
+|RF-005| O sistema deve permitir que o usuário entre em contato de forma direta com o vendedor via WhatsApp a qualquer momento para sanar dúvidas | MÉDIA |
+|RF-006| O sistema deve informar ao usuário o prazo de confecção do seu pedido de 5 dias úteis | MÉDIA |
+|RF-007| O sistema deve redirecionar o usuário e o pedido já finalizado ao WhatsApp do vendedor  | ALTA |
+|RF-008| O sistema deve permitir o login do administrador do sistema  | ALTA |
+|RF-009| O sistema deve permitir a atualização dos dados do administrador do sistema | ALTA |
+|RF-010| O sistema deve permitir que o administrador realize o gerenciamento das velas (CRUD)  | ALTA |
+|RF-011| O sistema deve permitir que o administrador receba via WhatsApp o chat do cliente com o pedido já finalizado | ALTA |
 
 ### Requisitos não Funcionais
 
