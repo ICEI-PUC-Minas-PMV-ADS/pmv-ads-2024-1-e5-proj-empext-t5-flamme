@@ -54,7 +54,7 @@ O diagrama de casos de uso é o próximo passo após a elicitação de requisito
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-![ClassDiagram.png](img/ClassDiagram.png)
+![ClassDiagramatualizado.png](img/ClassDiagramatualizado.png)
 
 
 ## Modelo ER (Projeto Conceitual)
