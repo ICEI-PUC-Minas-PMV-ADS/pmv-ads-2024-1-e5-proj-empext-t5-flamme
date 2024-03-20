@@ -13,7 +13,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001 | O sistema deve permitir que o usuário tenha acesso ao catálogo das velas aromáticas | ALTA |
-|RF-002 | O sistema deve ter instruções sobre como funciona a venda e o envio das velas aromáticas | ALTA |
+|RF-002 | O sistema deve ter instruções de funcionamento da venda e do envio das velas aromáticas | ALTA |
 |RF-003| O sistema deve permitir que o usuário realize o orçamento/pedido de velas aromáticas | ALTA | 
 |RF-004| O sistema deve permitir que o usuário escolha o aroma, quantidade e modelo das velas, bem como para qual finalidade/tipo de evento  | ALTA |
 |RF-005| O sistema deve permitir que o usuário entre em contato de forma direta com o vendedor via WhatsApp a qualquer momento para sanar dúvidas | MÉDIA |
@@ -22,7 +22,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-008| O sistema deve permitir o login do administrador do sistema  | ALTA |
 |RF-009| O sistema deve permitir a atualização dos dados do administrador do sistema | ALTA |
 |RF-010| O sistema deve permitir que o administrador realize o gerenciamento das velas (CRUD)  | ALTA |
-|RF-011| O sistema deve permitir que o administrador receba via WhatsApp o chat do cliente com o pedido já finalizado | ALTA |
+|RF-011| O sistema deve permitir que o administrador realize o gerenciamento dos orçamentos recebidos  | MÉDIA |
+|RF-012| O sistema deve permitir que o administrador receba via WhatsApp o chat do cliente com o pedido já finalizado | ALTA |
 
 ### Requisitos não Funcionais
 
