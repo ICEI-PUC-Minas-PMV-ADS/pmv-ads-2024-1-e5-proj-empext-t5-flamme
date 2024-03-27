@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Button } from "./components/Button/Button";
+import { SectionTitle } from "./components/SectionTitle";
+import { Text } from "./components/Text";
+import { Title } from "./components/Title";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  function click() {
+    console.log("teste");
+  }
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/* Exemplo de como utilizar os componentes sustomizados */}
+      <Title text="Potinho de vidro tampa de tecido - 40g" />
+      <Text
+        text="As velas perfumadas no potinho de vidro são personalizadas com adesivo e tampa de tecido.
+São feitas com cera vegetal de coco ou soja e pavio de algodão, proporcionando aproximadamente 5 horas  de queima.
+Tem o tamanho de 4x4,5 e peso de 40g."
+      />
+
+      <SectionTitle text="Detalhes do produto" />
+      <Button label="Adicionar ao carrinho" onclick={click} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
