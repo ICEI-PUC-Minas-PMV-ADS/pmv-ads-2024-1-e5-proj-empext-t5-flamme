@@ -1,57 +1,43 @@
 package com.flamme.flammebackend.entities;
 
-import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.util.UUID;
+import java.util.List;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.validator.constraints.Length;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
-import jakarta.validation.constraints.Email;
 import lombok.Data;
 
 @Data
-@Entity(name = "admin")
-@Table(name = "tb_user")
-public class User implements Serializable {
-    private static final long serialVersionUID = 1L;
+@Entity
+public class Candles {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "admin_id", nullable = false)
+    private Long userId;
+
     @Length(min = 3)
     private String name;
-
-    @Email(message = "O campo [email] deve conter um e-mail válido")
-    private String email;
-
-    @Length(min = 8, max = 100)
-    private String password;
+    private String description;
 
     @Length(min = 11, max = 15)
     private String phone;
+    private List<String> aroma;
+    private String model;
+    private Double price;
+    private int quantity;
 
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime createdAt;
-
-    public User() {
-    }
-
-    public User(String name, String email, String password, String phone) {
-        super();
-        this.name = name;
-        this.email = email;
-        this.password = password;
-        this.phone = phone;
-    }
-
 }
