@@ -1,4 +1,5 @@
 import { Button } from "../../components/Button/Button";
+import { ButtonWhite } from "../../components/ButtonWhite/ButtonWhite";
 import { SectionTitle } from "../../components/SectionTitle";
 import { Text } from "../../components/Text";
 import Logo from "../../assets/logo.svg";
@@ -48,7 +49,7 @@ function Catalog() {
         </div>
 
         <div className="flex justify-around mt-6">
-          <Button label="Excluir" onclick={click} />
+          <ButtonWhite label="Excluir" onclick={click} />
           <Button label="Editar" onclick={click} />
         </div>
 
@@ -70,7 +71,7 @@ function Catalog() {
         </div>
 
         <div className="flex justify-around mt-6">
-          <Button label="Excluir" onclick={click} />
+          <ButtonWhite label="Excluir" onclick={click} />
           <Button label="Editar" onclick={click} />
         </div>
 
@@ -92,7 +93,7 @@ function Catalog() {
         </div>
 
         <div className="flex justify-around mt-6">
-          <Button label="Excluir" onclick={click} />
+          <ButtonWhite label="Excluir" onclick={click} />
           <Button label="Editar" onclick={click} />
         </div>
 
@@ -114,7 +115,7 @@ function Catalog() {
         </div>
 
         <div className="flex justify-around mt-6">
-          <Button label="Excluir" onclick={click} />
+          <ButtonWhite label="Excluir" onclick={click} />
           <Button label="Editar" onclick={click} />
         </div>
 
@@ -136,7 +137,7 @@ function Catalog() {
         </div>
 
         <div className="flex justify-around mt-6">
-          <Button label="Excluir" onclick={click} />
+          <ButtonWhite label="Excluir" onclick={click} />
           <Button label="Editar" onclick={click} />
         </div>
 

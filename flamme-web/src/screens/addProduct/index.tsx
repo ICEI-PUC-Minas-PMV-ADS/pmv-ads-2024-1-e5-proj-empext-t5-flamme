@@ -1,6 +1,7 @@
 import { Title } from "../../components/Title";
 import { Text } from "../../components/Text";
 import { Button } from "../../components/Button/Button";
+import { ButtonWhite } from "../../components/ButtonWhite/ButtonWhite";
 import { SectionTitle } from "../../components/SectionTitle";
 import Rectangle from "../../components/Rectangle/index.tsx"
 
@@ -82,7 +83,7 @@ function AddProduct() {
         </div>
 
         <div className="flex justify-center items-center mt-7">
-          <Button label="+ Adicionar mais opções" onclick={click} />
+          <ButtonWhite label="+ Adicionar mais opções" onclick={click} />
         </div>
 
 
@@ -110,7 +111,7 @@ function AddProduct() {
 
 
         <div className="flex justify-center items-center mt-10">
-          <Button label="+ Adicionar mais aromas" onclick={click} />
+          <ButtonWhite label="+ Adicionar mais aromas" onclick={click} />
         </div>
 
 
@@ -131,7 +132,7 @@ function AddProduct() {
         </div>
 
         <div className="flex justify-center items-center mt-10">
-          <Button label="+ Adicionar mais acréscimos" onclick={click} />
+          <ButtonWhite label="+ Adicionar mais acréscimos" onclick={click} />
         </div>
 
 
@@ -145,7 +146,7 @@ function AddProduct() {
           <Text text="Esse produto possui fita?" />
         </div>
 
-        <div className="flex mt-2">
+        <div className="flex mt-2 text-xs">
           <div className="ml-7">
             <label>
               <input
@@ -183,12 +184,12 @@ function AddProduct() {
         </div>
 
         <div className="flex justify-center items-center mt-10">
-          <Button label="+ Adicionar mais fitas" onclick={click} />
+          <ButtonWhite label="+ Adicionar mais fitas" onclick={click} />
         </div>
 
         <div className="flex justify-around mt-16">
           <div className="p-4">
-            <Button label="Cancelar" onclick={click} />
+            <ButtonWhite label="Cancelar" onclick={click} />
           </div>
 
           <div className="p-4">
