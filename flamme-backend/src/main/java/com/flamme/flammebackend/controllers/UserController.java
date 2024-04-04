@@ -1,4 +1,4 @@
-package com.flamme.flammebackend.controller;
+package com.flamme.flammebackend.controllers;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
