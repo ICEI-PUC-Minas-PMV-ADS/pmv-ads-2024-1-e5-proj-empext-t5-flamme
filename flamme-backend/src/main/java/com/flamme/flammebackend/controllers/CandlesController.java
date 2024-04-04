@@ -1,7 +1,6 @@
 package com.flamme.flammebackend.controllers;
 
 import java.util.List;
-import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -12,40 +11,41 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.flamme.flammebackend.entities.Candles;
 import com.flamme.flammebackend.entities.User;
-import com.flamme.flammebackend.services.create.UserService;
+import com.flamme.flammebackend.services.create.CandlesService;
 
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/users")
-public class UserController {
+@RequestMapping("/users/candles")
+public class CandlesController {
 
     @Autowired
-    private UserService service;
+    private CandlesService service;
 
     // GET
     @GetMapping
-    public ResponseEntity<List<User>> findAll() {
-        List<User> list = service.findAll();
+    public ResponseEntity<List<Candles>> findAll() {
+        List<Candles> list = service.findAll();
 
         return ResponseEntity.ok().body(list);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<User> findById(@PathVariable Long id) {
-        User user = service.findById(id);
+    public ResponseEntity<Candles> findById(@PathVariable Long id) {
+        Candles Candles = service.findById(id);
 
-        return ResponseEntity.ok().body(user);
+        return ResponseEntity.ok().body(Candles);
     }
 
     // POST
-    @PostMapping
-    public ResponseEntity<Object> create(@Valid @RequestBody User user){
+    @PostMapping("/{id}")
+    public ResponseEntity<Object> create(@Valid @RequestBody Candles candle, @PathVariable Long id) {
         try {
-           var result = this.service.create(user);
-            
-           return ResponseEntity.ok().body(result);
+            Candles result = this.service.create(candle, id);
+
+            return ResponseEntity.ok().body(result);
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }

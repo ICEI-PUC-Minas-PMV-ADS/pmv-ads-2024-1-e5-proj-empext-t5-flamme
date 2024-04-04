@@ -1,4 +1,4 @@
-package com.flamme.flammebackend.services;
+package com.flamme.flammebackend.services.create;
 
 import java.util.List;
 import java.util.Optional;
