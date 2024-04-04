@@ -12,133 +12,187 @@ function AddProduct() {
     <>
       <div className="AddProduct">
 
-        <Title text="Adicionar Produto" />
+        <div className="flex justify-center items-center mt-4">
+          <Title text="Adicionar Produto" />
+        </div>
 
-        <SectionTitle text="Imagens do produto" />
+        <div className="mt-16 ml-7">
+          <SectionTitle text="Imagens do produto" />
+        </div>
 
-        <Rectangle/>
+        <Rectangle />
 
-        <div className="container">
-          <div className="input-group">
-            <div className="input-box">
-              <SectionTitle text="Nome do produto" />
-              <input type="text" placeholder="Digite o nome do produto" />
-            </div>
+        <div className="mt-16 ml-7">
+          <SectionTitle text="Nome do produto" />
+          <input type="text" placeholder="Digite o nome do produto" />
+        </div>
 
-            <div className="input-box">
-              <SectionTitle text="Descrição" />
-              <input type="text" placeholder="Digite a descrição do produto" />
-            </div>
+        <div className="ml-7 mt-4">
+          <SectionTitle text="Descrição" />
+          <input type="text" placeholder="Digite a descrição do produto" />
+        </div>
 
-            <div className="input-box">
-              <SectionTitle text="Unidades a partir de" />
-              <input type="text" placeholder="Digite o valor das unidades" />
-            </div>
+        <div className="ml-7 mt-4">
+          <SectionTitle text="Unidades a partir de" />
+          <input type="text" placeholder="Digite o valor das unidades" />
+        </div>
 
-            {/* Tabela de preços */}
 
-            <Title text="Tabela de preços" />
-            <SectionTitle text="Opção 1" />
-            <div className="input-box">
-              <Text text="Quantidade mínima" />
-              <input type="text" placeholder="Ex: 20" />
-            </div>
+        {/* Tabela de preços */}
 
-            <div className="input-box">
-              <Text text="Valor p/ unidade" />
-              <input type="text" placeholder="R$ 0,00" />
-            </div>
+        <div className="pt-16 ml-7">
+          <Title text="Tabela de preços" />
+        </div>
 
-            <SectionTitle text="Opção 2" />
-            <div className="input-box">
-              <Text text="Quantidade mínima" />
-              <input type="text" placeholder="Ex: 20" />
-            </div>
+        <div className="ml-7 mt-4">
+          <SectionTitle text="Opção 1" />
+        </div>
 
-            <div className="input-box">
-              <Text text="Quantidade máxima" />
-              <input type="text" placeholder="Ex: 40" />
-            </div>
+        <div className="flex justify-around">
+          <div className="ml-7 mt-3">
+            <Text text="Quantidade mínima" />
+            <input type="text" placeholder="Ex: 20" />
+          </div>
 
-            <div className="input-box">
-              <Text text="Valor p/ unidade" />
-              <input type="text" placeholder="R$ 0,00" />
-            </div>
+          <div className="ml-7 mt-3">
+            <Text text="Valor p/ unidade" />
+            <input type="text" placeholder="R$ 0,00" />
+          </div>
+        </div>
 
-            <Button label="+ Adicionar mais opções" onclick={click} />
+        <div className="ml-7 mt-10">
+          <SectionTitle text="Opção 2" />
+        </div>
 
-            {/* Personalização */}
+        <div className="flex justify-around">
+          <div className="ml-7 mt-3">
+            <Text text="Quantidade mínima" />
+            <input type="text" placeholder="Ex: 20" />
+          </div>
 
-            <Title text="Personalização" />
-            <SectionTitle text="Aroma" />
-            <div className="input-box">
-              <Text text="Opção 1" />
-              <input type="text" placeholder="Ex: Lavanda" />
-            </div>
+          <div className="ml-7 mt-3">
+            <Text text="Quantidade máxima" />
+            <input type="text" placeholder="Ex: 40" />
+          </div>
+        </div>
 
-            <div className="input-box">
-              <Text text="Opção 2" />
-              <input type="text" placeholder="Ex: Lavanda" />
-            </div>
+        <div className="ml-7 mt-4">
+          <Text text="Valor p/ unidade" />
+          <input type="text" placeholder="R$ 0,00" />
+        </div>
 
-            <Button label="+ Adicionar mais aromas" onclick={click} />
+        <div className="flex justify-center items-center mt-7">
+          <Button label="+ Adicionar mais opções" onclick={click} />
+        </div>
 
-            {/* Acréscimo */}
 
-            <SectionTitle text="Acréscimo" />
-            <div className="input-box">
-              <Text text="Nome" />
-              <input type="text" placeholder="Ex: Saquinho" />
-            </div>
+        {/* Personalização */}
 
-            <div className="input-box">
-              <Text text="Valor" />
-              <input type="text" placeholder="R$ 0,00" />
-            </div>
+        <div className="ml-7 mt-10">
+          <Title text="Personalização" />
+        </div>
 
-            <Button label="+ Adicionar mais acréscimos" onclick={click} />
+        <div className="ml-7 mt-6">
+          <SectionTitle text="Aroma" />
+        </div>
 
-            {/* Tipo de fita */}
+        <div className="flex justify-around">
+          <div className="ml-7 mt-3">
+            <Text text="Opção 1" />
+            <input type="text" placeholder="Ex: Lavanda" />
+          </div>
 
-            <SectionTitle text="Tipo de fita" />
-            <Text text="Esse produto possui fita?" />
+          <div className="ml-7 mt-3">
+            <Text text="Opção 2" />
+            <input type="text" placeholder="Ex: Lavanda" />
+          </div>
+        </div>
 
-            <div>
-              <label>
-                <input
-                  type="radio"
-                  name="tipo_fita"
-                  value="nao_possui"
-                />
-                Não possui
-              </label>
 
-              <label>
-                <input
-                  type="radio"
-                  name="tipo_fita"
-                  value="possui"
-                />
-                Possui
-              </label>
-            </div>
+        <div className="flex justify-center items-center mt-10">
+          <Button label="+ Adicionar mais aromas" onclick={click} />
+        </div>
 
-            <div className="input-box">
-              <Text text="Opção 1" />
-              <input type="text" placeholder="Ex: Cetim" />
-            </div>
 
-            <div className="input-box">
-              <Text text="Opção 2" />
-              <input type="text" placeholder="Ex: Junta" />
-            </div>
+        {/* Acréscimo */}
 
-            <Button label="+ Adicionar mais fitas" onclick={click} />
+        <div className="ml-7 mt-10">
+          <SectionTitle text="Acréscimo" />
+        </div>
 
+        <div className="ml-7 mt-3">
+          <Text text="Nome" />
+          <input type="text" placeholder="Ex: Saquinho" />
+        </div>
+
+        <div className="ml-7 mt-3">
+          <Text text="Valor" />
+          <input type="text" placeholder="R$ 0,00" />
+        </div>
+
+        <div className="flex justify-center items-center mt-10">
+          <Button label="+ Adicionar mais acréscimos" onclick={click} />
+        </div>
+
+
+        {/* Tipo de fita */}
+
+        <div className="ml-7 mt-10">
+          <SectionTitle text="Tipo de fita" />
+        </div>
+
+        <div className="ml-7 mt-6">
+          <Text text="Esse produto possui fita?" />
+        </div>
+
+        <div className="flex mt-2">
+          <div className="ml-7">
+            <label>
+              <input
+                type="radio"
+                name="tipo_fita"
+                value="nao_possui"
+              />
+              Não possui
+            </label>
+          </div>
+
+          <div className="ml-12">
+            <label>
+              <input
+                type="radio"
+                name="tipo_fita"
+                value="possui"
+              />
+              Possui
+            </label>
+          </div>
+        </div>
+
+        <div className="flex justify-around">
+          <div className="ml-7 mt-6">
+            <Text text="Opção 1" />
+            <input type="text" placeholder="Ex: Cetim" />
+          </div>
+
+          <div className="ml-7 mt-6">
+            <Text text="Opção 2" />
+            <input type="text" placeholder="Ex: Junta" />
+          </div>
+
+        </div>
+
+        <div className="flex justify-center items-center mt-10">
+          <Button label="+ Adicionar mais fitas" onclick={click} />
+        </div>
+
+        <div className="flex justify-around mt-16">
+          <div className="p-4">
             <Button label="Cancelar" onclick={click} />
+          </div>
 
+          <div className="p-4">
             <Button label="Salvar" onclick={click} />
-
           </div>
         </div>
       </div>
