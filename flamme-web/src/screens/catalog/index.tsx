@@ -7,6 +7,8 @@ import Product2 from "../../assets/product-img2.svg";
 import Product3 from "../../assets/product-img3.svg";
 import Product4 from "../../assets/product-img4.svg";
 import Product5 from "../../assets/product-img5.svg";
+import BrownBorder from "../../components/BrownBorder/index.tsx"
+import GrayBorder from "../../components/GrayBorder/index.tsx"
 
 function Catalog() {
   function click() {
@@ -15,92 +17,130 @@ function Catalog() {
   return (
     <>
       <div className="Catalog">
-        <div className="header-logo">
+        <div className="flex justify-center items-center mt-8">
           <img className="flamme-logo" src={Logo} alt="Logo do Flamme" />
         </div>
 
-        <div className="container">
+        <div className="ml-7 mt-14">
           <SectionTitle text="Catálogo de velas" />
+        </div>
+
+        <BrownBorder />
+
+        <div className="flex justify-center items-center mt-8">
           <Button label="+ Adicionar produto" onclick={click} />
+        </div>
 
-          <div className="product-container">
-            <div className="product-content">
-              <div className="product-img">
-                <img src={Product1} alt="Foto do Produto" />
-              </div>
+        {/* Produto */}
+        <div className="flex justify-around mx-7 mt-8">
+          <div>
+            <img src={Product1} alt="Foto do Produto" />
+          </div>
 
-              <div className="product-description">
-                <Text text="Potinho de vidro tampa de junta - 40g" />
-                <Text text="Unidades a partir de" />
-                <Text text="R$ 9,00" />
+          <div className="ml-2">
+            <Text text="Potinho de vidro tampa de junta - 40g" />
 
-                <Button label="Excluir" onclick={click} />
-                <Button label="Editar" onclick={click} />
-              </div>
+            <div className="mt-2">
+              <Text text="Unidades a partir de" />
+              <Text text="R$ 9,00" />
             </div>
-
-            <div className="product-content">
-              <div className="product-img">
-                <img src={Product2} alt="Foto do Produto" />
-              </div>
-
-              <div className="product-description">
-                <Text text="Potinho de vidro tampa de rolha - 40g" />
-                <Text text="Unidades a partir de" />
-                <Text text="R$ 8,50" />
-
-                <Button label="Excluir" onclick={click} />
-                <Button label="Editar" onclick={click} />
-              </div>
-            </div>
-
-            <div className="product-content">
-              <div className="product-img">
-                <img src={Product3} alt="Foto do Produto" />
-              </div>
-
-              <div className="product-description">
-                <Text text="Latinha personalizada - 15g" />
-                <Text text="Unidades a partir de" />
-                <Text text="R$ 3,50" />
-
-                <Button label="Excluir" onclick={click} />
-                <Button label="Editar" onclick={click} />
-              </div>
-            </div>
-
-            <div className="product-content">
-              <div className="product-img">
-                <img src={Product4} alt="Foto do Produto" />
-              </div>
-
-              <div className="product-description">
-                <Text text="Potinho de vidro tampa de tecido - 40g" />
-                <Text text="Unidades a partir de" />
-                <Text text="R$ 9,00" />
-
-                <Button label="Excluir" onclick={click} />
-                <Button label="Editar" onclick={click} />
-              </div>
-            </div>
-
-            <div className="product-content">
-              <div className="product-img">
-                <img src={Product5} alt="Foto do Produto" />
-              </div>
-
-              <div className="product-description">
-                <Text text="Potinho de vidro tampa de alumínio - 40g" />
-                <Text text="Unidades a partir de" />
-                <Text text="R$ 8,50" />
-
-                <Button label="Excluir" onclick={click} />
-                <Button label="Editar" onclick={click} />
-              </div>
-            </div>
-
           </div>
         </div>
+
+        <div className="flex justify-around mt-6">
+          <Button label="Excluir" onclick={click} />
+          <Button label="Editar" onclick={click} />
+        </div>
+
+        <GrayBorder />
+
+        <div className="flex justify-around mx-7 mt-8">
+          <div>
+            <img src={Product2} alt="Foto do Produto" />
+          </div>
+
+          <div className="ml-2">
+            <Text text="Potinho de vidro tampa de rolha - 40g" />
+
+            <div className="mt-2">
+              <Text text="Unidades a partir de" />
+              <Text text="R$ 8,50" />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-around mt-6">
+          <Button label="Excluir" onclick={click} />
+          <Button label="Editar" onclick={click} />
+        </div>
+
+        <GrayBorder />
+
+        <div className="flex justify-around mx-7 mt-8">
+          <div>
+            <img src={Product3} alt="Foto do Produto" />
+          </div>
+
+          <div className="ml-2">
+            <Text text="Latinha personalizada - 15g" />
+
+            <div className="mt-2">
+              <Text text="Unidades a partir de" />
+              <Text text="R$ 3,50" />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-around mt-6">
+          <Button label="Excluir" onclick={click} />
+          <Button label="Editar" onclick={click} />
+        </div>
+
+        <GrayBorder />
+
+        <div className="flex justify-around mx-7 mt-8">
+          <div>
+            <img src={Product4} alt="Foto do Produto" />
+          </div>
+
+          <div className="ml-2">
+            <Text text="Potinho de vidro tampa de tecido - 40g" />
+
+            <div className="mt-2">
+              <Text text="Unidades a partir de" />
+              <Text text="R$ 9,00" />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-around mt-6">
+          <Button label="Excluir" onclick={click} />
+          <Button label="Editar" onclick={click} />
+        </div>
+
+        <GrayBorder />
+
+        <div className="flex justify-around mx-7 mt-8">
+          <div>
+            <img src={Product5} alt="Foto do Produto" />
+          </div>
+
+          <div className="ml-2">
+            <Text text="Potinho de vidro tampa de alumínio - 40g" />
+
+            <div className="mt-2">
+              <Text text="Unidades a partir de" />
+              <Text text="R$ 8,50" />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-around mt-6">
+          <Button label="Excluir" onclick={click} />
+          <Button label="Editar" onclick={click} />
+        </div>
+
+        <GrayBorder />
       </div>
     </>
   );

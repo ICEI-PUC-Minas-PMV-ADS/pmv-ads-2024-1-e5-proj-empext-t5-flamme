@@ -7,6 +7,6 @@ import AddProduct from './screens/addProduct/index.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <AddProduct />
+    <Catalog />
   </React.StrictMode>,
 )
