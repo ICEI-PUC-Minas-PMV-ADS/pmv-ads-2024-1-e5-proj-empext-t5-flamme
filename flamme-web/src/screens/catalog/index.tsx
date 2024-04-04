@@ -38,11 +38,11 @@ function Catalog() {
           </div>
 
           <div className="ml-2">
-            <Text text="Potinho de vidro tampa de junta - 40g" />
+            <SectionTitle text="Potinho de vidro tampa de junta - 40g" />
 
             <div className="mt-2">
               <Text text="Unidades a partir de" />
-              <Text text="R$ 9,00" />
+              <SectionTitle text="R$ 9,00" />
             </div>
           </div>
         </div>
@@ -60,11 +60,11 @@ function Catalog() {
           </div>
 
           <div className="ml-2">
-            <Text text="Potinho de vidro tampa de rolha - 40g" />
+            <SectionTitle text="Potinho de vidro tampa de rolha - 40g" />
 
             <div className="mt-2">
               <Text text="Unidades a partir de" />
-              <Text text="R$ 8,50" />
+              <SectionTitle text="R$ 8,50" />
             </div>
           </div>
         </div>
@@ -82,11 +82,11 @@ function Catalog() {
           </div>
 
           <div className="ml-2">
-            <Text text="Latinha personalizada - 15g" />
+            <SectionTitle text="Latinha personalizada - 15g" />
 
             <div className="mt-2">
               <Text text="Unidades a partir de" />
-              <Text text="R$ 3,50" />
+              <SectionTitle text="R$ 3,50" />
             </div>
           </div>
         </div>
@@ -104,11 +104,11 @@ function Catalog() {
           </div>
 
           <div className="ml-2">
-            <Text text="Potinho de vidro tampa de tecido - 40g" />
+            <SectionTitle text="Potinho de vidro tampa de tecido - 40g" />
 
             <div className="mt-2">
               <Text text="Unidades a partir de" />
-              <Text text="R$ 9,00" />
+              <SectionTitle text="R$ 9,00" />
             </div>
           </div>
         </div>
@@ -126,11 +126,11 @@ function Catalog() {
           </div>
 
           <div className="ml-2">
-            <Text text="Potinho de vidro tampa de alumínio - 40g" />
+            <SectionTitle text="Potinho de vidro tampa de alumínio - 40g" />
 
             <div className="mt-2">
               <Text text="Unidades a partir de" />
-              <Text text="R$ 8,50" />
+              <SectionTitle text="R$ 8,50" />
             </div>
           </div>
         </div>
