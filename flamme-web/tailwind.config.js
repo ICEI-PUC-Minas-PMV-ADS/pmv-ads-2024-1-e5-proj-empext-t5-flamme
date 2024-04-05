@@ -6,7 +6,9 @@ export default {
       colors: {
         primary: "#763F21",
         secundary: "#F8E1CF",
-        labels: "#404040"
+        labels: "#404040",
+        brownborder:"#D2A27A",
+        grayborder: "#D9D9D9"
       },
     },
   },
