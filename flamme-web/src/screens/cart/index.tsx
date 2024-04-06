@@ -10,6 +10,7 @@ import EditButton from "../../components/EditButton/index.tsx";
 import DeleteButton from "../../components/DeleteButton/index.tsx";
 import AlertButton1 from "../../components/AlertButton1/index.tsx";
 import AlertButton2 from "../../components/AlertButton2/index.tsx";
+import ButtonNavBarCart from "../../components/ButtonNavBarCart/index.tsx";
 
 function Cart() {
   function click() {
@@ -131,6 +132,8 @@ function Cart() {
             <ButtonWhite2 label="Continuar comprando" onclick={click} />
           </div>
         </div>
+        
+        <ButtonNavBarCart />
       </div>
     </>
   );
