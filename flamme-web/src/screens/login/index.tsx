@@ -1,10 +1,11 @@
 import "../../styles/Login.css";
-import React, { useState } from "react";
 import logoFlameLog from "../../../public/logoFlameLog.svg";
+import { useState } from "react";
+import { Button } from "../../components/Button/Button";
 
 const Login = () => {
-  //const [email, setEmail] = useState("");
-  //const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const login = async () => {};
 
@@ -34,6 +35,7 @@ const Login = () => {
                 onChange={(ev) => setEmail(ev.target.value)}
                 type="text"
                 placeholder="Digite seu e-mail"
+                value={email}
               />
             </div>
 
@@ -43,13 +45,14 @@ const Login = () => {
                 onChange={(ev) => setPassword(ev.target.value)}
                 type="password"
                 placeholder="Digite sua senha"
+                value={password}
               />
-              <a className="forgot-password-login" to="" href="#">
+              <a className="forgot-password-login" href="#">
                 Esqueceu a senha?
               </a>
             </div>
 
-            <Button label="Entrar" onClick={login}></Button>
+            <Button label="Entrar" onclick={login} />
           </div>
         </div>
       </div>
