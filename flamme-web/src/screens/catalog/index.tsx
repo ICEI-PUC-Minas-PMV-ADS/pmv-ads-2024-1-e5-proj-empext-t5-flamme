@@ -1,4 +1,5 @@
 import { Button } from "../../components/Button/Button";
+import { Button2 } from "../../components/Button2/index.tsx";
 import { ButtonWhite } from "../../components/ButtonWhite/ButtonWhite";
 import { SectionTitle } from "../../components/SectionTitle";
 import { Text } from "../../components/Text";
@@ -50,7 +51,7 @@ function Catalog() {
 
         <div className="flex justify-around mt-6">
           <ButtonWhite label="Excluir" onclick={click} />
-          <Button label="Editar" onclick={click} />
+          <Button2 label="Editar" onclick={click} />
         </div>
 
         <GrayBorder />
@@ -72,7 +73,7 @@ function Catalog() {
 
         <div className="flex justify-around mt-6">
           <ButtonWhite label="Excluir" onclick={click} />
-          <Button label="Editar" onclick={click} />
+          <Button2 label="Editar" onclick={click} />
         </div>
 
         <GrayBorder />
@@ -94,7 +95,7 @@ function Catalog() {
 
         <div className="flex justify-around mt-6">
           <ButtonWhite label="Excluir" onclick={click} />
-          <Button label="Editar" onclick={click} />
+          <Button2 label="Editar" onclick={click} />
         </div>
 
         <GrayBorder />
@@ -116,7 +117,7 @@ function Catalog() {
 
         <div className="flex justify-around mt-6">
           <ButtonWhite label="Excluir" onclick={click} />
-          <Button label="Editar" onclick={click} />
+          <Button2 label="Editar" onclick={click} />
         </div>
 
         <GrayBorder />
@@ -138,7 +139,7 @@ function Catalog() {
 
         <div className="flex justify-around mt-6">
           <ButtonWhite label="Excluir" onclick={click} />
-          <Button label="Editar" onclick={click} />
+          <Button2 label="Editar" onclick={click} />
         </div>
 
         <GrayBorder />
