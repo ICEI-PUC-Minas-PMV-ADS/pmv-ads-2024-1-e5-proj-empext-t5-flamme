@@ -8,13 +8,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.flamme.flammebackend.entities.Candles;
 import com.flamme.flammebackend.entities.User;
 import com.flamme.flammebackend.exceptions.UserException;
 import com.flamme.flammebackend.repository.UserRepository;
 
 @Service
 public class UserService {
-    
+
     @Autowired
     private UserRepository repository;
 
@@ -42,5 +43,28 @@ public class UserService {
 
         return this.repository.save(user);
 
+    }
+
+    public User update(User users) {
+        this.repository.findByEmail(users.getEmail())
+                .ifPresent((company) -> {
+                    throw new UserException();
+                });
+
+        Optional<User> user = repository.findById(users.getId());
+
+        User newUsers = user.get();
+        newUsers.setName(users.getName());
+        newUsers.setPhone(users.getPhone());
+        newUsers.setEmail(users.getEmail());
+        var password = passwordEncoder.encode(users.getPassword());
+        newUsers.setPassword(password);
+
+        return this.repository.save(newUsers);
+    }
+
+    public String delete(Long id) {
+        this.repository.deleteById(id);
+        return "Usuário deletado!";
     }
 }
