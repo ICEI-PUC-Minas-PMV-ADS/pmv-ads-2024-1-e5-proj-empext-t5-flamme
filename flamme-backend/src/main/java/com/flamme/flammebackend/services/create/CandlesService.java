@@ -4,11 +4,9 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.flamme.flammebackend.entities.Candles;
-import com.flamme.flammebackend.exceptions.UserException;
 import com.flamme.flammebackend.repository.CandlesRepository;
 
 @Service
@@ -31,4 +29,22 @@ public class CandlesService {
         candles.setUserId(id);
         return this.repository.save(candles);
     }
+
+    public Candles update(Candles candles) {
+        Optional<Candles> candle = repository.findById(candles.getId());
+        Candles newCandle = candle.get();
+        newCandle.setName(candles.getName());
+        newCandle.setDescription(candles.getDescription());
+        newCandle.setPhone(candles.getPhone());
+        newCandle.setAroma(candles.getAroma());
+        newCandle.setModel(candles.getModel());
+        newCandle.setPrice(candles.getPrice());
+        newCandle.setQuantity(candles.getQuantity());
+        return this.repository.save(newCandle);
+    }
+
+    public String delete(Long id) {
+        this.repository.deleteById(id);
+        return "Usuário deletado!";
+    } 
 }

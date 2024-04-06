@@ -4,7 +4,9 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -44,6 +46,30 @@ public class CandlesController {
     public ResponseEntity<Object> create(@Valid @RequestBody Candles candle, @PathVariable Long id) {
         try {
             Candles result = this.service.create(candle, id);
+
+            return ResponseEntity.ok().body(result);
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    // PUT
+    @PatchMapping("update")
+    public ResponseEntity<Object> update(@Valid @RequestBody Candles candle) {
+        try {
+            Candles result = this.service.update(candle);
+
+            return ResponseEntity.ok().body(result);
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    //DELETE
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Object> delete(@Valid @RequestBody @PathVariable Long id) {
+        try {
+            String result = this.service.delete(id);
 
             return ResponseEntity.ok().body(result);
         } catch (Exception e) {
