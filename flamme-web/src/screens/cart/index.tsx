@@ -1,8 +1,7 @@
 import { Title } from "../../components/Title";
-import { Additional } from "../../components/Additional";
 import { Text } from "../../components/Text";
 import { Button } from "../../components/Button/Button";
-import { ButtonWhite } from "../../components/ButtonWhite/ButtonWhite";
+import { ButtonWhite2 } from "../../components/ButtonWhite2/index.tsx";
 import { SectionTitle } from "../../components/SectionTitle";
 import GrayBorderTop from "../../components/GrayBorderTop/index.tsx";
 import Product4 from "../../assets/product-img4.svg";
@@ -126,10 +125,10 @@ function Cart() {
         </div>
 
         <div className="flex flex-col items-center justify-center mt-10">
-          <ButtonWhite label="Finalizar compra" onclick={click} />
+          <Button label="Finalizar compra" onclick={click} />
 
           <div className="mt-4">
-            <Button label="Continuar comprando" onclick={click} />
+            <ButtonWhite2 label="Continuar comprando" onclick={click} />
           </div>
         </div>
       </div>

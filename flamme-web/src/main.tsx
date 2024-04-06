@@ -8,6 +8,6 @@ import Cart from './screens/cart/index.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <AddProduct />
+    <Catalog />
   </React.StrictMode>,
 )
