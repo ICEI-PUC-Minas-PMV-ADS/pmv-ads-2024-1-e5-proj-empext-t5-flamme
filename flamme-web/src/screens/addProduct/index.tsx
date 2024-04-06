@@ -1,11 +1,12 @@
 import { Title } from "../../components/Title";
 import { Text } from "../../components/Text";
-import { Button } from "../../components/Button/Button";
 import { ButtonWhite } from "../../components/ButtonWhite/ButtonWhite";
+import { ButtonWhite2 } from "../../components/ButtonWhite2/index.tsx";
 import { SectionTitle } from "../../components/SectionTitle";
 import Rectangle from "../../components/Rectangle/index.tsx"
 import GrayBorder from "../../components/GrayBorder/index.tsx";
 import GrayBorderTop from "../../components/GrayBorderTop/index.tsx";
+import { Button2 } from "../../components/Button2/index.tsx";
 
 function AddProduct() {
   function click() {
@@ -89,7 +90,7 @@ function AddProduct() {
         </div>
 
         <div className="flex justify-center items-center mt-10">
-          <ButtonWhite label="+ Adicionar mais opções" onclick={click} />
+          <ButtonWhite2 label="+ Adicionar mais opções" onclick={click} />
         </div>
 
 
@@ -116,7 +117,7 @@ function AddProduct() {
         </div>
 
         <div className="flex justify-center items-center mt-10">
-          <ButtonWhite label="+ Adicionar mais aromas" onclick={click} />
+          <ButtonWhite2 label="+ Adicionar mais aromas" onclick={click} />
         </div>
 
 
@@ -137,7 +138,7 @@ function AddProduct() {
         </div>
 
         <div className="flex justify-center items-center mt-10">
-          <ButtonWhite label="+ Adicionar mais acréscimos" onclick={click} />
+          <ButtonWhite2 label="+ Adicionar mais acréscimos" onclick={click} />
         </div>
 
 
@@ -188,7 +189,7 @@ function AddProduct() {
         </div>
 
         <div className="flex justify-center items-center mt-10">
-          <ButtonWhite label="+ Adicionar mais fitas" onclick={click} />
+          <ButtonWhite2 label="+ Adicionar mais fitas" onclick={click} />
         </div>
 
         <div className="flex justify-around mt-10">
@@ -197,7 +198,7 @@ function AddProduct() {
           </div>
 
           <div className="p-4">
-            <Button label="Salvar" onclick={click} />
+            <Button2 label="Salvar" onclick={click} />
           </div>
         </div>
       </div>
