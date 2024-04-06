@@ -7,6 +7,7 @@ import Rectangle from "../../components/Rectangle/index.tsx"
 import GrayBorder from "../../components/GrayBorder/index.tsx";
 import GrayBorderTop from "../../components/GrayBorderTop/index.tsx";
 import { Button2 } from "../../components/Button2/index.tsx";
+import ButtonNavBarAddProduct from "../../components/ButtonNavBarAddProduct/index.tsx"
 
 function AddProduct() {
   function click() {
@@ -201,6 +202,8 @@ function AddProduct() {
             <Button2 label="Salvar" onclick={click} />
           </div>
         </div>
+
+        <ButtonNavBarAddProduct />
       </div>
     </>
   );
