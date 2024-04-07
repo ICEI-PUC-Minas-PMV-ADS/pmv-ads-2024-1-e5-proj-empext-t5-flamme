@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://flamme.database.windows.net:1433;database=flammedb;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: flamme
+    password: Flm01@Adm*
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 9191
