@@ -2,23 +2,23 @@ import "../../styles/Login.css";
 import logoFlameLog from "../../../public/logoFlameLog.svg";
 import { useState } from "react";
 import { Button } from "../../components/Button/Button";
+import auth  from "../../services/request/auth";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
-  const login = async () => {};
+  const handleLogin = async () => {
+    const resp = await auth({ email, password });
 
-  // const login = async () => {
-  //   const auth = await loginUser(email, password);
+    if (resp !== null) {
+      return navigate("/Catalog");
+    }
 
-  //   if (auth && auth.token) {
-  //     window.location.href = "/inicio";
-  //     return localStorage.setItem("token", auth.token);
-  //   }
-
-  //   return  alert("Usuário não encontrado!");
-  // };
+    return alert("Usuário não encontrado!");
+  };
 
   return (
     <>
@@ -52,7 +52,7 @@ const Login = () => {
               </a>
             </div>
 
-            <Button label="Entrar" onclick={login} />
+            <Button label="Entrar" onclick={handleLogin} />
           </div>
         </div>
       </div>

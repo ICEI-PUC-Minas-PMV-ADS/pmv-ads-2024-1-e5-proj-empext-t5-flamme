@@ -8,7 +8,6 @@ import Ellipse from "../../components/Ellipse/index.tsx";
 import EditButton from "../../components/EditButton/index.tsx";
 import DeleteButton from "../../components/DeleteButton/index.tsx";
 import AlertButton1 from "../../components/AlertButton1/index.tsx";
-import Rectangle from "../../components/Rectangle/index.tsx"
 import GrayBorder from "../../components/GrayBorder/index.tsx";
 
 function CheckoutBudget() {
