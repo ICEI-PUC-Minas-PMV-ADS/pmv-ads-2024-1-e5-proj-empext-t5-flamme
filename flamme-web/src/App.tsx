@@ -1,12 +1,15 @@
 import { BrowserRouter } from "react-router-dom";
 import Routes from "./router/app.routes";
+import { StoreProvider } from "./contexts";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes />
-      </BrowserRouter>
+      <StoreProvider>
+        <BrowserRouter>
+          <Routes />
+        </BrowserRouter>
+      </StoreProvider>
     </>
   );
 }
