@@ -4,7 +4,7 @@ Apresente os cenários de testes utilizados na realização dos testes da sua ap
 
 Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
 
-| **Caso de Teste** 	| **CT-01 – Login do Administradora** 	|
+| **Caso de Teste** 	| **CT-01 – Login da Administradora** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-008 – O sistema deve permitir o login do administrador do sistema|
 | Objetivo do Teste 	| Verificar se o login está funcionando corretamente. |
@@ -46,4 +46,34 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
  
 # Evidências de Testes de Software
 
-Apresente imagens e/ou vídeos que comprovam que um determinado teste foi executado, e o resultado esperado foi obtido. Normalmente são screenshots de telas, ou vídeos do software em funcionamento.
+**CT-01 Login da Administradora**
+
+
+Critério de êxito 01 - A tela de login deve abrir corretamente
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/01985eab-e793-495c-a1a0-8129bdf6ee0c)
+
+
+
+Critério de êxito 02 - O login e senha cadastrados devem direcionar o usuário para a tela de gestão de orçamentos/pedidos da FLAMME
+
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/908b7c6c-7385-44b6-acb1-7b1108d16832)
+
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/8a969afa-ba96-49e2-82ef-96400d83974d)
+
+Backend - banco de dados do usuário
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/422951ec-f6db-4e14-952b-d55ca6ce374f)
+
+
+Critério de êxito 03 - Login e senha incorretos devem exibir uma mensagem de login ou senha incorretos
+
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/7498d62d-f1c1-4dea-ab9e-7e3e36e3c468)
+
+Mensagem de erro console
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/d6213c73-efd7-4f29-83cd-7b660acd5032)
+
