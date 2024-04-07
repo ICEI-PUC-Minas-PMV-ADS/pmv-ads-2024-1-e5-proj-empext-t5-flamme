@@ -14,7 +14,7 @@ const Login = () => {
     const resp = await auth({ email, password });
 
     if (resp !== null) {
-      return navigate("/Catalog");
+      return navigate("/");
     }
 
     return alert("Usuário não encontrado!");
