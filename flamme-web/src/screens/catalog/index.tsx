@@ -11,6 +11,7 @@ import Product4 from "../../assets/product-img4.svg";
 import Product5 from "../../assets/product-img5.svg";
 import BrownBorder from "../../components/BrownBorder/index.tsx"
 import GrayBorder from "../../components/GrayBorder/index.tsx"
+import ButtonNavBarCatalog from "../../components/ButtonNavBarCatalog/index.tsx";
 
 function Catalog() {
   function click() {
@@ -142,7 +143,7 @@ function Catalog() {
           <Button2 label="Editar" onclick={click} />
         </div>
 
-        <GrayBorder />
+        <ButtonNavBarCatalog />
       </div>
     </>
   );
