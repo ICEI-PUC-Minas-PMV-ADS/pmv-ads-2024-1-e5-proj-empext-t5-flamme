@@ -5,7 +5,7 @@ interface IAuth {
   password: string;
 }
 
-export const auth = async (data: IAuth) => {
+const auth = async (data: IAuth) => {
   try {
     const response = await api.post("auth", {
       email: data.email,
@@ -21,3 +21,5 @@ export const auth = async (data: IAuth) => {
     return null;
   }
 };
+
+export default auth;
