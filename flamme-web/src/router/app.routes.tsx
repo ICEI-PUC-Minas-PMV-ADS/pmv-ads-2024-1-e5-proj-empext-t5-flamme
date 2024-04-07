@@ -8,7 +8,7 @@ import {
 } from "../screens";
 
 export default function Routes() {
-  const auth = window.localStorage.getItem("token");
+  
   return (
     <Switch>
       <>
