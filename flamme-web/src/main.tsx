@@ -2,10 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import CheckoutBudget from './screens/CheckoutBudget/index.tsx'
+import Cart from './screens/cart/index.tsx'
+import AddProduct from './screens/addProduct/index.tsx'
+import Catalog from './screens/catalog/index.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <CheckoutBudget />
+    <Catalog />
   </React.StrictMode>,
 )
