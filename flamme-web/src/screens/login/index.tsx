@@ -2,7 +2,7 @@ import "../../styles/Login.css";
 import logoFlameLog from "../../../public/logoFlameLog.svg";
 import { useState } from "react";
 import { Button } from "../../components/Button/Button";
-import { auth } from "../../services/request/auth";
+import auth  from "../../services/request/auth";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
