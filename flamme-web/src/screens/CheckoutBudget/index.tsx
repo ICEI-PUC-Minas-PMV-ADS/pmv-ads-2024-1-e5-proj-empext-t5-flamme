@@ -160,7 +160,7 @@ function CheckoutBudget() {
         </div>
 
         <div className="mt-4 ml-7">
-          <SectionTitle text="Número" />
+          <SectionTitle text="Complemento" />
           <input className="mt-2 w-80 border rounded-md text-xs px-3 h-11" type="text" placeholder="Informe o complemento da residência" />
         </div>
 
