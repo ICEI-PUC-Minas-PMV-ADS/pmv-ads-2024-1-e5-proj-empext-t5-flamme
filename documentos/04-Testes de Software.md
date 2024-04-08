@@ -101,6 +101,14 @@ Resposta para a requisição POST/CREATE com status 200
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2023.20.20.jpeg)
 
+GET - produtos na tela inicial "/"
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2023.42.31.jpeg)
+
+Retorno das velas cadastradas
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2023.42.50.jpeg)
+
 Ao clicar em "Editar" inicia um get pelo ID  do produto é apresentada a opção de alterar o nome do produto em tela.
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2023.00.55.jpeg)
