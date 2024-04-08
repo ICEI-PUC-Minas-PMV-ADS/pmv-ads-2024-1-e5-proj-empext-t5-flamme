@@ -79,7 +79,7 @@ Mensagem de erro console
 
 **CT-04 Área do administrador**
 
-Critério de êxito - Ser redirecionado para a tela Estoque em que ele poderá cadastrar, alterar, excluir ou editar os itens do produto.
+Critério de êxito - A tela área da administradora deve abrir corretamente, Marina deverá conseguir alterar, cadastrar, excluir e editar os produtos do estoque, que deverão ser atualizados após salvar as informações. 
 
 Criação de um novo produto
 
