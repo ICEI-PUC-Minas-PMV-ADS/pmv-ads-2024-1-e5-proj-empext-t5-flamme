@@ -77,3 +77,72 @@ Mensagem de erro console
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/d6213c73-efd7-4f29-83cd-7b660acd5032)
 
+**CT-04 Área do administrador**
+
+Critério de êxito - Ser redirecionado para a tela Estoque em que ele poderá cadastrar, alterar, excluir ou editar os itens do produto.
+
+Criação de um novo produto
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2023.02.08.jpeg)
+
+Preenchimento de dados
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2023.02.36.jpeg)
+
+Ao clicar em Salvar inicia a requisição POST / CREATE
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2023.03.03.jpeg)
+
+Requisição POST/CREATE com status 200
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2023.19.53.jpeg)
+
+Resposta para a requisição POST/CREATE com status 200
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2023.20.20.jpeg)
+
+Ao clicar em "Editar" inicia um get pelo ID  do produto é apresentada a opção de alterar o nome do produto em tela.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2023.00.55.jpeg)
+
+GET produtos por ID, requisição
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2022.55.01.jpeg)
+
+Retorno da requisição Get por ID
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2022.55.27.jpeg)
+
+Ao adicionar um novo nome e clicar em alterar, aciona o UPDATE do produto.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2022.56.21.jpeg)
+
+Requisição update
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2022.57.03.jpeg)
+
+Resultado do nome do produto alterado
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2023.00.55.jpeg)
+
+Resposta da requisição após status 200
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2022.57.32.jpeg)
+
+Ao clicar em "Excluir" aciona o DELETE
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2022.59.14.jpeg)
+
+Requisição DELETE
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2022.59.34.jpeg)
+
+Resposta da requisição para o status 200
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2022.59.58.jpeg)
+
+
+
+
+
+
