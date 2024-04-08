@@ -4,7 +4,8 @@ import {
  Cart,
  AddProduct,
  Catalog,
- CheckoutBudget
+ CheckoutBudget,
+ Profile
 } from "../screens";
 
 export default function Routes() {
@@ -17,6 +18,7 @@ export default function Routes() {
         <Route path="/adicionar-produto" element={<AddProduct />} />
         <Route path="/carrinho" element={<Cart />} />
         <Route path="/checkout" element={<CheckoutBudget />} />
+        <Route path="/perfil" element={<Profile />} />
       </>
     </Switch>
   );
