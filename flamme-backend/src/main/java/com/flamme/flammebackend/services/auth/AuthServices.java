@@ -1,7 +1,5 @@
 package com.flamme.flammebackend.services.auth;
 
-import java.util.Arrays;
-
 import javax.naming.AuthenticationException;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +12,6 @@ import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.flamme.flammebackend.dto.AuthCompanyResponseDTO;
 import com.flamme.flammebackend.dto.AuthRequestDTO;
-import com.flamme.flammebackend.dto.AuthUserDTO;
 import com.flamme.flammebackend.repository.UserRepository;
 
 @Service
