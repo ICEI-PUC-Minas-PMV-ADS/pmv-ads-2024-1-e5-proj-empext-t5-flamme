@@ -95,7 +95,7 @@ function Catalog() {
                       price: item.price,
                       quantity: item.quantity,
                     });
-                    window.location.reload();
+                    // window.location.reload();
                   }}
                 />
               </div>
