@@ -1,6 +1,6 @@
 const GrayBorderTop = () => {
     return (
-      <div className="mt-6 border border-solid border-gray-300"></div>
+      <div className="border border-solid border-gray-300"></div>
     );
   };
   
