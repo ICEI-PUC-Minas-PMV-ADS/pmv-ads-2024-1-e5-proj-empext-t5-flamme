@@ -26,12 +26,12 @@ function Catalog() {
 
   return products ? (
     <>
-      <div className="Catalog">
+      <div className="Catalog w-full p-7 pb-32">
         <div className="flex justify-center items-center mt-8">
           <img className="flamme-logo" src={Logo} alt="Logo do Flamme" />
         </div>
 
-        <div className="ml-7 mt-14">
+        <div className="mt-14">
           <SectionTitle text="Catálogo de velas" />
         </div>
 
@@ -43,8 +43,8 @@ function Catalog() {
 
         {/* Produto */}
         {products.map((item: IProduct) => (
-          <div className="flex flex-col justify-around mx-7 mt-8">
-            <div className="flex items-center">
+          <div className="flex flex-col mt-8">
+            <div className="flex items-center justify-around">
               <div>
                 <img src={Product1} alt="Foto do Produto" />
               </div>
