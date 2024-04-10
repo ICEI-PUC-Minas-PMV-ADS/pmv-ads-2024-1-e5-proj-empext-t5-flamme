@@ -5,5 +5,6 @@ import CheckoutBudget from "./CheckoutBudget";
 import Login from "./login";
 import Profile from "./Profile";
 import ViewProduct from "./viewProduct";
+import ProductClient from "./Productclient";
 
-export { Cart, AddProduct, Catalog, CheckoutBudget, Login, Profile, ViewProduct };
+export { Cart, AddProduct, Catalog, CheckoutBudget, Login, Profile, ViewProduct, ProductClient };
