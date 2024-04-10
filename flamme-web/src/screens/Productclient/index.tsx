@@ -13,10 +13,13 @@ import Product5 from "../../assets/product-img5.svg";
 import { Additional } from "../../components/Additional";
 import { Aroma } from "../../components/Aroma";
 import { Text } from "../../components/Text";
-import ButtonNavBarAddProduct from '../../components/ButtonNavBarAddProduct'; 
 import AlertButton1 from "../../components/AlertButton1/index.tsx";
 import AlertButton2 from "../../components/AlertButton2/index.tsx";
 import GrayBorderUnid from "../../components/GrayBorderUnid/index.tsx";
+import WhatsAppRectangle from '../../components/WhatsApp/index.tsx';
+import AlertButton3 from "../../components/AlertButton3/index.tsx";
+import ButtonNavBarCart from "../../components/ButtonNavBarCart/index.tsx";
+import Whastsappcontato from "../../components/Whatsappcontato/index.tsx";
 
 function ViewProduct() {
   const settings = {
@@ -38,7 +41,7 @@ function ViewProduct() {
     <>
       <div className="ViewProduct">
         <div className="flex justify-center items-center mt-4">
-          <Title text="Visualizar Produto" />
+          <Title text="" />
         </div>
 
         <GrayBorderTop />
@@ -173,7 +176,25 @@ Tem o tamanho de 4x4,5 e peso de 40g."
         <Additional value="Saquinho de organza" price={0.50} />
         </div>
 
-      <ButtonNavBarAddProduct />
+        <div className="mt-3">
+      <WhatsAppRectangle />
+      </div>
+
+      <div className="flex gap-1">
+          <div className="ml-2 mt-5">
+            <AlertButton3 />
+          </div>
+
+          <div className="mt-5">
+            <Text text="Em caso de dúvidas ou caso queira fazer um pedido diferente do que está no catálogo, entre em contato conosco atrasvés do nosso WhatsApp." />
+          </div>
+        </div>
+
+        <div className="ml-2">
+      <Whastsappcontato />
+      </div>
+
+        <ButtonNavBarCart />
 
       </div>
     </>
