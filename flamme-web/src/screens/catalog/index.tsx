@@ -12,6 +12,7 @@ import { useStoreContext } from "../../contexts/index.tsx";
 import { Title } from "../../components/Title/index.tsx";
 import { IProduct } from "../../contexts/interface.ts";
 import { useState } from "react";
+import { transformPricePTBR } from "../../utils/scripts.ts";
 
 function Catalog() {
   const { products, getProduct, updateProduct, deleteProduct } =
@@ -54,7 +55,7 @@ function Catalog() {
 
                 <div className="mt-2">
                   <Text text="Unidades a partir de" />
-                  <SectionTitle text={`R$ ${item.price}`} />
+                  <SectionTitle text={"R$ " + transformPricePTBR(item.price)} />
                 </div>
               </div>
             </div>
@@ -72,7 +73,7 @@ function Catalog() {
               />
             </div>
             {modal && (
-              <div className="my-4">
+              <div className="my-4 p-7">
                 <Text text="Alterar nome do produto" />
                 <input
                 className="border-2 border-black rounded-lg my-4 p-2"
@@ -95,7 +96,7 @@ function Catalog() {
                       price: item.price,
                       quantity: item.quantity,
                     });
-                    // window.location.reload();
+                    window.location.reload();
                   }}
                 />
               </div>
