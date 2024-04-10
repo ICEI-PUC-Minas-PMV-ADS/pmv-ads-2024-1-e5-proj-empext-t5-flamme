@@ -5,7 +5,9 @@ import {
  AddProduct,
  Catalog,
  CheckoutBudget,
- Profile
+ Profile,
+ ViewProduct,
+ ProductClient
 } from "../screens";
 
 export default function Routes() {
@@ -19,6 +21,8 @@ export default function Routes() {
         <Route path="/carrinho" element={<Cart />} />
         <Route path="/checkout" element={<CheckoutBudget />} />
         <Route path="/perfil" element={<Profile />} />
+        <Route path="/visualizar-produto" element={<ViewProduct />} />
+        <Route path="/produto-cliente" element={<ProductClient />} />
       </>
     </Switch>
   );
