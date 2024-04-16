@@ -6,8 +6,8 @@ import BudgetNavBar from "../BudgetNavBar/index.tsx";
 
 const ButtonNavBarCatalog = () => {
     return (
-        <div className="relative">
-            <div className="mt-11">
+        <div className="fixed bottom-0 inset-x-0 bg-white">
+            <div>
                 <GrayBorderTop />
             </div>
 
