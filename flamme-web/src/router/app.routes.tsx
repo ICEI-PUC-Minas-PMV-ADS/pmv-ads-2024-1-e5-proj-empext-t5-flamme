@@ -1,15 +1,15 @@
 import { Routes as Switch, Route } from "react-router-dom";
 import {
- Login,
- Cart,
- AddProduct,
- Catalog,
- CheckoutBudget,
- Profile
+  Login,
+  Cart,
+  AddProduct,
+  Catalog,
+  CheckoutBudget,
+  Profile,
+  Budgets,
 } from "../screens";
 
 export default function Routes() {
-  
   return (
     <Switch>
       <>
@@ -19,6 +19,7 @@ export default function Routes() {
         <Route path="/carrinho" element={<Cart />} />
         <Route path="/checkout" element={<CheckoutBudget />} />
         <Route path="/perfil" element={<Profile />} />
+        <Route path="/orcamentos" element={<Budgets />} />
       </>
     </Switch>
   );
