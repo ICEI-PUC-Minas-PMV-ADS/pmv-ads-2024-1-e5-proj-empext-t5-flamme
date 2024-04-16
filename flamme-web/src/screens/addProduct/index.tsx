@@ -14,7 +14,7 @@ import { useStoreContext } from "../../contexts/index.tsx";
 function AddProduct() {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
-  const [phone, setPhone] = useState("");
+  // const [phone, setPhone] = useState("");
   const [aroma, setAroma] = useState([""]);
   const [model, setModel] = useState("ASV55");
   const [price, setPrice] = useState(0);
@@ -22,6 +22,7 @@ function AddProduct() {
   const { createProduct } = useStoreContext();
 
   const click = async () => {
+    setModel("ASV55")
     return await createProduct({
       name: name,
       description: description,
