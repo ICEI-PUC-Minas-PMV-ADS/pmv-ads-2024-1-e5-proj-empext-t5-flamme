@@ -9,7 +9,8 @@ import {
  ViewProduct,
  ProductClient,
  AddCartClient,
- BuyClient
+ BuyClient,
+ RegisterInformation
 } from "../screens";
 
 export default function Routes() {
@@ -27,6 +28,7 @@ export default function Routes() {
         <Route path="/produto-cliente" element={<ProductClient />} />
         <Route path="/carrinho-cliente" element={<AddCartClient />} />
         <Route path="/comprar-cliente" element={<BuyClient />} />
+        <Route path="/informações-cadastro" element={<RegisterInformation />} />
       </>
     </Switch>
   );
