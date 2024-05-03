@@ -22,4 +22,6 @@ export {
   ProductClient,
   AddCartClient,
   BuyClient,
+  RegisterInformation,
+  Info,
 };

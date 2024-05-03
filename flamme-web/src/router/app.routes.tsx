@@ -28,6 +28,8 @@ export default function Routes() {
         <Route path="/produto-cliente" element={<ProductClient />} />
         <Route path="/carrinho-cliente" element={<AddCartClient />} />
         <Route path="/comprar-cliente" element={<BuyClient />} />
+        <Route path="/informações-cadastro" element={<RegisterInformation />} />
+        <Route path="/informações-gerais" element={<Info />} />
       </>
     </Switch>
   );
