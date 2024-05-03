@@ -8,6 +8,7 @@ import ViewProduct from "./viewProduct";
 import ProductClient from "./Productclient";
 import AddCartClient from "./addcartclient";
 import BuyClient from "./Buyclient";
+import RegisterInformation from "./RegisterInformation";
 import Info from "./Info";
 
 export {
@@ -21,5 +22,4 @@ export {
   ProductClient,
   AddCartClient,
   BuyClient,
-  Info,
 };

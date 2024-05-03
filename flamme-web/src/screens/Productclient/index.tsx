@@ -186,7 +186,7 @@ Tem o tamanho de 4x4,5 e peso de 40g."
           </div>
 
           <div className="mt-5">
-            <Text text="Em caso de dúvidas ou caso queira fazer um pedido diferente do que está no catálogo, entre em contato conosco atrasvés do nosso WhatsApp." />
+            <Text text="Em caso de dúvidas ou caso queira fazer um pedido diferente do que está no catálogo, entre em contato conosco através do nosso WhatsApp." />
           </div>
         </div>
 

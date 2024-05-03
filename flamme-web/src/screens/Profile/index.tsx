@@ -30,7 +30,7 @@ function Profile() {
       </div>
 
       <div className="flex justify-between items-center mt-4 ml-7">
-      <Link to="/registerInformation">Informações de cadastro</Link> 
+      <Link to="/informações-cadastro">Informações de cadastro</Link> 
       </div>
 
       <div className="flex justify-center items-center mt-40">
