@@ -3,6 +3,11 @@ interface IText {
   classes?: string;
 }
 
+interface ITextList {
+  items: string | string[];
+  classes?: string;
+}
+
 interface IButton {
   label: string;
   onclick: () => {} | void;
@@ -14,4 +19,4 @@ interface IAroma {
   price: number;
 }
 
-export type { IText, IButton, IAroma };
+export type { IText, IButton, IAroma, ITextList };
