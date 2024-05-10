@@ -14,7 +14,6 @@ import { useStoreContext } from "../../contexts/index.tsx";
 function AddProduct() {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
-  // const [phone, setPhone] = useState("");
   const [aroma, setAroma] = useState([""]);
   const [model, setModel] = useState("ASV55");
   const [price, setPrice] = useState(0);
@@ -22,17 +21,18 @@ function AddProduct() {
   const { createProduct } = useStoreContext();
 
   const click = async () => {
-    setModel("ASV55")
+    setModel("ASV55");
     return await createProduct({
       name: name,
       description: description,
-      phone: "71998979694",
+      phone: "71993314919",
       aroma: aroma,
       model: model,
       price: price,
       quantity: quantity,
     });
   };
+
   return (
     <>
       <div className="AddProduct">
@@ -231,12 +231,12 @@ function AddProduct() {
 
         <div className="flex mt-2 text-xs">
           <div className="flex ml-7">
-            <input type="radio" name="tipo_fita" value="nao_possui" />
+            <input placeholder="ex" type="radio" name="tipo_fita" value="nao_possui" />
             <label className="ml-2">Não possui</label>
           </div>
 
           <div className="flex ml-12">
-            <input type="radio" name="tipo_fita" value="possui" />
+            <input placeholder="ex" type="radio" name="tipo_fita" value="possui" />
             <label className="ml-2">Possui</label>
           </div>
         </div>

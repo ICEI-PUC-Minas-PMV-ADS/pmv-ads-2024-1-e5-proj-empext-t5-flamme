@@ -90,13 +90,15 @@ function Catalog() {
                       id: item.id,
                       name,
                       description: item.description,
-                      phone: item.phone,
                       aroma: item.aroma,
                       model: item.model,
                       price: item.price,
+                      extras: [{}],
+                      options: [{}],
+                      tapes: [{}],
                       quantity: item.quantity,
                     });
-                    window.location.reload();
+                    // window.location.reload();
                   }}
                 />
               </div>

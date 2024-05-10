@@ -1,7 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { IProduct, IProvider, IStoreContext } from "./interface";
 import { api } from "../services/api";
-import { useNavigate } from "react-router-dom";
 
 const StoreContext = createContext<IStoreContext>({} as IStoreContext);
 
