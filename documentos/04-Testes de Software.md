@@ -4,7 +4,7 @@ Apresente os cenários de testes utilizados na realização dos testes da sua ap
 
 Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
 
-| **Caso de Teste** 	| **CT-01 – Login da Administradora** 	|
+| **Caso de Teste** 	| **CT-01 – Login do Administrador(a)** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-008 – O sistema deve permitir o login do administrador do sistema|
 | Objetivo do Teste 	| Verificar se o login está funcionando corretamente. |
@@ -20,7 +20,7 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 | Critério de Êxito | - A tela de nova senha deve abrir corretamente - Ao alterar os dados, a administradora deverá conseguir realizar o login perfeitamente |
 |  	|  	|
 
-| **Caso de Teste** 	| **CT-03 – Informações da administradora** 	|
+| **Caso de Teste** 	| **CT-03 – Informações do administrador(a)** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-009 - O sistema deve permitir a atualização dos dados do administrador do sistema|
 | Objetivo do Teste 	| Verificar se a alteração dos dados está ocorrendo corretamente. |
@@ -28,7 +28,7 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 | Critério de Êxito | - Conforme a LGPD, se a administradora Marina possuir o nome, WhatsApp, e-mail ou senhas adulteradas a mesma pode recorrer do recurso de alterar as informações cadastrais pelo aplicativo FLAMME. |
 |  	|  	|
 
-| **Caso de Teste** 	| **CT-04 – Área do administrador** 	|
+| **Caso de Teste** 	| **CT-04 – Área do administrador(a)** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-010 - O sistema deve permitir que o administrador realize o gerenciamento das velas (CRUD). RF-011 - O sistema deve permitir que o administrador realize o gerenciamento dos orçamentos recebidos. RF-012 - O sistema deve permitir que o administrador receba via WhatsApp o chat do cliente com o pedido já finalizado|
 | Objetivo do Teste 	| Verificar se o administrador consegue fazer a gestão de estoque e confirmar se o orçamento seja excluído ou passe a ser um pedido no sistema. |
@@ -46,7 +46,7 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
  
 # Evidências de Testes de Software
 
-**CT-01 Login da Administradora**
+**CT-01 – Login do Administrador(a)**
 
 
 Critério de êxito 01 - A tela de login deve abrir corretamente
@@ -77,7 +77,7 @@ Mensagem de erro console
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/d6213c73-efd7-4f29-83cd-7b660acd5032)
 
-**CT-04 Área do administrador**
+**CT-04 – Área do administrador(a)**
 
 Critério de êxito - A tela área da administradora deve abrir corretamente, Marina deverá conseguir alterar, cadastrar, excluir e editar os produtos do estoque, que deverão ser atualizados após salvar as informações. 
 
@@ -150,7 +150,13 @@ Resposta da requisição para o status 200
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/WhatsApp%20Image%202024-04-07%20at%2022.59.58.jpeg)
 
 
+Critério de êxito - A tela área da administradora deve abrir corretamente, Marina deverá conseguir visualizar os produtos do estoque.
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/0adca3e0-d439-4a0d-8f65-82a1ccc3b25d)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/355b133b-2425-46db-bb79-90164561cf1e)
 
+**CT-03 – Informações do administrador(a)**
 
+Critério de êxito - A tela área da administradora deve abrir corretamente, para que Marina consiga acessar a tela de Perfil.
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/bafa031d-552b-466b-940f-8aad29708dcd)
