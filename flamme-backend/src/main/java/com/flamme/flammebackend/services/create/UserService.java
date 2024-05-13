@@ -2,13 +2,11 @@ package com.flamme.flammebackend.services.create;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.flamme.flammebackend.entities.Candles;
 import com.flamme.flammebackend.entities.User;
 import com.flamme.flammebackend.exceptions.UserException;
 import com.flamme.flammebackend.repository.UserRepository;

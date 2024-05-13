@@ -7,6 +7,7 @@ const StoreContext = createContext<IStoreContext>({} as IStoreContext);
 export const StoreProvider: React.FC<IProvider> = ({ children }) => {
   const [products, setProducts] = useState<any>();
   const [product, setProduct] = useState<any>();
+  
   const getProducts = async () => {
     try {
       const response = await api.get("users/candles");
