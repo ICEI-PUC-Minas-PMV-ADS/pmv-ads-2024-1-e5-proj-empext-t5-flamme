@@ -6,10 +6,24 @@ import { Text } from "../../components/Text/index.tsx";
 import BrownBorder from "../../components/BrownBorder/index.tsx";
 import ButtonNavBarHome from "../../components/ButtonNavBarHome/index.tsx";
 import CartIcon from "../../components/CartIcon2/index.tsx";
-import { Carousel } from "@material-tailwind/react";
+
+//CARROSSEL
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import '../../components/Carrossel/style.css';
+
 
 
 function HomeClient() {
+  //IMAGENS DO CARROSSEL
+  const data = [
+    { id: '1', image: '../../../public/img-carrossel.svg' },
+    { id: '2', image: '../../../public/img-carrossel.svg' },
+    { id: '3', image: '../../../public/img-carrossel.svg' },
+  ]
+
   return (
     <>
       <div className="Home p-5">
@@ -17,7 +31,21 @@ function HomeClient() {
           <img className="w-36" src={Logo} alt="Logo do Flamme" />
         </div>
 
-        {/*ADICIONAR CARROSSEL*/}
+        {/*CARROSSEL*/}
+        <Swiper
+          className="mt-10 h-48"
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          modules={[Pagination]}
+        >
+          {data.map((item) => (
+
+            <SwiperSlide key={item.id}>
+              <img src={item.image} alt="Velas aromáticas" className="w-full" />
+            </SwiperSlide>
+            
+          ))}
+        </Swiper>
 
 
         {/*ADICIONAR LINK A PAG INFO IMPORTANTE*/}
@@ -68,6 +96,7 @@ function HomeClient() {
 
         <ButtonNavBarHome />
       </div>
+
     </>
   );
 }
