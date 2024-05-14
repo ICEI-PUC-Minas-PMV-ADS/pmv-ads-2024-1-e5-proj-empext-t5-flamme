@@ -6,6 +6,7 @@ import { Text } from "../../components/Text/index.tsx";
 import BrownBorder from "../../components/BrownBorder/index.tsx";
 import ButtonNavBarHome from "../../components/ButtonNavBarHome/index.tsx";
 import CartIcon from "../../components/CartIcon2/index.tsx";
+import { Link } from "react-router-dom"
 
 //CARROSSEL
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -43,7 +44,7 @@ function HomeClient() {
             <SwiperSlide key={item.id}>
               <img src={item.image} alt="Velas aromáticas" className="w-full" />
             </SwiperSlide>
-            
+
           ))}
         </Swiper>
 
@@ -51,7 +52,7 @@ function HomeClient() {
         {/*ADICIONAR LINK A PAG INFO IMPORTANTE*/}
         <div className="flex items-center gap-x-4 mt-10 rounded-lg w-full px-5 py-4 text-sm bg-white text-brownbutton font-semibold border border-brownbutton">
           <CartIcon />
-          <p className="text-black">Clique aqui e veja como comprar</p>
+          <Link to="/informações-cadastro" className="text-black">Clique aqui e veja como comprar</Link>
         </div>
 
         <div className="mt-14">
@@ -62,18 +63,20 @@ function HomeClient() {
         {/*Card - Produto*/}
         <div className="flex flex-wrap mt-8 gap-x-11">
           <div className="w-40">
-            <div>
-              <img src={Product1} alt="Foto do Produto" className="w-48" />
-            </div>
-
-            <div className="mt-2">
-              <SectionTitle text="Potinho de vidro tampa de junta - 40g" />
+            <Link to="/produto-cliente" className="text-black">
+              <div>
+                <img src={Product1} alt="Foto do Produto" className="w-48" />
+              </div>
 
               <div className="mt-2">
-                <Text text="Unidades a partir de" />
-                <SectionTitle text="R$ 9,00" />
+                <SectionTitle text="Potinho de vidro tampa de junta - 40g" />
+
+                <div className="mt-2">
+                  <Text text="Unidades a partir de" />
+                  <SectionTitle text="R$ 9,00" />
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
 
 
