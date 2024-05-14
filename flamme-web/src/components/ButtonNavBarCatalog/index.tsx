@@ -3,6 +3,7 @@ import GrayBorderTop from "../../components/GrayBorderTop/index.tsx";
 import CatalogNavBar2 from "../CatalogNavBar2/index.tsx";
 import ProfileNavBar from "../ProfileNavBar/index.tsx";
 import BudgetNavBar from "../BudgetNavBar/index.tsx";
+import { Link } from "react-router-dom";
 
 const ButtonNavBarCatalog = () => {
     return (
@@ -13,21 +14,20 @@ const ButtonNavBarCatalog = () => {
 
             <div className="flex items-center justify-around mt-3 mb-3">
 
-                <div className="flex flex-col items-center">
+                <Link to={"/perfil"} className="flex flex-col items-center">
                     <ProfileNavBar />
                     <div className="mt-1.5">
                         <SectionTitle text="Perfil" />
                     </div>
 
-                </div>
+                </Link>
 
-                <div className="flex flex-col items-center">
+                <Link to={"/home-orçamentos"} className="flex flex-col items-center">
                     <BudgetNavBar />
                     <div className="mt-1.5">
                         <SectionTitle text="Orçamento" />
                     </div>
-
-                </div>
+                </Link>
 
                 <div className="flex flex-col items-center">
                     <CatalogNavBar2 />

@@ -21,7 +21,8 @@ export default function Routes() {
   return (
     <Switch>
       <>
-        <Route path="/informações-cadastro" element={<Catalog />} />
+        <Route path="/" element={<HomeClient />} />
+        <Route path="/catalogo-adm" element={<Catalog />} />
         <Route path="/login" element={<Login />} />
         <Route path="/adicionar-produto" element={<AddProduct />} />
         <Route path="/carrinho" element={<Cart />} />
@@ -31,9 +32,8 @@ export default function Routes() {
         <Route path="/produto-cliente" element={<ProductClient />} />
         <Route path="/carrinho-cliente" element={<AddCartClient />} />
         <Route path="/comprar-cliente" element={<BuyClient />} />
-        <Route path="/" element={<RegisterInformation />} />
+        <Route path="/informações-cadastro" element={<RegisterInformation />} />
         <Route path="/home-orçamentos" element={<HomeBudgetAdm />} />
-        <Route path="/home-loja" element={<HomeClient />} />
         {/*<Route path="/editar-info" element={<EditInfo />} />*/}
       </>
     </Switch>

@@ -3,6 +3,7 @@ import GrayBorderTop from "../GrayBorderTop/index.tsx";
 import CatalogNavBar from "../CatalogNavBar/index.tsx";
 import PerfilFillNavBar from "../PerfilFillNavBar/index.tsx";
 import BudgetNavBar from "../BudgetNavBar/index.tsx";
+import { Link } from "react-router-dom";
 
 const ButtonNavBarPerfil = () => {
     return (
@@ -20,20 +21,19 @@ const ButtonNavBarPerfil = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center">
+                <Link to={"/home-orçamentos"} className="flex flex-col items-center">
                     <BudgetNavBar />
                     <div className="mt-1.5">
                         <SectionTitle text="Orçamento" />
                     </div>
+                </Link>
 
-                </div>
-
-                <div className="flex flex-col items-center">
+                <Link to={"/catalogo-adm"} className="flex flex-col items-center">
                     <CatalogNavBar />
                     <div className="mt-1.5">
                         <SectionTitle text="Catálogo" />
                     </div>
-                </div>
+                </Link>
             </div>
         </div>
     );
