@@ -10,7 +10,9 @@ import {
  ProductClient,
  AddCartClient,
  BuyClient,
- RegisterInformation
+ RegisterInformation,
+ HomeBudgetAdm,
+ HomeClient
 } from "../screens";
 
 export default function Routes() {
@@ -18,7 +20,7 @@ export default function Routes() {
   return (
     <Switch>
       <>
-        <Route path="/" element={<Catalog />} />
+        <Route path="/home-loja" element={<Catalog />} />
         <Route path="/login" element={<Login />} />
         <Route path="/adicionar-produto" element={<AddProduct />} />
         <Route path="/carrinho" element={<Cart />} />
@@ -29,6 +31,8 @@ export default function Routes() {
         <Route path="/carrinho-cliente" element={<AddCartClient />} />
         <Route path="/comprar-cliente" element={<BuyClient />} />
         <Route path="/informações-cadastro" element={<RegisterInformation />} />
+        <Route path="/home-orçamentos" element={<HomeBudgetAdm />} />
+        <Route path="/" element={<HomeClient />} />
       </>
     </Switch>
   );
