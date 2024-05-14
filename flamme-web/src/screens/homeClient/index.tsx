@@ -48,11 +48,9 @@ function HomeClient() {
           ))}
         </Swiper>
 
-
-        {/*ADICIONAR LINK A PAG INFO IMPORTANTE*/}
         <div className="flex items-center gap-x-4 mt-10 rounded-lg w-full px-5 py-4 text-sm bg-white text-brownbutton font-semibold border border-brownbutton">
           <CartIcon />
-          <Link to="/informações-cadastro" className="text-black">Clique aqui e veja como comprar</Link>
+          <Link to="/informações-gerais" className="text-black">Clique aqui e veja como comprar</Link>
         </div>
 
         <div className="mt-14">
@@ -60,6 +58,7 @@ function HomeClient() {
         </div>
         <BrownBorder />
 
+        {/*FAZER INTEGRAÇÃO DOS CARDS DE PRODUTO*/}
         {/*Card - Produto*/}
         <div className="flex flex-wrap mt-8 gap-x-11">
           <div className="w-40">
@@ -78,7 +77,6 @@ function HomeClient() {
               </div>
             </Link>
           </div>
-
 
           <div className="w-40">
             <div>
