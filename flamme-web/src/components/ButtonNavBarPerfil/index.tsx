@@ -1,6 +1,6 @@
 import { SectionTitle } from "../SectionTitle/index.tsx";
 import GrayBorderTop from "../GrayBorderTop/index.tsx";
-import CatalogNavBar2 from "../CatalogNavBar2/index.tsx";
+import CatalogNavBar from "../CatalogNavBar/index.tsx";
 import PerfilFillNavBar from "../PerfilFillNavBar/index.tsx";
 import BudgetNavBar from "../BudgetNavBar/index.tsx";
 
@@ -29,7 +29,7 @@ const ButtonNavBarPerfil = () => {
                 </div>
 
                 <div className="flex flex-col items-center">
-                    <CatalogNavBar2 />
+                    <CatalogNavBar />
                     <div className="mt-1.5">
                         <SectionTitle text="Catálogo" />
                     </div>
