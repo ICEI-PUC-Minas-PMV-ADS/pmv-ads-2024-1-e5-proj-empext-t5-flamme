@@ -8,18 +8,8 @@ import ViewProduct from "./viewProduct";
 import ProductClient from "./Productclient";
 import AddCartClient from "./addcartclient";
 import BuyClient from "./Buyclient";
-import RegisterInformation from "./RegisterInformation";
+import RegisterInformation from "./RegisterInformation"
+import HomeBudgetAdm from "./homeBudgetAdm"
+import HomeClient from "./homeClient"
 
-export {
-  Cart,
-  AddProduct,
-  Catalog,
-  CheckoutBudget,
-  Login,
-  Profile,
-  ViewProduct,
-  ProductClient,
-  AddCartClient,
-  BuyClient,
-  RegisterInformation,
-};
+export { Cart, AddProduct, Catalog, CheckoutBudget, Login, Profile, ViewProduct, ProductClient, AddCartClient, BuyClient, RegisterInformation, HomeBudgetAdm, HomeClient };

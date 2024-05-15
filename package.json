@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@material-tailwind/react": "^2.1.9",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.1.1"
