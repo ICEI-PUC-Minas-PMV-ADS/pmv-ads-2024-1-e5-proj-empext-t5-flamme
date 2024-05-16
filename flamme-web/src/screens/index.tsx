@@ -4,7 +4,7 @@ import Catalog from "./catalog";
 import CheckoutBudget from "./CheckoutBudget";
 import Login from "./login";
 import Profile from "./Profile";
-import ViewProduct from "./viewProduct";
+import ViewProduct from "./ViewProduct";
 import ProductClient from "./Productclient";
 import AddCartClient from "./addcartclient";
 import BuyClient from "./Buyclient";
