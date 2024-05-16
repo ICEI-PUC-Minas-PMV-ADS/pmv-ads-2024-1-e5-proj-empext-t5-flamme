@@ -1,24 +1,17 @@
-import { Title } from "../../components/Title";
-import { Text } from "../../components/Text";
+import { Title } from "../../components/Title/index.tsx";
+import { Text } from "../../components/Text/index.tsx";
 import GrayBorderTop from "../../components/GrayBorderTop/index.tsx";
-import ButtonNavBarPerfil from "../../components/ButtonNavBarPerfil";
+import { Button2 } from "../../components/Button2/index.tsx";
+import ButtonNavBarPerfil from "../../components/ButtonNavBarPerfil/index.tsx";
 import { Link } from "react-router-dom";
 
-function RegisterInformation() {
+function EditInfo() {
   return (
-    <div className="RegisterInformation">
+    <div className="EditInfo">
       <div className="flex justify-center mt-4 mb-4">
-        <Title text="Informações de cadastro" />
+        <Title text="Editar informações" />
       </div>
       <GrayBorderTop />
-
-      <div className="m-6">
-        <Link to="/editar-info">
-          <button className="w-full py-3.5 mb-1 rounded-lg border border-brownbutton bg-white text-sm text-brownbutton font-semibold ">
-            Editar informações
-          </button>
-        </Link>
-      </div>
 
 
       <form action="" className="mx-6">
@@ -59,7 +52,7 @@ function RegisterInformation() {
           />
         </div>
 
-        <div className="mt-3 text-slate-500">
+        <div className="mt-3">
           <strong>
             <Text text="Sua senha deve conter:" />
           </strong>
@@ -78,6 +71,18 @@ function RegisterInformation() {
             />
           </div>
         </div>
+
+        <div className="flex justify-around items-center mt-10">
+          <Link to="/informações-cadastro">
+            <button className="w-36 px-2.5 py-3 rounded-lg border border-brownbutton bg-white text-sm text-brownbutton font-semibold ">
+              Cancelar
+            </button>
+          </Link>
+
+          <div className="p-4">
+            <Button2 label="Salvar" onclick={() => { }} />
+          </div>
+        </div>
       </form>
 
       <ButtonNavBarPerfil />
@@ -85,4 +90,4 @@ function RegisterInformation() {
   );
 }
 
-export default RegisterInformation;
+export default EditInfo;
