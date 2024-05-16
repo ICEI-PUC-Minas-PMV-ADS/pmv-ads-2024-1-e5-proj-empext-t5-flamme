@@ -13,6 +13,7 @@ import {
   RegisterInformation,
   HomeBudgetAdm,
   HomeClient,
+  Info,
   //EditInfo,
 } from "../screens";
 import Forgotpassword from "../screens/Forgotpassword";

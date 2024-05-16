@@ -8,13 +8,15 @@ export const CartStoreProvider: React.FC<IProvider> = ({ children }) => {
   const [cart, setCart] = useState<Array<IProduct>>([] as Array<IProduct>);
 
   function addToCart(item: IProduct) {
-    setCart((prev: any) => [...prev, item]);
+    setCart([...cart, item]);
   }
 
   const value = useMemo(() => ({ cart, addToCart }), [cart, addToCart]);
 
   return (
-    <CartStoreContext.Provider value={value}>{children}</CartStoreContext.Provider>
+    <CartStoreContext.Provider value={value}>
+      {children}
+    </CartStoreContext.Provider>
   );
 };
 

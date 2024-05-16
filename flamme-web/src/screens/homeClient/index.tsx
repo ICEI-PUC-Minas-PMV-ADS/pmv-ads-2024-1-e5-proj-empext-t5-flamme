@@ -1,5 +1,4 @@
 import Logo from "../../assets/logo.svg";
-import Product1 from "../../assets/product-img1.svg";
 import Product2 from "../../assets/product-img2.svg";
 import { SectionTitle } from "../../components/SectionTitle/index.tsx";
 import { Text } from "../../components/Text/index.tsx";
@@ -61,8 +60,9 @@ function HomeClient() {
 
         <div className="flex items-center gap-x-4 mt-10 rounded-lg w-full px-5 py-4 text-sm bg-white text-brownbutton font-semibold border border-brownbutton">
           <CartIcon />
-          <Link to="/informações-gerais" className="text-black">Clique aqui e veja como comprar</Link>
-
+          <Link to="/informações-gerais" className="text-black">
+            Clique aqui e veja como comprar
+          </Link>
         </div>
 
         <div className="mt-14">
@@ -70,7 +70,6 @@ function HomeClient() {
         </div>
         <BrownBorder />
 
-        {/*FAZER INTEGRAÇÃO DOS CARDS DE PRODUTO*/}
         {/*Card - Produto*/}
         <div className="flex flex-wrap mt-8 gap-x-11">
           {products && products.length > 0 ? (
@@ -80,16 +79,8 @@ function HomeClient() {
                 onClick={() => handleProductDetails(candle)}
               >
                 <div>
-                  <img src={Product1} alt="Foto do Produto" className="w-48" />
+                  <img src={Product2} alt="Foto do Produto" className="w-48" />
                 </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="w-40">
-            <div>
-              <img src={Product2} alt="Foto do Produto" className="w-48" />
-            </div>
 
                 <div className="mt-2">
                   <SectionTitle classes="text-center" text={candle.name} />

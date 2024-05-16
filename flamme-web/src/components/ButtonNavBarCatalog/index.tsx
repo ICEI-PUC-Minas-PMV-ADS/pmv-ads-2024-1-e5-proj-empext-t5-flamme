@@ -6,43 +6,38 @@ import BudgetNavBar from "../BudgetNavBar/index.tsx";
 import { Link } from "react-router-dom";
 
 const ButtonNavBarCatalog = () => {
-    return (
-        <div className="fixed bottom-0 inset-x-0 bg-white">
-            <div>
-                <GrayBorderTop />
+  return (
+    <div className="fixed bottom-0 inset-x-0 bg-white">
+      <div>
+        <GrayBorderTop />
+      </div>
+
+      <div className="flex items-center justify-around mt-3 mb-3">
+        <Link to={"/perfil"} className="flex flex-col items-center">
+          <ProfileNavBar />
+          <div className="mt-1.5">
+            <SectionTitle text="Perfil" />
+          </div>
+        </Link>
+
+        <Link to={"/home-orçamentos"} className="flex flex-col items-center">
+          <BudgetNavBar />
+          <div className="mt-1.5">
+            <SectionTitle text="Orçamento" />
+          </div>
+        </Link>
+
+        <div className="flex flex-col items-center">
+          <Link to="/home-loja" className="flex flex-col items-center">
+            <CatalogNavBar2 />
+            <div className=" flex flex-col items-center mt-1.5">
+              <SectionTitle text="Catálogo" />
             </div>
-
-            <div className="flex items-center justify-around mt-3 mb-3">
-
-                <Link to={"/perfil"} className="flex flex-col items-center">
-
-                    <ProfileNavBar />
-                    <div className="mt-1.5">
-                        <SectionTitle text="Perfil" />
-                    </div>
-                    </Link>
-
-                </Link>
-
-                <Link to={"/home-orçamentos"} className="flex flex-col items-center">
-                    <BudgetNavBar />
-                    <div className="mt-1.5">
-                        <SectionTitle text="Orçamento" />
-                    </div>
-                </Link>
-
-                
-                <div className="flex flex-col items-center">
-                <Link to="/home-loja" className="flex flex-col items-center">
-                    <CatalogNavBar2 />
-                    <div className=" flex flex-col items-center mt-1.5">
-                        <SectionTitle text="Catálogo" />
-                    </div>
-                    </Link>
-                </div>
-            </div>
+          </Link>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default ButtonNavBarCatalog;

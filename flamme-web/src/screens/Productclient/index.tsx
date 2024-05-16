@@ -194,7 +194,10 @@ function ViewProduct() {
       </div>
     </>
   ) : (
-    { back }
+    <p>
+      Ocorreu um erro, por favor retorne a página anterior.{" "}
+      <button onClick={back}>Voltar</button>
+    </p>
   );
 }
 
