@@ -94,7 +94,10 @@ Tem o tamanho de 4x4,5 e peso de 40g."
         <GrayBorderTop />
 
         <div className="flex flex-col rounded-lg w-80 bg-white border border-brownborder mt-6 mx-auto">
-          <button className="flex items-center gap-3 pt-3.5 pl-4 ">
+          <button
+            type="button"
+            className="flex items-center gap-3 pt-3.5 pl-4 "
+          >
             <AlertButton2 />
             <SectionTitle text="Sobre a arte do adesivo!" />
           </button>

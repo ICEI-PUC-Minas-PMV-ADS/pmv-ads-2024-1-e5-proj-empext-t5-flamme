@@ -5,9 +5,11 @@ import { candlesController } from "../services/request/candles";
 const StoreContext = createContext<IStoreContext>({} as IStoreContext);
 
 export const StoreProvider: React.FC<IProvider> = ({ children }) => {
-  const [products, setProducts] = useState<any>();
-  const [product, setProduct] = useState<any>();
-  
+  const [products, setProducts] = useState<Array<IProduct>>(
+    [] as Array<IProduct>
+  );
+  const [product, setProduct] = useState<IProduct>({} as IProduct);
+
   const {
     get: getCandles,
     getForId: getCandleId,
@@ -45,7 +47,7 @@ export const StoreProvider: React.FC<IProvider> = ({ children }) => {
   };
 
   useEffect(() => {
-    if (!products) getProducts();
+    if (products.length === 0) getProducts();
   }, [products]);
 
   const value = useMemo(
