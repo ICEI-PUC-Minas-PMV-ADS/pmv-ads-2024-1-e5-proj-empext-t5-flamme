@@ -10,6 +10,7 @@ import { Button2 } from "../../components/Button2/index.tsx";
 import ButtonNavBarAddProduct from "../../components/ButtonNavBarAddProduct/index.tsx";
 import { useState } from "react";
 import { useStoreContext } from "../../contexts/index.tsx";
+import { Link } from "react-router-dom"
 
 function AddProduct() {
   const [name, setName] = useState("");
@@ -266,13 +267,17 @@ function AddProduct() {
         </div>
 
         <div className="flex justify-around mt-10">
+        <Link to="/home-loja" className="text-black">
           <div className="p-4">
             <ButtonWhite label="Cancelar" onclick={() => {}} />
           </div>
+          </Link>
 
+          <Link to="/home-loja" className="text-black">
           <div className="p-4">
             <Button2 label="Salvar" onclick={click} />
           </div>
+          </Link>
         </div>
 
         <ButtonNavBarAddProduct />

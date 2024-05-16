@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "../../components/Button/Button";
 import auth  from "../../services/request/auth";
 import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -51,8 +52,9 @@ const Login = () => {
                 Esqueceu a senha?
               </a>
             </div>
-
+            <Link to="/home-loja">
             <Button label="Entrar" onclick={handleLogin} />
+            </Link>
           </div>
         </div>
       </div>
