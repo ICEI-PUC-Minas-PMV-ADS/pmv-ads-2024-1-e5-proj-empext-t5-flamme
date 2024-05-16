@@ -15,6 +15,8 @@ import {
   HomeClient,
   //EditInfo,
 } from "../screens";
+import Forgotpassword from "../screens/Forgotpassword";
+import Forgotemail from "../screens/Forgopasswordtemail";
 
 export default function Routes() {
 
@@ -35,6 +37,8 @@ export default function Routes() {
         <Route path="/informações-cadastro" element={<RegisterInformation />} />
         <Route path="/informações-gerais" element={<Info />} />
         <Route path="/home-orçamentos" element={<HomeBudgetAdm />} />
+        <Route path="/Esqueci-a-senha" element={<Forgotpassword />} />
+        <Route path="/email-de-recuperacao" element={<Forgotemail />} />
         {/*<Route path="/editar-info" element={<EditInfo />} />*/}
       </>
     </Switch>
