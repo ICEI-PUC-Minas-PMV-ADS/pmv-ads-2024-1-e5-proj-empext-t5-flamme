@@ -53,16 +53,16 @@ function ViewProduct() {
         <div className="flex mt-2 w-full">
           <Swiper {...settings}>
             <SwiperSlide>
-              <img src={Product4} alt="Product 4" className="w-full" />
+              <img src={Product4} alt="Product 4" className="w-full h-full" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={Product1} alt="Product 1" className="w-full" />
+              <img src={Product1} alt="Product 1" className="w-full h-ful" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={Product2} alt="Product 2" className="w-full" />
+              <img src={Product2} alt="Product 2" className="w-full h-ful" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={Product5} alt="Product 5" className="w-full" />
+              <img src={Product5} alt="Product 5" className="w-full h-ful" />
             </SwiperSlide>
           </Swiper>
         </div>
