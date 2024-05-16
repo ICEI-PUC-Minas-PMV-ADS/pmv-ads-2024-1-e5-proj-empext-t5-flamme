@@ -13,6 +13,7 @@ import { Title } from "../../components/Title/index.tsx";
 import { IProduct } from "../../contexts/interface.ts";
 import { useState } from "react";
 import { transformPricePTBR } from "../../utils/scripts.ts";
+import { Link } from "react-router-dom"
 
 function Catalog() {
   const { products, getProduct, updateProduct, deleteProduct } =
@@ -46,6 +47,7 @@ function Catalog() {
         {products.map((item: IProduct) => (
           <div className="flex flex-col mt-8">
             <div className="flex items-center justify-around">
+            <Link to="/visualizar-produto" className="text-black">
               <div>
                 <img src={Product1} alt="Foto do Produto" />
               </div>
@@ -56,8 +58,10 @@ function Catalog() {
                 <div className="mt-2">
                   <Text text="Unidades a partir de" />
                   <SectionTitle text={"R$ " + transformPricePTBR(item.price)} />
+                  
                 </div>
               </div>
+              </Link>
             </div>
             <div className="flex justify-around mt-6">
               <ButtonWhite
