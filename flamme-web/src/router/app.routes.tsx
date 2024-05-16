@@ -1,22 +1,22 @@
 import { Routes as Switch, Route } from "react-router-dom";
 import {
- Login,
- Cart,
- AddProduct,
- Catalog,
- CheckoutBudget,
- Profile,
- ViewProduct,
- ProductClient,
- AddCartClient,
- BuyClient,
- RegisterInformation,
- HomeBudgetAdm,
- HomeClient
+  Login,
+  Cart,
+  AddProduct,
+  Catalog,
+  CheckoutBudget,
+  Profile,
+  ViewProduct,
+  ProductClient,
+  AddCartClient,
+  BuyClient,
+  RegisterInformation,
+  HomeBudgetAdm,
+  HomeClient,
+  Info,
 } from "../screens";
 
 export default function Routes() {
-  
   return (
     <Switch>
       <>
@@ -31,6 +31,7 @@ export default function Routes() {
         <Route path="/carrinho-cliente" element={<AddCartClient />} />
         <Route path="/comprar-cliente" element={<BuyClient />} />
         <Route path="/informações-cadastro" element={<RegisterInformation />} />
+        <Route path="/informações-gerais" element={<Info />} />
         <Route path="/home-orçamentos" element={<HomeBudgetAdm />} />
         <Route path="/" element={<HomeClient />} />
       </>
