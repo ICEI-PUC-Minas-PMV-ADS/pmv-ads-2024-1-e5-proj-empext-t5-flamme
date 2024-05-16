@@ -15,10 +15,12 @@ const ButtonNavBarCatalog = () => {
             <div className="flex items-center justify-around mt-3 mb-3">
 
                 <Link to={"/perfil"} className="flex flex-col items-center">
+
                     <ProfileNavBar />
                     <div className="mt-1.5">
                         <SectionTitle text="Perfil" />
                     </div>
+                    </Link>
 
                 </Link>
 
@@ -29,11 +31,14 @@ const ButtonNavBarCatalog = () => {
                     </div>
                 </Link>
 
+                
                 <div className="flex flex-col items-center">
+                <Link to="/home-loja" className="flex flex-col items-center">
                     <CatalogNavBar2 />
-                    <div className="mt-1.5">
+                    <div className=" flex flex-col items-center mt-1.5">
                         <SectionTitle text="Catálogo" />
                     </div>
+                    </Link>
                 </div>
             </div>
         </div>

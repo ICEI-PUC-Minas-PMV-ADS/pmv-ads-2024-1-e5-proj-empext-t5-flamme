@@ -10,25 +10,42 @@ import { Button2 } from "../../components/Button2/index.tsx";
 import ButtonNavBarAddProduct from "../../components/ButtonNavBarAddProduct/index.tsx";
 import { useState } from "react";
 import { useStoreContext } from "../../contexts/index.tsx";
+import { Link } from "react-router-dom";
 
 function AddProduct() {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
-  const [aroma, setAroma] = useState([""]);
+  const [aroma, setAroma] = useState<Array<string>>([] as Array<string>);
   const [model, setModel] = useState("ASV55");
-  const [price, setPrice] = useState(0);
+  const [price, setPrice] = useState<string>("0");
   const [quantity, setQuantity] = useState(0);
+  const [extras, setExtras] = useState<Array<{}>>([]);
+  const [options, setOptions] = useState<Array<{}>>([]);
+  const [tapes, setTapes] = useState<Array<string>>([] as Array<string>);
   const { createProduct } = useStoreContext();
+
+  const arr = {
+    min: 0,
+    max: 0,
+    price: 0,
+  };
+
+  const arr2 = {
+    name: "",
+    price: 0,
+  };
 
   const click = async () => {
     setModel("ASV55");
     return await createProduct({
       name: name,
       description: description,
-      phone: "71993314919",
       aroma: aroma,
       model: model,
-      price: price,
+      price: +price,
+      extras: extras,
+      options: options,
+      tapes: tapes,
       quantity: quantity,
     });
   };
@@ -78,7 +95,7 @@ function AddProduct() {
             type="text"
             placeholder="Digite o valor das unidades"
             value={price}
-            onChange={(ev) => setPrice(+ev.target.value)}
+            onChange={(ev) => setPrice(ev.target.value)}
           />
         </div>
 
@@ -111,7 +128,13 @@ function AddProduct() {
               type="text"
               placeholder="R$ 0,00"
               value={price}
-              onChange={(ev) => setPrice(+ev.target.value)}
+              onChange={(ev) => {
+                setPrice(ev.target.value);
+                setOptions([
+                  ...options,
+                  { min: quantity, max: 0, price: price },
+                ]);
+              }}
             />
           </div>
         </div>
@@ -129,6 +152,7 @@ function AddProduct() {
               className="mt-2 p-2 w-36 border rounded-md text-xs px-3 h-11"
               type="text"
               placeholder="Ex: 20"
+              onBlur={(ev) => (arr.min = +ev.target.value)}
             />
           </div>
 
@@ -138,6 +162,7 @@ function AddProduct() {
               className="mt-2 p-2 w-36 border rounded-md text-xs px-3 h-11"
               type="text"
               placeholder="Ex: 40"
+              onBlur={(ev) => (arr.max = +ev.target.value)}
             />
           </div>
         </div>
@@ -148,6 +173,10 @@ function AddProduct() {
             className="mt-2 p-2 w-36 border rounded-md text-xs px-3 h-11"
             type="text"
             placeholder="R$ 0,00"
+            onBlur={(ev) => {
+              arr.price = +ev.target.value;
+              setOptions([...options, arr]);
+            }}
           />
         </div>
 
@@ -203,6 +232,7 @@ function AddProduct() {
             className="mt-2 p-2 w-80 border rounded-md text-xs px-3 h-11"
             type="text"
             placeholder="Ex: Saquinho"
+            onBlur={(ev) => (arr2.name = ev.target.value)}
           />
         </div>
 
@@ -212,6 +242,11 @@ function AddProduct() {
             className="mt-2 p-2 w-36 border rounded-md text-xs px-3 h-11"
             type="text"
             placeholder="R$ 0,00"
+            onBlur={(ev) => {
+              arr2.price = +ev.target.value;
+
+              setExtras([...extras, arr2]);
+            }}
           />
         </div>
 
@@ -231,12 +266,22 @@ function AddProduct() {
 
         <div className="flex mt-2 text-xs">
           <div className="flex ml-7">
-            <input placeholder="ex" type="radio" name="tipo_fita" value="nao_possui" />
+            <input
+              placeholder="ex"
+              type="radio"
+              name="tipo_fita"
+              value="nao_possui"
+            />
             <label className="ml-2">Não possui</label>
           </div>
 
           <div className="flex ml-12">
-            <input placeholder="ex" type="radio" name="tipo_fita" value="possui" />
+            <input
+              placeholder="ex"
+              type="radio"
+              name="tipo_fita"
+              value="possui"
+            />
             <label className="ml-2">Possui</label>
           </div>
         </div>
@@ -248,6 +293,7 @@ function AddProduct() {
               className="mt-2 p-2 w-36 border rounded-md text-xs px-3 h-11"
               type="text"
               placeholder="Ex: Cetim"
+              onBlur={(ev) => setTapes([...tapes, ev.target.value])}
             />
           </div>
 
@@ -257,6 +303,7 @@ function AddProduct() {
               className="mt-2 p-2 w-36 border rounded-md text-xs px-3 h-11"
               type="text"
               placeholder="Ex: Junta"
+              onBlur={(ev) => setTapes([...tapes, ev.target.value])}
             />
           </div>
         </div>
@@ -266,13 +313,17 @@ function AddProduct() {
         </div>
 
         <div className="flex justify-around mt-10">
-          <div className="p-4">
-            <ButtonWhite label="Cancelar" onclick={() => {}} />
-          </div>
+          <Link to="/home-loja" className="text-black">
+            <div className="p-4">
+              <ButtonWhite label="Cancelar" onclick={() => {}} />
+            </div>
+          </Link>
 
-          <div className="p-4">
-            <Button2 label="Salvar" onclick={click} />
-          </div>
+          <Link to="/home-loja" className="text-black">
+            <div className="p-4">
+              <Button2 label="Salvar" onclick={click} />
+            </div>
+          </Link>
         </div>
 
         <ButtonNavBarAddProduct />

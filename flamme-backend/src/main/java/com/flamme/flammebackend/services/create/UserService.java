@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.yaml.snakeyaml.events.Event.ID;
 
 import com.flamme.flammebackend.entities.User;
 import com.flamme.flammebackend.exceptions.UserException;
@@ -63,6 +64,7 @@ public class UserService {
 
     public String delete(Long id) {
         this.repository.deleteById(id);
+        
         return "Usuário deletado!";
     }
 }
