@@ -23,8 +23,12 @@ import Whastsappcontato from "../../components/Whatsappcontato/index.tsx";
 import { useStoreContext } from "../../contexts/index.tsx";
 import { useNavigate } from "react-router-dom";
 import { transformPricePTBR } from "../../utils/scripts.ts";
+import { Button4 } from "../../components/Button4/index.tsx";
+import ButtonNavBarAddProduct from "../../components/ButtonNavBarAddProduct/index.tsx";
+interface IProps { isAdmin: Boolean }
 
-function ViewProduct() {
+
+function ViewProduct({ isAdmin }: IProps) {
   const settings = {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -47,7 +51,7 @@ function ViewProduct() {
   }
 
   return product ? (
-    <>
+    <div className="pb-40">
       <div className="ViewProduct p-2">
         <div className="flex justify-center items-center mt-4">
           <Title text="" />
@@ -171,28 +175,48 @@ function ViewProduct() {
             <Additional value={item.name} price={item.price} />
           ))}
         </div>
+        {isAdmin &&
+          <ButtonNavBarAddProduct />}
 
-        <div className="mt-3">
-          <WhatsAppRectangle />
-        </div>
+        {!isAdmin && <>
 
-        <div className="flex gap-1">
-          <div className="ml-2 mt-5">
-            <AlertButton3 />
+
+          <div className="mt-3">
+            <WhatsAppRectangle />
           </div>
 
-          <div className="mt-5">
-            <Text text="Em caso de dúvidas ou caso queira fazer um pedido diferente do que está no catálogo, entre em contato conosco através do nosso WhatsApp." />
+          <div className="flex gap-1">
+            <div className="ml-2 mt-5">
+              <AlertButton3 />
+            </div>
+
+            <div className="mt-5">
+              <Text text="Em caso de dúvidas ou caso queira fazer um pedido diferente do que está no catálogo, entre em contato conosco através do nosso WhatsApp." />
+            </div>
           </div>
-        </div>
 
-        <div className="ml-2">
-          <Whastsappcontato />
-        </div>
+          <div className="ml-2">
+            <Whastsappcontato />
+          </div>
 
-        <ButtonNavBarCart />
+          <div className="max-w-screen-lg mx-2">
+            <div className="flex justify-around mt-5 border">
+              <div className="p-3">
+                <Text text="Valor" />
+                <SectionTitle text="R$ 264,50" />
+              </div>
+
+              <div className="p-3">
+                <Button4 label="Adicionar ao carrinho" onclick={() => { }} />
+              </div>
+            </div>
+          </div>
+
+          <ButtonNavBarCart />
+        </>
+        }
       </div>
-    </>
+    </div>
   ) : (
     <p>
       Ocorreu um erro, por favor retorne a página anterior.{" "}

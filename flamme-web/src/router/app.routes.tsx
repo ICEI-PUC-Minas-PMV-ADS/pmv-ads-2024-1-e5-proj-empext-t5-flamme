@@ -31,8 +31,8 @@ export default function Routes() {
         <Route path="/carrinho" element={<Cart />} />
         <Route path="/checkout" element={<CheckoutBudget />} />
         <Route path="/perfil" element={<Profile />} />
-        <Route path="/visualizar-produto" element={<ViewProduct />} />
-        <Route path="/produto-cliente" element={<ProductClient />} />
+        <Route path="/visualizar-produto" element={<ProductClient isAdmin={true} />} />
+        <Route path="/produto-cliente" element={<ProductClient isAdmin={false} />} />
         <Route path="/carrinho-cliente" element={<AddCartClient />} />
         <Route path="/comprar-cliente" element={<BuyClient />} />
         <Route path="/informações-cadastro" element={<RegisterInformation />} />

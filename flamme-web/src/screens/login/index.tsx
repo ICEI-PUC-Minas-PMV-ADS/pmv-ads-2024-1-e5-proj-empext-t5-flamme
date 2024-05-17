@@ -52,7 +52,7 @@ const Login = () => {
                 Esqueceu a senha?
               </a>
             </div>
-            <Link to="/home-loja">
+            <Link to="/catalogo-adm">
             <Button label="Entrar" onclick={handleLogin} />
             </Link>
           </div>

@@ -28,7 +28,7 @@ const ButtonNavBarCatalog = () => {
         </Link>
 
         <div className="flex flex-col items-center">
-          <Link to="/home-loja" className="flex flex-col items-center">
+          <Link to="/catalogo-adm" className="flex flex-col items-center">
             <CatalogNavBar2 />
             <div className=" flex flex-col items-center mt-1.5">
               <SectionTitle text="Catálogo" />
