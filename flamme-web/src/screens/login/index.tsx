@@ -48,7 +48,7 @@ const Login = () => {
                 placeholder="Digite sua senha"
                 value={password}
               />
-              <a className="forgot-password-login" href="#">
+              <a className="forgot-password-login" href="/email-de-recuperacao">
                 Esqueceu a senha?
               </a>
             </div>
