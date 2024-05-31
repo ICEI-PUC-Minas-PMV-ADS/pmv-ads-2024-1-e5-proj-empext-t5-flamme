@@ -4,8 +4,74 @@ import GrayBorderTop from "../../components/GrayBorderTop/index.tsx";
 import { Button2 } from "../../components/Button2/index.tsx";
 import ButtonNavBarPerfil from "../../components/ButtonNavBarPerfil/index.tsx";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { userController } from "../../services/request/user.ts";
+
+interface IUser {
+  id: number;
+  name: string;
+  email: string;
+  password: string;
+  phone: string;
+  createdAt: string;
+}
 
 function EditInfo() {
+  //falta pegar o numero de id no localstorage
+  //não estou conseguindo efetuar o patch
+
+  const [userId, setUserId] = useState<number>(1);
+  const [userData, setUserData] = useState<IUser>({
+    id: 0,
+    name: "",
+    email: "",
+    password: "",
+    phone: "",
+    createdAt: "",
+  });
+  const [passwordCheck, setPasswordCheck] = useState<string>();
+
+  const {
+    get: getUsers,
+    getForId: getUserId,
+    post: postUser,
+    patch: patchUser,
+  } = userController();
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await getUserId(userId);
+      setUserData(response);
+    }
+
+    fetchData();
+  }, [userId]);
+
+  console.log(userData);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setUserData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (passwordCheck === userData.password) {
+      const updatedData = await patchUser(userData);
+      if (updatedData) {
+        setUserData(updatedData);
+      } else {
+        alert("Atualização não efetuada");
+      }
+    } else {
+      alert("Campos 'senha' e 'confirme sua senha' distintos");
+    }
+  };
+
   return (
     <div className="EditInfo">
       <div className="flex justify-center mt-4 mb-4">
@@ -13,14 +79,16 @@ function EditInfo() {
       </div>
       <GrayBorderTop />
 
-
-      <form action="" className="mx-6">
+      <form onSubmit={handleSubmit} action="" className="mx-6 ">
         <div className="flex flex-col mt-10">
           <label htmlFor="">Nome</label>
           <input
             className="w-full px-4 py-4 mt-2 border rounded-md text-xs"
             type="text"
-            placeholder="Usuário da Silva"
+            name="name"
+            value={userData?.name}
+            placeholder={userData?.name}
+            onChange={handleChange}
           />
         </div>
 
@@ -29,7 +97,10 @@ function EditInfo() {
           <input
             className="w-full px-4 py-4 mt-2 border rounded-md text-xs"
             type="tel"
-            placeholder="(31) 91234-5678"
+            name="phone"
+            placeholder={userData?.phone}
+            value={userData?.phone}
+            onChange={handleChange}
           />
         </div>
 
@@ -38,7 +109,10 @@ function EditInfo() {
           <input
             className="w-full px-4 py-4 mt-2 border rounded-md text-xs"
             type="email"
-            placeholder="email.do.usuario@gmail.com"
+            name="email"
+            placeholder={userData?.email}
+            value={userData?.email}
+            onChange={handleChange}
           />
         </div>
 
@@ -49,6 +123,9 @@ function EditInfo() {
             className="w-full px-4 py-4 mt-2 border rounded-md text-xs"
             type="password"
             placeholder="********"
+            name="password"
+            value={userData?.password}
+            onChange={handleChange}
           />
         </div>
 
@@ -66,8 +143,10 @@ function EditInfo() {
             <label htmlFor="">Confirme sua senha</label>
             <input
               className="w-full px-4 py-4 mt-2 border rounded-md text-xs px-3 h-11"
-              type="text"
+              type="password"
               placeholder="********"
+              name="passwordCheck"
+              onChange={(ev) => setPasswordCheck(ev.target.value)}
             />
           </div>
         </div>
@@ -80,7 +159,7 @@ function EditInfo() {
           </Link>
 
           <div className="p-4">
-            <Button2 label="Salvar" onclick={() => { }} />
+            <Button2 type="submit" label="Salvar" />
           </div>
         </div>
       </form>

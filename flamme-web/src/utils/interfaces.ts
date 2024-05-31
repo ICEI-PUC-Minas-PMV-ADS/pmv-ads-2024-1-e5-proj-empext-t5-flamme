@@ -5,8 +5,9 @@ interface IText {
 
 interface IButton {
   label: string;
-  onclick: () => {} | void;
+  onclick?: () => {} | void;
   classes?: string;
+  type?: "button" | "submit" | "reset";
 }
 
 interface IAroma {
