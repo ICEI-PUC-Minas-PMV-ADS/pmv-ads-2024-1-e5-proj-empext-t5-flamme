@@ -14,13 +14,12 @@ import {
   HomeBudgetAdm,
   HomeClient,
   Info,
-  //EditInfo,
+  EditInfo,
 } from "../screens";
 import Forgotpassword from "../screens/Forgotpassword";
 import Forgotemail from "../screens/Forgopasswordtemail";
 
 export default function Routes() {
-
   return (
     <Switch>
       <>
@@ -31,8 +30,14 @@ export default function Routes() {
         <Route path="/carrinho" element={<Cart />} />
         <Route path="/checkout" element={<CheckoutBudget />} />
         <Route path="/perfil" element={<Profile />} />
-        <Route path="/visualizar-produto" element={<ProductClient isAdmin={true} />} />
-        <Route path="/produto-cliente" element={<ProductClient isAdmin={false} />} />
+        <Route
+          path="/visualizar-produto"
+          element={<ProductClient isAdmin={true} />}
+        />
+        <Route
+          path="/produto-cliente"
+          element={<ProductClient isAdmin={false} />}
+        />
         <Route path="/carrinho-cliente" element={<AddCartClient />} />
         <Route path="/comprar-cliente" element={<BuyClient />} />
         <Route path="/informações-cadastro" element={<RegisterInformation />} />
@@ -40,7 +45,7 @@ export default function Routes() {
         <Route path="/home-orçamentos" element={<HomeBudgetAdm />} />
         <Route path="/Esqueci-a-senha" element={<Forgotpassword />} />
         <Route path="/email-de-recuperacao" element={<Forgotemail />} />
-        {/*<Route path="/editar-info" element={<EditInfo />} />*/}
+        <Route path="/editar-info" element={<EditInfo />} />
       </>
     </Switch>
   );
