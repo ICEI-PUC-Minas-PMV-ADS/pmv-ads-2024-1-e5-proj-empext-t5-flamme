@@ -3,8 +3,11 @@ import GrayBorderTop from "../GrayBorderTop/index.tsx";
 import WhatsAppNavBar from "../WhatsAppNavBar/index.tsx";
 import HomeFillNavBar from "../HomeFillNavBar/index.tsx";
 import CartLightNavBar from "../CartLightNavBar/index.tsx";
+import { useNavigate } from "react-router-dom";
 
 const ButtonNavBarHome = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="fixed bottom-0 inset-x-0 bg-white">
             <div>
@@ -21,7 +24,7 @@ const ButtonNavBarHome = () => {
 
                 </div>
 
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center" onClick={() => navigate("/")}>
                     <HomeFillNavBar  />
                     <div className="mt-1.5">
                         <SectionTitle text="Início" />
@@ -29,7 +32,7 @@ const ButtonNavBarHome = () => {
 
                 </div>
 
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center" onClick={() => navigate("/carrinho")}>
                     <CartLightNavBar />
                     <div className="mt-1.5">
                         <SectionTitle text="Carrinho" />

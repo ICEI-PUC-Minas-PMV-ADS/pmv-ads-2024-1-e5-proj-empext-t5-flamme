@@ -11,7 +11,7 @@ export const CartStoreProvider: React.FC<IProvider> = ({ children }) => {
     setCart([...cart, item]);
   }
 
-  const value = useMemo(() => ({ cart, addToCart }), [cart, addToCart]);
+  const value = useMemo(() => ({ cart, setCart, addToCart }), [cart, setCart, addToCart]);
 
   return (
     <CartStoreContext.Provider value={value}>

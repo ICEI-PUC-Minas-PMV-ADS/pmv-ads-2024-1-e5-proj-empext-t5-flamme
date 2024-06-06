@@ -25,7 +25,7 @@ export interface IProduct {
     max?: number;
     price: number;
   }>;
-  extras?: Array<{
+  extras: Array<{
     name: string;
     price: number;
   }>;

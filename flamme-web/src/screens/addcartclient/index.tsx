@@ -1,8 +1,8 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import { Title } from "../../components/Title/index.tsx";
 import { SectionTitle } from "../../components/SectionTitle/index.tsx";
 import GrayBorderTop from "../../components/GrayBorderTop/index.tsx";
@@ -16,13 +16,11 @@ import { Text } from "../../components/Text";
 import AlertButton1 from "../../components/AlertButton1/index.tsx";
 import AlertButton2 from "../../components/AlertButton2/index.tsx";
 import GrayBorderUnid from "../../components/GrayBorderUnid/index.tsx";
-import WhatsAppRectangle from '../../components/WhatsApp/index.tsx';
+import WhatsAppRectangle from "../../components/WhatsApp/index.tsx";
 import AlertButton3 from "../../components/AlertButton3/index.tsx";
 import ButtonNavBarCart from "../../components/ButtonNavBarCart/index.tsx";
 import Whastsappcontato from "../../components/Whatsappcontato/index.tsx";
-import { Button4 } from '../../components/Button4/index.tsx';
-
-
+import { Button4 } from "../../components/Button4/index.tsx";
 
 function ViewProduct() {
   const settings = {
@@ -33,12 +31,19 @@ function ViewProduct() {
       clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   };
 
-  const arr = ["Capim-limão", "Flor de cerejeira", "Lavanda", "Canela", "Vanilla", "Aroma"];
+  const arr = [
+    "Capim-limão",
+    "Flor de cerejeira",
+    "Lavanda",
+    "Canela",
+    "Vanilla",
+    "Aroma",
+  ];
 
   return (
     <>
@@ -52,30 +57,47 @@ function ViewProduct() {
         <div className="flex mt-2 w-full">
           <Swiper {...settings}>
             <SwiperSlide>
-              <img src={Product4} alt="Product 4" style={{ width: '100%', height: 'auto' }} />
+              <img
+                src={Product4}
+                alt="Product 4"
+                style={{ width: "100%", height: "auto" }}
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={Product1} alt="Product 1" style={{ width: '100%', height: 'auto' }} />
+              <img
+                src={Product1}
+                alt="Product 1"
+                style={{ width: "100%", height: "auto" }}
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={Product2} alt="Product 2" style={{ width: '100%', height: 'auto' }} />
+              <img
+                src={Product2}
+                alt="Product 2"
+                style={{ width: "100%", height: "auto" }}
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={Product5} alt="Product 5" style={{ width: '100%', height: 'auto' }} />
+              <img
+                src={Product5}
+                alt="Product 5"
+                style={{ width: "100%", height: "auto" }}
+              />
             </SwiperSlide>
           </Swiper>
         </div>
 
         <div className="ml-2 mt-5">
           <SectionTitle text="Potinho de vidro tampa de tecido - 40g" />
-          <Text text="As velas perfumadas no potinho de vidro são personalizadas com adesivo e tampa de tecido.
+          <Text
+            text="As velas perfumadas no potinho de vidro são personalizadas com adesivo e tampa de tecido.
 São feitas com cera vegetal de coco ou soja e pavio de algodão, proporcionando aproximadamente 5 horas  de queima.
 Tem o tamanho de 4x4,5 e peso de 40g."
-      />
+          />
         </div>
 
         <div className="ml-2 mt-5">
-          <Text text="Unidades a partir de"  />
+          <Text text="Unidades a partir de" />
           <SectionTitle text="R$ 9,00" />
         </div>
 
@@ -98,8 +120,10 @@ Tem o tamanho de 4x4,5 e peso de 40g."
           </button>
 
           <div className="pb-3.5 pl-4 w-72 mt-3">
-            <Text text="Para a definição das artes, entraremos em contato via WhatsApp. 
-            Desenvolvemos a arte para adesivo após confirmação do pagamento de 50% do valor." />
+            <Text
+              text="Para a definição das artes, entraremos em contato via WhatsApp. 
+            Desenvolvemos a arte para adesivo após confirmação do pagamento de 50% do valor."
+            />
           </div>
         </div>
 
@@ -108,8 +132,8 @@ Tem o tamanho de 4x4,5 e peso de 40g."
         </div>
 
         <div className="ml-2 mt-5">
-            <Text text="Quantidade"/>
-            <input
+          <Text text="Quantidade" />
+          <input
             className="mt-2 p-2 w-80 border rounded-md text-xs px-3 h-11"
             type="text"
             placeholder="Ex: 20 uni"
@@ -117,73 +141,68 @@ Tem o tamanho de 4x4,5 e peso de 40g."
         </div>
 
         <div className="flex justify-between ml-2 mt-5">
-
-           <div className="">
-           <Text text="Até 10 unidades" />
-           </div>
-
-          <div className="mr-6">
-           <Text text="R$12,00/uni" />
-           </div>
-           </div>
-
-           <GrayBorderUnid />
-
-           <div className="flex justify-between ml-2 mt-3">
-
-           <div className="">
-           <Text text="11 a 24 unidades" />
-           </div>
-
-           <div className="mr-6">
-           <Text text="R$11,00/uni" />
-           </div>
-          </div>
-
-          <GrayBorderUnid />
-
-          <div className="flex justify-between ml-2 mt-3">
-
           <div className="">
-          <Text text="25 a 49 unidades" />
+            <Text text="Até 10 unidades" />
           </div>
 
           <div className="mr-6">
-          <Text text="R$10,00/uni" />
+            <Text text="R$12,00/uni" />
           </div>
-          </div>
+        </div>
 
-          <GrayBorderUnid />
+        <GrayBorderUnid />
 
-          <div className="flex justify-between ml-2 mt-3">
-
+        <div className="flex justify-between ml-2 mt-3">
           <div className="">
-          <Text text="50 a 99 unidades" />
+            <Text text="11 a 24 unidades" />
           </div>
 
           <div className="mr-6">
-          <Text text="R$9,00/uni" />
+            <Text text="R$11,00/uni" />
           </div>
+        </div>
+
+        <GrayBorderUnid />
+
+        <div className="flex justify-between ml-2 mt-3">
+          <div className="">
+            <Text text="25 a 49 unidades" />
           </div>
 
-          <GrayBorderUnid />
+          <div className="mr-6">
+            <Text text="R$10,00/uni" />
+          </div>
+        </div>
 
+        <GrayBorderUnid />
+
+        <div className="flex justify-between ml-2 mt-3">
+          <div className="">
+            <Text text="50 a 99 unidades" />
+          </div>
+
+          <div className="mr-6">
+            <Text text="R$9,00/uni" />
+          </div>
+        </div>
+
+        <GrayBorderUnid />
 
         <div className="ml-2 mt-8">
-        <Text text="Aroma" />
-      <Aroma data={arr} />
-      </div>
+          <Text text="Aroma" />
+          <Aroma data={arr} />
+        </div>
 
-      <div className="ml-2 mt-8">
-        <Text text="Acréscimo" />
-        <Additional value="Saquinho de organza" price={0.50} />
+        <div className="ml-2 mt-8">
+          <Text text="Acréscimo" />
+          <Additional value="Saquinho de organza" price={0.5} />
         </div>
 
         <div className="mt-3">
-      <WhatsAppRectangle />
-      </div>
+          <WhatsAppRectangle />
+        </div>
 
-      <div className="flex gap-1">
+        <div className="flex gap-1">
           <div className="ml-2 mt-5">
             <AlertButton3 />
           </div>
@@ -194,24 +213,23 @@ Tem o tamanho de 4x4,5 e peso de 40g."
         </div>
 
         <div className="ml-2">
-      <Whastsappcontato />
-      </div>
-
-      <div className="max-w-screen-lg mx-2">
-      <div className="flex justify-around mt-5 border">
-          <div className="p-3">
-          <Text text="Valor" />
-          <SectionTitle text="R$ 264,50" />
-          </div>
-
-          <div className="p-3">
-            <Button4 label="Adicionar ao carrinho" onclick={() => {}} />
-          </div>
+          <Whastsappcontato />
         </div>
+
+        <div className="max-w-screen-lg mx-2">
+          <div className="flex justify-around mt-5 border">
+            <div className="p-3">
+              <Text text="Valor" />
+              <SectionTitle text="R$ 264,50" />
+            </div>
+
+            <div className="p-3">
+              <Button4 label="Adicionar ao carrinho" onclick={() => {}} />
+            </div>
+          </div>
         </div>
 
         <ButtonNavBarCart />
-
       </div>
     </>
   );

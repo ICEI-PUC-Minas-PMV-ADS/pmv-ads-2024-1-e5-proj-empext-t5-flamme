@@ -37,7 +37,6 @@ export const StoreProvider: React.FC<IProvider> = ({ children }) => {
   const updateProduct = async (data: IProduct) => {
     const response = await patchCandle(data);
     if (!response) return;
-    window.location.href = "/";
   };
 
   const deleteProduct = async (id: number) => {
@@ -48,7 +47,7 @@ export const StoreProvider: React.FC<IProvider> = ({ children }) => {
 
   useEffect(() => {
     if (products.length === 0) getProducts();
-  }, [products]);
+  }, []);
 
   const value = useMemo(
     () => ({
