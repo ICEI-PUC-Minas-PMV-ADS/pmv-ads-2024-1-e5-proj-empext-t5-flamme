@@ -1,76 +1,53 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { IProduct, IProvider, IStoreContext } from "./interface";
-import { api } from "../services/api";
+import { candlesController } from "../services/request/candles";
 
 const StoreContext = createContext<IStoreContext>({} as IStoreContext);
 
 export const StoreProvider: React.FC<IProvider> = ({ children }) => {
-  const [products, setProducts] = useState<any>();
-  const [product, setProduct] = useState<any>();
-  const getProducts = async () => {
-    try {
-      const response = await api.get("users/candles");
+  const [products, setProducts] = useState<Array<IProduct>>(
+    [] as Array<IProduct>
+  );
+  const [product, setProduct] = useState<IProduct>({} as IProduct);
 
-      if (response.status === 200) {
-        return setProducts(response.data);
-      }
-    } catch (error) {
-      console.error(error);
-      return setProducts([]);
-    }
+  const {
+    get: getCandles,
+    getForId: getCandleId,
+    post: postCandle,
+    patch: patchCandle,
+    del: deleteCandle,
+  } = candlesController();
+
+  const getProducts = async () => {
+    const response = await getCandles();
+    setProducts(response);
   };
+
   const getProduct = async (id: number) => {
-    try {
-      const response = await api.get(`users/candles/${id}`);
-      if (response.status === 200) {
-        return setProduct(response.data);
-      }
-    } catch (error) {
-      console.error(error);
-      return setProduct([]);
-    }
+    const response = await getCandleId(id);
+    setProduct(response);
   };
+
   const createProduct = async (data: IProduct) => {
-    try {
-      const response = await api.post(`users/candles/1`, data);
-      if (response.status === 200) {
-        setProduct(response.data);
-        // return (window.location.href = "/");
-        return "Usuário criado com sucesso!"
-      }
-    } catch (error) {
-      console.error(error);
-      alert("Não foi possível alterar produto!");
-      return setProduct(product);
-    }
+    const response = await postCandle(data);
+    if (!response) return;
+    window.location.href = "/";
   };
+
   const updateProduct = async (data: IProduct) => {
-    try {
-      const response = await api.patch("users/candles/update", data);
-      if (response.status === 200) {
-        return setProduct(response.data);
-      }
-    } catch (error) {
-      console.error(error);
-      alert("Não foi possível alterar produto!");
-      return setProduct(product);
-    }
+    const response = await patchCandle(data);
+    if (!response) return;
   };
+
   const deleteProduct = async (id: number) => {
-    try {
-      const response = await api.delete(`users/candles/${id}`);
-      if (response.status === 200) {
-        return "Produto removido com sucesso.";
-      }
-    } catch (error) {
-      console.error(error);
-      return alert("Erro ao tentar excluir produto. Tente novamente!");
-    }
+    const response = await deleteCandle(id);
+    if (!response) return;
+    window.location.reload();
   };
 
   useEffect(() => {
-    if (!products) getProducts();
-  }, [products]);
+    if (products.length === 0) getProducts();
+  }, []);
 
   const value = useMemo(
     () => ({

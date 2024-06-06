@@ -3,8 +3,8 @@ export interface IProvider {
 }
 
 export interface IStoreContext {
-  products: any;
-  product: any;
+  products: Array<IProduct>;
+  product: IProduct;
   setProduct: any;
   getProducts: any;
   getProduct: any;
@@ -17,9 +17,18 @@ export interface IProduct {
   id?: number;
   name: string;
   description: string;
-  phone: string;
   aroma: Array<string>;
   model: string;
   price: number;
+  options?: Array<{
+    min: number;
+    max?: number;
+    price: number;
+  }>;
+  extras: Array<{
+    name: string;
+    price: number;
+  }>;
+  tapes?: Array<string>;
   quantity: number;
 }

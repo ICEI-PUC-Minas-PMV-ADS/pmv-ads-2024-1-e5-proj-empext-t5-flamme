@@ -14,4 +14,7 @@ export default {
     },
   },
   plugins: [],
+  screens: {
+    sm: "400px",
+  },
 };

@@ -3,11 +3,13 @@ import HomeNavBar from "../HomeNavBar/index.tsx";
 import CartNavBar from "../CartNavBar/index.tsx";
 import { SectionTitle } from "../SectionTitle/index.tsx";
 import GrayBorderTop from "../GrayBorderTop/index.tsx";
+import { useNavigate } from "react-router-dom";
 
 const ButtonNavBarCart = () => {
+    const navigate = useNavigate();
     return (
-        <div className="relative">
-            <div className="mt-11">
+        <div className="fixed bottom-0 inset-x-0 z-10 bg-white">
+            <div>
                 <GrayBorderTop />
             </div>
 
@@ -21,7 +23,7 @@ const ButtonNavBarCart = () => {
 
                 </div>
 
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center" onClick={() => navigate("/")}>
                     <HomeNavBar />
                     <div className="mt-1.5">
                         <SectionTitle text="Início" />
@@ -29,7 +31,7 @@ const ButtonNavBarCart = () => {
 
                 </div>
 
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center" onClick={() => navigate("/carrinho")}>
                     <CartNavBar />
                     <div className="mt-1.5">
                         <SectionTitle text="Carrinho" />

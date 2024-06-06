@@ -35,7 +35,6 @@ public class CandlesService {
         Candles newCandle = candle.get();
         newCandle.setName(candles.getName());
         newCandle.setDescription(candles.getDescription());
-        newCandle.setPhone(candles.getPhone());
         newCandle.setAroma(candles.getAroma());
         newCandle.setModel(candles.getModel());
         newCandle.setPrice(candles.getPrice());

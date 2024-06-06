@@ -1,6 +1,7 @@
 package com.flamme.flammebackend.entities;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.hibernate.annotations.CreationTimestamp;
@@ -30,11 +31,14 @@ public class Candles {
     private String name;
     private String description;
 
-    @Length(min = 11, max = 15)
-    private String phone;
     private List<String> aroma;
     private String model;
     private Double price;
+
+    private ArrayList<Object> options;
+    private ArrayList<Object> extras;
+    private ArrayList<Object> tapes;
+
     private int quantity;
 
     @CreationTimestamp

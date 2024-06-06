@@ -9,6 +9,7 @@ import EditButton from "../../components/EditButton/index.tsx";
 import DeleteButton from "../../components/DeleteButton/index.tsx";
 import AlertButton1 from "../../components/AlertButton1/index.tsx";
 import GrayBorder from "../../components/GrayBorder/index.tsx";
+import ButtonNavBarCart from "../../components/ButtonNavBarCart/index.tsx";
 
 function CheckoutBudget() {
   function click() {
@@ -184,6 +185,7 @@ function CheckoutBudget() {
           <Button label="Finalizar Orçamento" onclick={click} />
 
         </div>
+        <ButtonNavBarCart />
       </div>
     </>
   );

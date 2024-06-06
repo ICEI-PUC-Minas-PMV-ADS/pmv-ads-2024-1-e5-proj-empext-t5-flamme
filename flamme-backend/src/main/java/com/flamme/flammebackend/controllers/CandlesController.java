@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.flamme.flammebackend.entities.Candles;
-import com.flamme.flammebackend.entities.User;
 import com.flamme.flammebackend.services.create.CandlesService;
 
 import jakarta.validation.Valid;
