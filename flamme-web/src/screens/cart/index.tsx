@@ -16,15 +16,35 @@ import { IProduct } from "../../contexts/interface.ts";
 import { transformPricePTBR } from "../../utils/scripts.ts";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { candlesController } from "../../services/request/candles.ts";
+import { userController } from "../../services/request/user.ts";
 
 function Cart() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const { cart, setCart } = useCartStoreContext();
+  const { orders } = candlesController();
+  const { getForId } = userController();
   const [total, setTotal] = useState<number>(0);
   const [extra, setExtra] = useState<number>(0);
 
-  function click() {
-    console.log("teste");
+  async function click() {
+    const userID = localStorage.getItem("id") ?? 0;
+    const response = await getForId(Number(userID));
+    if (response) {
+      try {
+        await orders(
+          {
+            client_name: response.name,
+            candles: cart,
+          },
+          response.id
+        );
+         return navigate("/")
+      } catch (error) {
+        console.error(error);
+        alert("Server error 500")
+      }
+    }
   }
 
   function deleteItem(item: IProduct) {
@@ -170,7 +190,10 @@ function Cart() {
           <Button label="Finalizar compra" onclick={click} />
 
           <div className="mt-4">
-            <ButtonWhite2 label="Continuar comprando" onclick={() => navigate("/")} />
+            <ButtonWhite2
+              label="Continuar comprando"
+              onclick={() => navigate("/")}
+            />
           </div>
         </div>
 

@@ -47,7 +47,8 @@ function ViewProduct({ isAdmin }: IProps) {
   const navigate = useNavigate();
   const { product } = useStoreContext();
   const { addToCart } = useCartStoreContext();
-  const arr = product ? product.aroma.filter((el) => el.length > 0) : [];
+  const arr =
+    product && product.aroma ? product.aroma.filter((el) => el.length > 0) : [];
   const [total, setTotal] = useState<number>(0);
   const [qtty, setQtty] = useState<number>(0);
   const [ex, setEx] = useState<boolean>(false);
@@ -262,8 +263,8 @@ function ViewProduct({ isAdmin }: IProps) {
                           tapes: product.tapes,
                           quantity: qtty,
                         });
-                        navigate("/")}
-                      }
+                        navigate("/");
+                      }}
                     />
                   </div>
                 </div>
@@ -272,7 +273,7 @@ function ViewProduct({ isAdmin }: IProps) {
           )}
         </div>
       </div>
-      <ButtonNavBarCart />
+      {!isAdmin && <ButtonNavBarCart />}
     </>
   ) : (
     <p>

@@ -13,10 +13,9 @@ import { Title } from "../../components/Title/index.tsx";
 import { IProduct } from "../../contexts/interface.ts";
 import { useState } from "react";
 import { transformPricePTBR } from "../../utils/scripts.ts";
-import { Link } from "react-router-dom"
 
 function Catalog() {
-  const { products, getProduct, updateProduct, deleteProduct } =
+  const { products, setProduct, getProduct, updateProduct, deleteProduct } =
     useStoreContext();
   const [name, setName] = useState("");
   const [modal, setModal] = useState(false);
@@ -24,6 +23,11 @@ function Catalog() {
 
   function linkToAddProduct() {
     navigate("/adicionar-produto");
+  }
+
+  function handleProduct(item: IProduct) {
+    setProduct(item)
+    navigate("/visualizar-produto")
   }
 
   return products ? (
@@ -46,8 +50,10 @@ function Catalog() {
         {/* Produto */}
         {products.map((item: IProduct) => (
           <div className="flex flex-col mt-8">
-            <div className="flex items-center justify-around">
-            <Link to="/visualizar-produto" className="text-black">
+            <div
+              className="flex items-center justify-around"
+              onClick={() => handleProduct(item)}
+            >
               <div>
                 <img src={Product1} alt="Foto do Produto" />
               </div>
@@ -58,10 +64,8 @@ function Catalog() {
                 <div className="mt-2">
                   <Text text="Unidades a partir de" />
                   <SectionTitle text={transformPricePTBR(item.price)} />
-                  
                 </div>
               </div>
-              </Link>
             </div>
             <div className="flex justify-around mt-6">
               <ButtonWhite
@@ -80,7 +84,7 @@ function Catalog() {
               <div className="my-4 p-7">
                 <Text text="Alterar nome do produto" />
                 <input
-                className="border-2 border-black rounded-lg my-4 p-2"
+                  className="border-2 border-black rounded-lg my-4 p-2"
                   name="name"
                   title={item.name}
                   placeholder="Ex: Vela Suave "
