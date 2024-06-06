@@ -69,5 +69,31 @@ export const candlesController = () => {
     }
   }
 
-  return { get, getForId, post, patch, del };
+  async function orders(data: any, id: number) {
+    try {
+      const response = await api.post(`/orders/${id}`, data);
+      if (response.status === 200) {
+        return "Ordem cadastrada com sucesso.";
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Erro ao tentar cadastrar ordem. Tente novamente!");
+      return false;
+    }
+  }
+
+  async function getOrders(id: number) {
+    try {
+      const response = await api.get(`/orders/${id}`);
+      if (response.status === 200) {
+        return response.data.candles;
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Erro ao tentar cadastrar ordem. Tente novamente!");
+      return false;
+    }
+  }
+
+  return { get, getForId, post, patch, del, orders, getOrders };
 };

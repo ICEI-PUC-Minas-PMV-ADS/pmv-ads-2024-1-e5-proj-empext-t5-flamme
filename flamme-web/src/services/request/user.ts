@@ -1,4 +1,3 @@
-import { IUser } from "../../contexts/User/interface";
 import { api } from "../api";
 
 export const userController = () => {
@@ -30,7 +29,7 @@ export const userController = () => {
 			
 	}
 
-	async function post(data: IUser) {
+	async function post(data: any) {
 		try {
 				const response = await api.post(`users`, data);
 
@@ -46,7 +45,7 @@ export const userController = () => {
 		
 	}
 
-	async function patch(data: IUser) {
+	async function patch(data: any) {
 		try {
 				const response = await api.patch(`users/update`, data);
 

@@ -13,8 +13,10 @@ const auth = async (data: IAuth) => {
     });
 
     if (response.status === 200) {
-      localStorage.setItem("token", response.data.token);
-      return response.data.id;
+      console.log(response.data)
+      localStorage.setItem("token", response.data.access_token);
+      localStorage.setItem("id", response.data.userId);
+      return response.data.userId;
     }
   } catch (error) {
     console.error(error);
