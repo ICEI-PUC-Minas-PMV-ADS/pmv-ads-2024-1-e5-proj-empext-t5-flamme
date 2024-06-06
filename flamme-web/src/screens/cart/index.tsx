@@ -15,8 +15,10 @@ import { useCartStoreContext } from "../../contexts/Cart/index.tsx";
 import { IProduct } from "../../contexts/interface.ts";
 import { transformPricePTBR } from "../../utils/scripts.ts";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Cart() {
+  const navigate = useNavigate()
   const { cart, setCart } = useCartStoreContext();
   const [total, setTotal] = useState<number>(0);
   const [extra, setExtra] = useState<number>(0);
@@ -60,7 +62,7 @@ function Cart() {
         </div>
         {cart.map((item: IProduct) => (
           <>
-            <div className="flex justify-around mx-7 mt-8">
+            <div className="flex justify-around mx-7 mt-8" key={item.id}>
               <div>
                 <img src={Product4} alt="Foto do Produto" />
               </div>
@@ -168,7 +170,7 @@ function Cart() {
           <Button label="Finalizar compra" onclick={click} />
 
           <div className="mt-4">
-            <ButtonWhite2 label="Continuar comprando" onclick={click} />
+            <ButtonWhite2 label="Continuar comprando" onclick={() => navigate("/")} />
           </div>
         </div>
 
