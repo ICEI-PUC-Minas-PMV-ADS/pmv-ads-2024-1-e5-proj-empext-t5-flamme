@@ -160,3 +160,9 @@ Critério de êxito - A tela área da administradora deve abrir corretamente, Ma
 Critério de êxito - A tela área da administradora deve abrir corretamente, para que Marina consiga acessar a tela de Perfil.
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/bafa031d-552b-466b-940f-8aad29708dcd)
+
+**CT-05 – Área do usuário**
+
+Critério de êxito - adicionar ao carrinho
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/blob/main/documentos/img/CarrinhoTeste.jpg)
