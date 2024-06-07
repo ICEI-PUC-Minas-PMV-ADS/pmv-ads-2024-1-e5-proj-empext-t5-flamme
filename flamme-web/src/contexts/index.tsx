@@ -1,10 +1,12 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { IProduct, IProvider, IStoreContext } from "./interface";
 import { candlesController } from "../services/request/candles";
+import { IData } from "../utils/interfaces";
 
 const StoreContext = createContext<IStoreContext>({} as IStoreContext);
 
 export const StoreProvider: React.FC<IProvider> = ({ children }) => {
+  const [user, setUser] = useState<IData>({} as IData);
   const [products, setProducts] = useState<Array<IProduct>>(
     [] as Array<IProduct>
   );
@@ -53,6 +55,8 @@ export const StoreProvider: React.FC<IProvider> = ({ children }) => {
     () => ({
       products,
       product,
+      user,
+      setUser,
       setProduct,
       getProducts,
       getProduct,
@@ -63,6 +67,8 @@ export const StoreProvider: React.FC<IProvider> = ({ children }) => {
     [
       products,
       product,
+      user,
+      setUser,
       setProduct,
       getProducts,
       getProduct,

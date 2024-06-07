@@ -82,15 +82,15 @@ export const candlesController = () => {
     }
   }
 
-  async function getOrders(id: number) {
+  async function getOrders() {
     try {
-      const response = await api.get(`/orders/${id}`);
+      const response = await api.get(`/orders`);
       if (response.status === 200) {
         return response.data.candles;
       }
     } catch (error) {
       console.error(error);
-      alert("Erro ao tentar cadastrar ordem. Tente novamente!");
+      console.log("Erro ao tentar buscar ordens. Tente novamente!");
       return false;
     }
   }

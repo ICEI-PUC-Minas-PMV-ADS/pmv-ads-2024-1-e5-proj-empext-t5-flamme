@@ -15,4 +15,17 @@ interface IAroma {
   price: number;
 }
 
-export type { IText, IButton, IAroma };
+interface IUser {
+  id: number;
+  name: string;
+  email: string;
+  password: string;
+  phone: string;
+}
+
+interface IData {
+  email: string;
+  password: string;
+}
+
+export type { IText, IButton, IAroma, IUser, IData };

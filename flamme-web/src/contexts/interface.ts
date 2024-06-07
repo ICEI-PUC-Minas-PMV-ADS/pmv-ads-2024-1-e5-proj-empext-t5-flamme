@@ -1,3 +1,5 @@
+import { IData } from "../utils/interfaces";
+
 export interface IProvider {
   children: React.ReactNode;
 }
@@ -5,6 +7,8 @@ export interface IProvider {
 export interface IStoreContext {
   products: Array<IProduct>;
   product: IProduct;
+  user: IData;
+  setUser: any;
   setProduct: any;
   getProducts: any;
   getProduct: any;

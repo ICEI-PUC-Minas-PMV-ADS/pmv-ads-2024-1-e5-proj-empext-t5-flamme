@@ -15,8 +15,9 @@ function HomeBudgetAdm() {
   async function getOrder() {
     const id = localStorage.getItem("id") ?? 0;
     try {
-      const data = await getOrders(Number(id));
-      setOrders(data);
+      const data = await getOrders();
+      const ord = data.filter((el: any) => el.user === id);
+      setOrders(ord);
     } catch (error) {
       setOrders([]);
     }
@@ -56,7 +57,7 @@ function HomeBudgetAdm() {
             </>
           ))
         ) : (
-          <p>Nenhum orçamento cadastrado!</p>
+          <p className="text-center">Nenhum orçamento cadastrado!</p>
         )}
 
         {/*EDITAR BARRA DE NAVEGAÇÃO*/}

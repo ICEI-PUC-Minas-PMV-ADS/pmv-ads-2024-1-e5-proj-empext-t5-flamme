@@ -2,19 +2,27 @@ import "../../styles/Login.css";
 import logoFlameLog from "../../../public/logoFlameLog.svg";
 import { useState } from "react";
 import { Button } from "../../components/Button/Button";
-import auth  from "../../services/request/auth";
+import auth from "../../services/request/auth";
 import { useNavigate } from "react-router-dom";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { useStoreContext } from "../../contexts";
+import { IData } from "../../utils/interfaces";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { setUser } = useStoreContext();
   const navigate = useNavigate();
 
   const handleLogin = async () => {
     const resp = await auth({ email, password });
 
     if (resp !== null) {
+      const data: IData = {
+        email,
+        password,
+      };
+      setUser(data);
       return navigate("/catalogo-adm");
     }
 
@@ -53,7 +61,7 @@ const Login = () => {
               </a>
             </div>
             <Link to="/catalogo-adm">
-            <Button label="Entrar" onclick={handleLogin} />
+              <Button label="Entrar" onclick={handleLogin} />
             </Link>
           </div>
         </div>
