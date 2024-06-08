@@ -101,6 +101,12 @@ Critério de êxito 05 - Erros ao longo do desenvolvimento
 ![image](img/evidenciaerro1.png)
 ![image](img/evidenciaerro2.png)
 
+**CT-03 – Informações do administrador(a)**
+
+Critério de êxito - A tela área da administradora deve abrir corretamente, para que Marina consiga acessar a tela de Perfil.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/bafa031d-552b-466b-940f-8aad29708dcd)
+
 **CT-04 – Área do administrador(a)** 
 
 Critério de êxito - A tela área da administradora deve abrir corretamente, Marina deverá conseguir alterar, cadastrar, excluir e editar os produtos do estoque, que deverão ser atualizados após salvar as informações. 
@@ -179,13 +185,36 @@ Critério de êxito - A tela área da administradora deve abrir corretamente, Ma
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/0adca3e0-d439-4a0d-8f65-82a1ccc3b25d)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/355b133b-2425-46db-bb79-90164561cf1e)
 
-**CT-03 – Informações do administrador(a)**
-
-Critério de êxito - A tela área da administradora deve abrir corretamente, para que Marina consiga acessar a tela de Perfil.
-
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/bafa031d-552b-466b-940f-8aad29708dcd)
 
 **CT-05 – Área do usuário**
+
+Critério de êxito - A tela de Home aonde o cliente terá os produtos disponiveis e as informações sobre a Loja Flamme.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/7e810235-4ef2-481e-9264-6339a7377a75)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/bde4265e-c70c-435e-8b15-cfad3115040d)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/f47cc16c-5f54-406b-a25b-33f320c06931)
+
+
+Critério de êxito - A tela de Informações importantes da Loja Flamme
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/a42b0595-210f-4623-9311-0da539ad42ce)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/075557dd-a8ce-4869-a03e-9a4ba72da7ed)
+
+Critério de êxito - A tela de Home deve abrir corretamente, para que o cliente consiga acessar o produto (vela) e preencher as informações no aplicativo.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/7c6c0520-188f-4e03-b4b2-8400dbd77213)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/24eb436e-b2c9-4e1e-bca0-faf4b8e03b58)
+
+Quantidade solicitada do produto (vela) ajustada com o valor para o carrinho:
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/f4b86dfd-d03e-4856-be2b-67feaf49a849)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/3aa6f60f-7ae7-4bf5-9f5c-589224f9c930)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/5225720e-b96e-434e-a4d2-c30fee29776f)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/c5e9d033-0577-4664-bb84-e8c4612770a0)
+
+Acrescimos solicitados:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/4f243245-48fc-416a-8ce8-62f869069142)
+
 
 Critério de êxito - adicionar ao carrinho
 
