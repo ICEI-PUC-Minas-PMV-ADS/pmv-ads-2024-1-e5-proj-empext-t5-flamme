@@ -47,6 +47,8 @@ Segue abaixo o link do Postman: <br>
         npm install
         npm run dev
 
+  ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/e8ed03d0-0fc9-43aa-ab37-009f89afcfff)
+
  - Hospedagem do Banco de Dados (AWS):
  <a href="https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26src%3Dheader-signin%26state%3DhashArgsFromTB_us-east-2_62bc9d8ca5062263&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=ptXt78zUBuCw1KEp2syc2IN7gjsDIlfo2VH_qH2Xx4w&code_challenge_method=SHA-256"> Amazon Web Services </a>
  - Login:
