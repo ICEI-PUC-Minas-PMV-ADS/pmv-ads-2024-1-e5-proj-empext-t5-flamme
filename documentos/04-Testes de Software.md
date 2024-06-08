@@ -194,8 +194,7 @@ Critério de êxito - A tela de Home onde o cliente terá os produtos disponíve
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/bde4265e-c70c-435e-8b15-cfad3115040d)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/f47cc16c-5f54-406b-a25b-33f320c06931)
 
-
-Critério de êxito - A tela de Informações importantes da Loja Flamme.
+Critério de êxito - A tela de Informações Importantes da Loja Flamme.
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/a42b0595-210f-4623-9311-0da539ad42ce)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/075557dd-a8ce-4869-a03e-9a4ba72da7ed)
@@ -211,10 +210,9 @@ Quantidade solicitada do produto (vela) ajustada com o valor para o carrinho:
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/3aa6f60f-7ae7-4bf5-9f5c-589224f9c930)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/5225720e-b96e-434e-a4d2-c30fee29776f)
 
-Acrescimos solicitados:
+Acréscimos solicitados:
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/4f243245-48fc-416a-8ce8-62f869069142)
-
 
 Critério de êxito - adicionar ao carrinho
 
