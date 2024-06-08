@@ -14,6 +14,10 @@ const Login = () => {
   const { setUser } = useStoreContext();
   const navigate = useNavigate();
 
+  function handleForgotPassword() {
+    navigate("/Esqueci-a-senha");
+  }
+
   const handleLogin = async () => {
     const resp = await auth({ email, password });
 
@@ -56,13 +60,15 @@ const Login = () => {
                 placeholder="Digite sua senha"
                 value={password}
               />
-              <a className="forgot-password-login" href="#">
+              <a
+                className="forgot-password-login"
+                onClick={handleForgotPassword}
+              >
                 Esqueceu a senha?
               </a>
             </div>
-            <Link to="/catalogo-adm">
-              <Button label="Entrar" onclick={handleLogin} />
-            </Link>
+
+            <Button label="Entrar" onclick={handleLogin} />
           </div>
         </div>
       </div>
