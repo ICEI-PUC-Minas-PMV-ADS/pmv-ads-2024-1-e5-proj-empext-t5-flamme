@@ -210,7 +210,6 @@ Quantidade solicitada do produto (vela) ajustada com o valor para o carrinho:
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/f4b86dfd-d03e-4856-be2b-67feaf49a849)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/3aa6f60f-7ae7-4bf5-9f5c-589224f9c930)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/5225720e-b96e-434e-a4d2-c30fee29776f)
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/c5e9d033-0577-4664-bb84-e8c4612770a0)
 
 Acrescimos solicitados:
 
