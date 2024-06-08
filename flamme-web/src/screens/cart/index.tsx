@@ -39,7 +39,7 @@ function Cart() {
           },
           response.id
         );
-         return navigate("/")
+         return navigate("/checkout")
       } catch (error) {
         console.error(error);
         alert("Server error 500")

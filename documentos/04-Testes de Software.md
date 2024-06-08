@@ -12,12 +12,12 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 | Critério de Êxito | - A tela de login deve abrir corretamente - O login e senha cadastrados devem direcionar o usuário para a tela de gestão de orçamentos/pedidos da FLAMME - Login e senha incorretos devem exibir uma mensagem de login ou senha incorretos. |
 |  	|  	|
 
-| **Caso de Teste** 	| **CT-02 – Esqueceu a senha / Redefinir senha** 	|
+| **Caso de Teste** 	| **CT-02 – Esqueceu a senha / Recuperação de senha** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-009 – O sistema deve permitir a atualização dos dados do administrador do sistema|
 | Objetivo do Teste 	| Verificar se a alteração dos dados está ocorrendo corretamente. |
-| Passos 	| 1) Acessar o aplicativo “FLAMME” 2) Clicar no botão esqueceu a senha 3) A administradora Marina será direcionada para a página de esqueceu a senha, digitará o e-mail para que possa acessar por caixa de entrada do e-mail ou um código de verificação via celular. Clicar no link presente a fim de ser redirecionada ou digitar o código no visor, para que assim seja encaminhada a página do app de redefinir senha e alterar para uma nova senha com êxito 7) Acessar o login novamente com a senha alterada. |
-| Critério de Êxito | - A tela de nova senha deve abrir corretamente - Ao alterar os dados, a administradora deverá conseguir realizar o login perfeitamente |
+| Passos 	| 1) Acessar o aplicativo “FLAMME” 2) Clicar no botão esqueceu a senha 3) A administradora Marina será direcionada para a página de esqueceu a senha, digitará o e-mail para que possa acessar por caixa de entrada do e-mail ou um código de verificação via celular. Clicar no link presente a fim de ser redirecionada um e-mail com a senha para a cliente 7) Acessar o login novamente com a senha alterada. |
+| Critério de Êxito | - O e-mail com a senha deverá ser recebido na caixa de entrada do cliente |
 |  	|  	|
 
 | **Caso de Teste** 	| **CT-03 – Informações do administrador(a)** 	|
@@ -77,7 +77,37 @@ Mensagem de erro console
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/d6213c73-efd7-4f29-83cd-7b660acd5032)
 
-**CT-04 – Área do administrador(a)**
+**CT-02 – Esqueceu a senha / Recuperação de senha** 
+
+Critério de êxito 01 - A tela de login deve abrir corretamente, nela terá a opção esqueci a senha para a recuperação da senha
+
+![image](img/Login.png)
+
+Critério de êxito 02 - A tela de recuperação de senha deve abrir corretamente
+
+![image](img/Recuperaçãodesenha.png)
+
+Critério de êxito 03 - Deverá aparecer uma mensagem informando que o e-mail foi enviado com sucesso
+
+![image](img/envioeemailexito.png)
+
+Critério de êxito 04 - O e-mail deverá ser recebido na caixa de entrada do cliente
+
+![image](img/emailrecebidoexito.png)
+![image](img/senharecebida.png)
+
+Critério de êxito 05 - Erros ao longo do desenvolvimento
+
+![image](img/evidenciaerro1.png)
+![image](img/evidenciaerro2.png)
+
+**CT-03 – Informações do administrador(a)**
+
+Critério de êxito - A tela área da administradora deve abrir corretamente, para que Marina consiga acessar a tela de Perfil.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/bafa031d-552b-466b-940f-8aad29708dcd)
+
+**CT-04 – Área do administrador(a)** 
 
 Critério de êxito - A tela área da administradora deve abrir corretamente, Marina deverá conseguir alterar, cadastrar, excluir e editar os produtos do estoque, que deverão ser atualizados após salvar as informações. 
 
@@ -155,13 +185,34 @@ Critério de êxito - A tela área da administradora deve abrir corretamente, Ma
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/0adca3e0-d439-4a0d-8f65-82a1ccc3b25d)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/355b133b-2425-46db-bb79-90164561cf1e)
 
-**CT-03 – Informações do administrador(a)**
-
-Critério de êxito - A tela área da administradora deve abrir corretamente, para que Marina consiga acessar a tela de Perfil.
-
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/bafa031d-552b-466b-940f-8aad29708dcd)
 
 **CT-05 – Área do usuário**
+
+Critério de êxito - A tela de Home onde o cliente terá os produtos disponíveis e as informações sobre a Loja Flamme.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/7e810235-4ef2-481e-9264-6339a7377a75)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/bde4265e-c70c-435e-8b15-cfad3115040d)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/f47cc16c-5f54-406b-a25b-33f320c06931)
+
+Critério de êxito - A tela de Informações Importantes da Loja Flamme.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/a42b0595-210f-4623-9311-0da539ad42ce)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/075557dd-a8ce-4869-a03e-9a4ba72da7ed)
+
+Critério de êxito - A tela de Home deve abrir corretamente, para que o cliente consiga acessar o produto (vela) e preencher as informações no aplicativo.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/7c6c0520-188f-4e03-b4b2-8400dbd77213)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/24eb436e-b2c9-4e1e-bca0-faf4b8e03b58)
+
+Quantidade solicitada do produto (vela) ajustada com o valor para o carrinho:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/f4b86dfd-d03e-4856-be2b-67feaf49a849)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/3aa6f60f-7ae7-4bf5-9f5c-589224f9c930)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/6298190a-5ef0-4f04-a533-96ee4d99f8e2)
+
+Acréscimos solicitados:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/4f243245-48fc-416a-8ce8-62f869069142)
 
 Critério de êxito - adicionar ao carrinho
 

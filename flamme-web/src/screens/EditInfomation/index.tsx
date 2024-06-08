@@ -26,7 +26,6 @@ function EditInfo() {
       password: user.password,
       phone: response.phone,
     };
-    console.log(data)
     setUserData(data);
   }
 
@@ -71,8 +70,8 @@ function EditInfo() {
             className="w-full px-4 py-4 mt-2 border rounded-md text-xs"
             type="text"
             name="name"
-            value={userData?.name}
-            placeholder={userData?.name}
+            value={userData.name}
+            placeholder={userData.name}
             onChange={handleChange}
           />
         </div>

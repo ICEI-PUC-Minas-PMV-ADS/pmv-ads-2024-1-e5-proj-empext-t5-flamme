@@ -84,7 +84,7 @@ export const candlesController = () => {
 
   async function getOrders() {
     try {
-      const response = await api.get(`/orders`);
+      const response = await api.get(`/orders/`);
       if (response.status === 200) {
         return response.data.candles;
       }
