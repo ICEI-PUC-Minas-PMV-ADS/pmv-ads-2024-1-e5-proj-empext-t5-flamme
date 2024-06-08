@@ -81,25 +81,27 @@ Mensagem de erro console
 
 Critério de êxito 01 - A tela de login deve abrir corretamente, nela terá a opção esqueci a senha para a recuperação da senha
 
-![image](Login.png/img)
+![image](img/Login.png)
 
 Critério de êxito 02 - A tela de recuperação de senha deve abrir corretamente
 
-![image](Recuperaçãodesenha.png/img)
+![image](img/Recuperaçãodesenha.png)
 
 Critério de êxito 03 - Deverá aparecer uma mensagem informando que o e-mail foi enviado com sucesso
 
-![image](envioeemailexito.png/img)
+![image](img/envioeemailexito.png)
 
 Critério de êxito 04 - O e-mail deverá ser recebido na caixa de entrada do cliente
 
-![image](emailrecebidoexito.png/img)
-![image](senharecebida.png/img)
+![image](img/emailrecebidoexito.png)
+![image](img/senharecebida.png)
 
 Critério de êxito 05 - Erros ao longo do desenvolvimento
 
-![image](evidenciaerro1.png/img)
-![image](evidenciaerro2.png/img)
+![image](img/evidenciaerro1.png)
+![image](img/evidenciaerro2.png)
+
+**CT-04 – Área do administrador(a)** 
 
 Critério de êxito - A tela área da administradora deve abrir corretamente, Marina deverá conseguir alterar, cadastrar, excluir e editar os produtos do estoque, que deverão ser atualizados após salvar as informações. 
 
