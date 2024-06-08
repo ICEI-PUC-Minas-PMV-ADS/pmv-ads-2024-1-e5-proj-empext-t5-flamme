@@ -12,12 +12,12 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 | Critério de Êxito | - A tela de login deve abrir corretamente - O login e senha cadastrados devem direcionar o usuário para a tela de gestão de orçamentos/pedidos da FLAMME - Login e senha incorretos devem exibir uma mensagem de login ou senha incorretos. |
 |  	|  	|
 
-| **Caso de Teste** 	| **CT-02 – Esqueceu a senha / Redefinir senha** 	|
+| **Caso de Teste** 	| **CT-02 – Esqueceu a senha / Recuperação de senha** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-009 – O sistema deve permitir a atualização dos dados do administrador do sistema|
 | Objetivo do Teste 	| Verificar se a alteração dos dados está ocorrendo corretamente. |
-| Passos 	| 1) Acessar o aplicativo “FLAMME” 2) Clicar no botão esqueceu a senha 3) A administradora Marina será direcionada para a página de esqueceu a senha, digitará o e-mail para que possa acessar por caixa de entrada do e-mail ou um código de verificação via celular. Clicar no link presente a fim de ser redirecionada ou digitar o código no visor, para que assim seja encaminhada a página do app de redefinir senha e alterar para uma nova senha com êxito 7) Acessar o login novamente com a senha alterada. |
-| Critério de Êxito | - A tela de nova senha deve abrir corretamente - Ao alterar os dados, a administradora deverá conseguir realizar o login perfeitamente |
+| Passos 	| 1) Acessar o aplicativo “FLAMME” 2) Clicar no botão esqueceu a senha 3) A administradora Marina será direcionada para a página de esqueceu a senha, digitará o e-mail para que possa acessar por caixa de entrada do e-mail ou um código de verificação via celular. Clicar no link presente a fim de ser redirecionada um e-mail com a senha para a cliente 7) Acessar o login novamente com a senha alterada. |
+| Critério de Êxito | - O e-mail com a senha deverá ser recebido na caixa de entrada do cliente |
 |  	|  	|
 
 | **Caso de Teste** 	| **CT-03 – Informações do administrador(a)** 	|
@@ -77,7 +77,29 @@ Mensagem de erro console
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/d6213c73-efd7-4f29-83cd-7b660acd5032)
 
-**CT-04 – Área do administrador(a)**
+**CT-02 – Esqueceu a senha / Recuperação de senha** 
+
+Critério de êxito 01 - A tela de login deve abrir corretamente, nela terá a opção esqueci a senha para a recuperação da senha
+
+![image](Login.png/img)
+
+Critério de êxito 02 - A tela de recuperação de senha deve abrir corretamente
+
+![image](Recuperaçãodesenha.png/img)
+
+Critério de êxito 03 - Deverá aparecer uma mensagem informando que o e-mail foi enviado com sucesso
+
+![image](envioeemailexito.png/img)
+
+Critério de êxito 04 - O e-mail deverá ser recebido na caixa de entrada do cliente
+
+![image](emailrecebidoexito.png/img)
+![image](senharecebida.png/img)
+
+Critério de êxito 05 - Erros ao longo do desenvolvimento
+
+![image](evidenciaerro1.png/img)
+![image](evidenciaerro2.png/img)
 
 Critério de êxito - A tela área da administradora deve abrir corretamente, Marina deverá conseguir alterar, cadastrar, excluir e editar os produtos do estoque, que deverão ser atualizados após salvar as informações. 
 
