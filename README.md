@@ -29,6 +29,7 @@ Link de acesso ao aplicativo (versão WEB) para o Instagram da cliente Marina:
 <a href="https://react-flamme-yln8.vercel.app/"> Site Flamme p/celular </a>
 
 - Login do Administrador(a) da Flamme:
+  
         flammevelas95@gmail.com
         Flamme@2024!
 
@@ -49,6 +50,7 @@ Segue abaixo o link do Postman: <br>
  - Hospedagem do Banco de Dados (AWS):
  <a href="https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26src%3Dheader-signin%26state%3DhashArgsFromTB_us-east-2_62bc9d8ca5062263&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=ptXt78zUBuCw1KEp2syc2IN7gjsDIlfo2VH_qH2Xx4w&code_challenge_method=SHA-256"> Amazon Web Services </a>
  - Login:
+   
         flammevelas95@gmail.com
         Flamme@2024!
 
