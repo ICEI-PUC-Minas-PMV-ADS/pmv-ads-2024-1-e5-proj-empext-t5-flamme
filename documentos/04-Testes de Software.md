@@ -188,14 +188,14 @@ Critério de êxito - A tela área da administradora deve abrir corretamente, Ma
 
 **CT-05 – Área do usuário**
 
-Critério de êxito - A tela de Home aonde o cliente terá os produtos disponiveis e as informações sobre a Loja Flamme.
+Critério de êxito - A tela de Home onde o cliente terá os produtos disponíveis e as informações sobre a Loja Flamme.
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/7e810235-4ef2-481e-9264-6339a7377a75)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/bde4265e-c70c-435e-8b15-cfad3115040d)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/f47cc16c-5f54-406b-a25b-33f320c06931)
 
 
-Critério de êxito - A tela de Informações importantes da Loja Flamme
+Critério de êxito - A tela de Informações importantes da Loja Flamme.
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/a42b0595-210f-4623-9311-0da539ad42ce)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/075557dd-a8ce-4869-a03e-9a4ba72da7ed)
@@ -206,6 +206,7 @@ Critério de êxito - A tela de Home deve abrir corretamente, para que o cliente
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/24eb436e-b2c9-4e1e-bca0-faf4b8e03b58)
 
 Quantidade solicitada do produto (vela) ajustada com o valor para o carrinho:
+
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/f4b86dfd-d03e-4856-be2b-67feaf49a849)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/3aa6f60f-7ae7-4bf5-9f5c-589224f9c930)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/5225720e-b96e-434e-a4d2-c30fee29776f)
