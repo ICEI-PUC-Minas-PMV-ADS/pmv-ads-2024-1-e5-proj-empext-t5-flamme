@@ -35,7 +35,7 @@ function HomeClient() {
 
   return (
     <>
-      <div className="Home p-5">
+      <div className="Home p-5 pb-40">
         <div className="flex justify-center items-center mt-8">
           <img className="w-36" src={Logo} alt="Logo do Flamme" />
         </div>
@@ -71,7 +71,7 @@ function HomeClient() {
         <BrownBorder />
 
         {/*Card - Produto*/}
-        <div className="flex flex-wrap mt-8 gap-x-11">
+        <div className="flex flex-wrap mt-8 gap-x-11 gap-4">
           {products && products.length > 0 ? (
             products.map((candle: IProduct) => (
               <div

@@ -17,7 +17,7 @@ function CheckoutBudget() {
   }
   return (
     <>
-      <div className="Checkout">
+      <div className="Checkout pb-40">
         <div className="flex justify-center items-center mt-4">
           <Title text="Carrinho" />
         </div>
