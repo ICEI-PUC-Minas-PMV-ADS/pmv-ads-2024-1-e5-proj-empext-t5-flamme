@@ -3,7 +3,7 @@
 •	Apresentar o planejamento da implantação: descrever tecnologias e processo de implantação.
 
 O banco de dados foi hospedado na AWS (Amazon Web Service). 
-A versão WEB para a cliente Marina utilizar o app da Flamme em seu dispostivo móvel foi através do link gerado no VERCEL.
+<br> A versão WEB para a cliente Marina utilizar o app da Flamme em seu dispostivo móvel foi através do link gerado no VERCEL.
 
 - https://react-flamme.vercel.app/
 - https://react-flamme-yln8.vercel.app/
