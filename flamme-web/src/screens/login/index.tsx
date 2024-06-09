@@ -15,7 +15,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   function handleForgotPassword() {
-    navigate("/Esqueci-a-senha");
+    navigate("/email-de-recuperacao");
   }
 
   const handleLogin = async () => {
@@ -60,7 +60,12 @@ const Login = () => {
                 placeholder="Digite sua senha"
                 value={password}
               />
-              <a className="forgot-password-login">Esqueceu a senha?</a>
+              <a
+                className="forgot-password-login"
+                onClick={handleForgotPassword}
+              >
+                Esqueceu a senha?
+              </a>
             </div>
 
             <Button label="Entrar" onclick={handleLogin} />
