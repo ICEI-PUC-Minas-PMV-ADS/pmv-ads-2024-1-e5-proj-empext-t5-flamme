@@ -115,7 +115,7 @@ Ao clicar em "Editar Informações" o usuário é direcionado para a rota /edita
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/0fbaf0f4-a303-4b5e-9f77-b73ff957eead)
 
-Critério de êxito - O sistema deve permitir a atualização dos dados do administrador do sistema
+RF 009 - Critério de êxito - O sistema deve permitir a atualização dos dados do administrador do sistema
 Dado no banco de dados seguindo a LGPD com senha armazenada criptografada
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/20093168-bd24-44b4-95bf-22d62c5e20d5)
