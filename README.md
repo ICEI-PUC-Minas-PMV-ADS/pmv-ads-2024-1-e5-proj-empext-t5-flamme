@@ -27,6 +27,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 Link de acesso ao aplicativo (versão WEB) para o Instagram da cliente Marina:
 <a href="https://react-flamme-yln8.vercel.app/"> Site Flamme p/celular </a>
+<br> <a href="https://react-flamme.vercel.app/"> </a>
 
 - Login do Administrador(a) da Flamme:
   
