@@ -7,7 +7,6 @@ O banco de dados foi hospedado na AWS (Amazon Web Service).
 
 - https://react-flamme.vercel.app/ (Site oficial - Cliente)
 - https://react-flamme-yln8.vercel.app/ (Site oficial - Cliente)
-<br>
 - https://react-flamme.vercel.app/login (Login administrador(a))
 <br>
 
