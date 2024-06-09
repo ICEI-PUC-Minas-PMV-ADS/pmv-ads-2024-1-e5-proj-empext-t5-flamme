@@ -30,6 +30,7 @@ Link de acesso ao aplicativo (versão WEB) para o Instagram da cliente Marina:
 <br> - <a href="https://react-flamme.vercel.app/"> Site oficial </a>
 
 - Login do Administrador(a) da Flamme:
+<br> - <a href="https://react-flamme-yln8.vercel.app/login"> Login do Administrador(a) </a>
   
         flammevelas95@gmail.com
         Flamme@2024!
