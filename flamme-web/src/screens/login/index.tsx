@@ -60,12 +60,7 @@ const Login = () => {
                 placeholder="Digite sua senha"
                 value={password}
               />
-              <a
-                className="forgot-password-login"
-                onClick={handleForgotPassword}
-              >
-                Esqueceu a senha?
-              </a>
+              <a className="forgot-password-login">Esqueceu a senha?</a>
             </div>
 
             <Button label="Entrar" onclick={handleLogin} />
