@@ -3,7 +3,7 @@ import { Text } from "../../components/Text/index.tsx";
 import GrayBorderTop from "../../components/GrayBorderTop/index.tsx";
 import { Button2 } from "../../components/Button2/index.tsx";
 import ButtonNavBarPerfil from "../../components/ButtonNavBarPerfil/index.tsx";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { userController } from "../../services/request/user.ts";
 import { IUser } from "../../utils/interfaces.ts";
@@ -13,6 +13,7 @@ function EditInfo() {
   const [userData, setUserData] = useState<IUser>({} as IUser);
   const [passwordCheck, setPasswordCheck] = useState<string>("");
   const { user } = useStoreContext();
+  const navigate = useNavigate();
 
   const { getForId: getUserId, patch: patchUser } = userController();
 
@@ -26,6 +27,7 @@ function EditInfo() {
       password: user.password,
       phone: response.phone,
     };
+    console.log(data);
     setUserData(data);
   }
 
@@ -48,6 +50,7 @@ function EditInfo() {
       const updatedData = await patchUser(userData);
       if (updatedData) {
         setUserData(updatedData);
+        navigate("/informações-cadastro");
       } else {
         alert("Atualização não efetuada");
       }
@@ -70,8 +73,8 @@ function EditInfo() {
             className="w-full px-4 py-4 mt-2 border rounded-md text-xs"
             type="text"
             name="name"
-            value={userData.name}
-            placeholder={userData.name}
+            value={userData?.name}
+            placeholder={userData?.name}
             onChange={handleChange}
           />
         </div>
