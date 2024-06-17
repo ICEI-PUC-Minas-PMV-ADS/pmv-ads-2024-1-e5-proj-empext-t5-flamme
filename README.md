@@ -26,9 +26,11 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 ## Instruções de utilização
 
 Link de acesso ao aplicativo (versão WEB) para o Instagram da cliente Marina:
-<a href="https://react-flamme-yln8.vercel.app/"> Site Flamme p/celular </a>
+<br> - <a href="https://react-flamme-yln8.vercel.app/"> Site Flamme p/celular </a>
+<br> - <a href="https://react-flamme.vercel.app/"> Site oficial </a>
 
 - Login do Administrador(a) da Flamme:
+<br> - <a href="https://react-flamme-yln8.vercel.app/login"> Login do Administrador(a) </a>
   
         flammevelas95@gmail.com
         Flamme@2024!

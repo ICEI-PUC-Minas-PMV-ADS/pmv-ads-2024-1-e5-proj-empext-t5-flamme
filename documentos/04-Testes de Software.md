@@ -107,6 +107,31 @@ Critério de êxito - A tela área da administradora deve abrir corretamente, pa
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103009155/bafa031d-552b-466b-940f-8aad29708dcd)
 
+Ao clicar na opção de "Informações de Cadastro" o usuário é direcionado para a rota /informações-cadastro
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/9f340bf6-3a61-4ff5-9fac-f0879cd0b977)
+
+Ao clicar em "Editar Informações" o usuário é direcionado para a rota /editar-info
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/0fbaf0f4-a303-4b5e-9f77-b73ff957eead)
+
+RF 009 - Critério de êxito - O sistema deve permitir a atualização dos dados do administrador do sistema
+Dado no banco de dados seguindo a LGPD com senha armazenada criptografada
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/20093168-bd24-44b4-95bf-22d62c5e20d5)
+
+Registro de alteração de dados de usuário - alteração de número de telefone
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/e8c3019c-0495-48dc-8ff4-6e37e2cee8c7)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/4a780f1a-73a5-4011-9a16-09c39c84e6ab)
+
+Critério de falha - usuário não adicionou a senha duas vezes para atualizar os dados
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme/assets/103540696/5905f679-66e4-4fe5-bc33-625cfac033d0)
+
+
+
 **CT-04 – Área do administrador(a)** 
 
 Critério de êxito - A tela área da administradora deve abrir corretamente, Marina deverá conseguir alterar, cadastrar, excluir e editar os produtos do estoque, que deverão ser atualizados após salvar as informações. 
