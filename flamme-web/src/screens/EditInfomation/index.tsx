@@ -140,7 +140,7 @@ function EditInfo() {
 
         <div className="flex justify-around items-center mt-10">
           <Link to="/informações-cadastro">
-            <button className="w-36 px-2.5 py-3 rounded-lg border border-brownbutton bg-white text-sm text-brownbutton font-semibold ">
+            <button className="w-36 px-2.5 mb-40 py-3 rounded-lg border border-brownbutton bg-white text-sm text-brownbutton font-semibold ">
               Cancelar
             </button>
           </Link>
