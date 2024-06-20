@@ -1,5 +1,4 @@
 import { Title } from "../../components/Title";
-import ButtonNavBarAddProduct from "../../components/ButtonNavBarAddProduct";
 import GrayBorderTop from "../../components/GrayBorderTop/index.tsx";
 import { Button } from "../../components/Button/Button.tsx";
 import { SectionTitle } from "../../components/SectionTitle";

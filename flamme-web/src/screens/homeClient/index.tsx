@@ -1,5 +1,6 @@
 import Logo from "../../assets/logo.svg";
 import Product2 from "../../assets/product-img2.svg";
+import Carrossel from "../../assets/img-carrossel.svg";
 import { SectionTitle } from "../../components/SectionTitle/index.tsx";
 import { Text } from "../../components/Text/index.tsx";
 import BrownBorder from "../../components/BrownBorder/index.tsx";
@@ -20,9 +21,9 @@ import { transformPricePTBR } from "../../utils/scripts.ts";
 function HomeClient() {
   //IMAGENS DO CARROSSEL
   const data = [
-    { id: "1", image: "../../../public/img-carrossel.svg" },
-    { id: "2", image: "../../../public/img-carrossel.svg" },
-    { id: "3", image: "../../../public/img-carrossel.svg" },
+    { id: "1"},
+    { id: "2"},
+    { id: "3"},
   ];
 
   const { products, getProduct } = useStoreContext();
@@ -50,7 +51,7 @@ function HomeClient() {
           {data.map((item) => (
             <SwiperSlide key={item.id}>
               <img
-                src={item.image}
+                src={Carrossel}
                 alt="Velas aromáticas"
                 className="w-full rounded-lg"
               />

@@ -7,7 +7,7 @@ interface IProps {
   onclick: (item: any) => void;
 }
 
-export const Additional = ({ value, price, onclick }: IProps) => {
+export const Additional = ({ value, price, onclick}: IProps) => {
   return (
     <div className="flex items-start gap-2">
       <input
