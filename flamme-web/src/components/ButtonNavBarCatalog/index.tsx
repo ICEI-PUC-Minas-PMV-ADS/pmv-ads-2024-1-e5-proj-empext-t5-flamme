@@ -3,10 +3,9 @@ import GrayBorderTop from "../../components/GrayBorderTop/index.tsx";
 import CatalogNavBar2 from "../CatalogNavBar2/index.tsx";
 import ProfileNavBar from "../ProfileNavBar/index.tsx";
 import BudgetNavBar from "../BudgetNavBar/index.tsx";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ButtonNavBarCatalog = () => {
-  const navigate = useNavigate();
   return (
     <div className="fixed bottom-0 inset-x-0 bg-white">
       <div>

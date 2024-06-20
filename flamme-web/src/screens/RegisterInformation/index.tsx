@@ -1,5 +1,4 @@
 import { Title } from "../../components/Title";
-import { Text } from "../../components/Text";
 import GrayBorderTop from "../../components/GrayBorderTop/index.tsx";
 import ButtonNavBarPerfil from "../../components/ButtonNavBarPerfil";
 import { Link } from "react-router-dom";
@@ -11,7 +10,7 @@ import { IUser } from "../../utils/interfaces.ts";
 function RegisterInformation() {
   const [userData, setUserData] = useState<IUser>({} as IUser);
   const { user } = useStoreContext();
-  const { getForId: getUserId, patch: patchUser } = userController();
+  const { getForId: getUserId } = userController();
 
   async function fetchData() {
     const id = localStorage.getItem("id") ?? 0;

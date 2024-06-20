@@ -27,10 +27,7 @@ function Info() {
         <div className="flex-initial max-w-md">
           <TextMd text="Sobre a arte dos adesivos" classes="text-base -" />
           <BulletPointList
-            items={[
-              "Para a definição das artes, entraremos em contato via WhatsApp.",
-              "Desevolvemos a arte para adesivo após confirmação do pagamento de 50% do valor.",
-            ]}
+            text="Para a definição das artes, entraremos em contato via WhatsApp. Desevolvemos a arte para adesivo após confirmação do pagamento de 50% do valor."
             classes="list-disc text-base marker:text-amber-600 translate-x-4"
           />
         </div>
@@ -40,9 +37,7 @@ function Info() {
         <div className="flex-initial max-w-md">
           <TextMd text="Prazo de confecção" classes="text-base" />
           <BulletPointList
-            items={[
-              "O prazo de confecção pe de 1 a 7 dias úteis a depender do tamanho e complexidade do pedido",
-            ]}
+            text="O prazo de confecção pe de 1 a 7 dias úteis a depender do tamanho e complexidade do pedido"
             classes="list-disc text-base marker:text-amber-600 translate-x-4"
           />
         </div>
@@ -52,9 +47,7 @@ function Info() {
         <div className="flex-initial max-w-md">
           <TextMd text="Prazo de confecção" classes="text-base " />
           <BulletPointList
-            items={[
-              "O prazo de confecção pe de 1 a 7 dias úteis a depender do tamanho e complexidade do pedido",
-            ]}
+            text="O prazo de confecção pe de 1 a 7 dias úteis a depender do tamanho e complexidade do pedido"
             classes="list-disc text-base marker:text-amber-600 translate-x-4"
           />
         </div>
@@ -64,10 +57,7 @@ function Info() {
         <div className="flex-initial max-w-md">
           <TextMd text="Tipos de envio/entrega" classes="text-base " />
           <BulletPointList
-            items={[
-              "Entrega por aplicativo de delivery para Sete Lagoas, MG.",
-              "Envio por Correios.",
-            ]}
+            text="Entrega por aplicativo de delivery para Sete Lagoas, MG. Envio por Correios."
             classes="list-disc text-base marker:text-amber-600 translate-x-4"
           />
         </div>
@@ -77,11 +67,7 @@ function Info() {
         <div className="flex-initial max-w-md">
           <TextMd text="Pagamento" classes="text-base " />
           <BulletPointList
-            items={[
-              "A encomenda é confirmada mediante pagamento de 50% do valor.",
-              "Após a finalização do pedido, entraremos em contato via WhatsApp para mandar o link de pagamento.",
-              "O pagamento por ser feito das seguintes formas: PIX, cartão de crédito ou débito, boleto (aprovação em até 48h).",
-            ]}
+            text="A encomenda é confirmada mediante pagamento de 50% do valor. Após a finalização do pedido, entraremos em contato via WhatsApp para mandar o link de pagamento. O pagamento por ser feito das seguintes formas: PIX, cartão de crédito ou débito, boleto (aprovação em até 48h)."
             classes="list-disc text-base marker:text-amber-600 translate-x-4"
           />
         </div>
@@ -91,9 +77,7 @@ function Info() {
         <div className="flex-initial max-w-md">
           <TextMd text="Nosso WhatsApp" classes="text-base " />
           <BulletPointList
-            items={[
-              "Em caso de dúvidas ou caso queira fazer um pedido diferente do que está no catálogo, entre em contato conosco através do nosso WhatsApp",
-            ]}
+            text="Em caso de dúvidas ou caso queira fazer um pedido diferente do que está no catálogo, entre em contato conosco através do nosso WhatsApp"
             classes="list-disc text-base marker:text-amber-600 translate-x-4"
           />
           <WhatsAppcontato />

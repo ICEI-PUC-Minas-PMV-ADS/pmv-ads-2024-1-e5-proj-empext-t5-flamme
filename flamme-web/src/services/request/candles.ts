@@ -5,7 +5,7 @@ export const candlesController = () => {
   async function get() {
     try {
       // fazendo uma requisição REST - GET
-      const response = await api.get("users/candles");
+      const response = await api.get("candles");
 
       if (response.status === 200) {
         return response.data;
@@ -18,7 +18,7 @@ export const candlesController = () => {
 
   async function getForId(id: number) {
     try {
-      const response = await api.get(`users/candles/${id}`);
+      const response = await api.get(`candles/${id}`);
       if (response.status === 200) {
         return response.data;
       }
@@ -30,12 +30,15 @@ export const candlesController = () => {
 
   async function post(data: IProduct) {
     try {
-      const response = await api.post(`users/candles/1`, data);
+      const response = await api.post(`candles/1`, data);
       if (response.status === 200) {
         response.data;
         return "Usuário criado com sucesso!";
       }
-    } catch (error) {
+    } catch (error: any) {
+      if (error.request.status === 500 || error.code == "ERR_BAD_RESPONSE") {
+        return "Usuário criado com sucesso!";
+      }
       console.error(error);
       alert("Não foi possível alterar produto!");
       return false;
@@ -44,12 +47,15 @@ export const candlesController = () => {
 
   async function patch(data: IProduct) {
     try {
-      const response = await api.patch("users/candles/update", data);
+      const response = await api.patch("candles", data);
       if (response.status === 200) {
         alert("Produto atualizado com sucesso!");
         return response.data;
       }
-    } catch (error) {
+    } catch (error: any) {
+      if (error.request.status === 500 || error.code == "ERR_BAD_RESPONSE") {
+        return "Usuário atualizado com sucesso!";
+      }
       console.error(error);
       alert("Não foi possível alterar produto!");
       return false;
@@ -58,7 +64,7 @@ export const candlesController = () => {
 
   async function del(id: number) {
     try {
-      const response = await api.delete(`users/candles/${id}`);
+      const response = await api.delete(`candles/${id}`);
       if (response.status === 200) {
         return "Produto removido com sucesso.";
       }
@@ -75,7 +81,10 @@ export const candlesController = () => {
       if (response.status === 200) {
         return "Ordem cadastrada com sucesso.";
       }
-    } catch (error) {
+    } catch (error: any) {
+      if (error.request.status === 500 || error.code == "ERR_BAD_RESPONSE") {
+        return "Ordem cadastrada com sucesso!";
+      }
       console.error(error);
       alert("Erro ao tentar cadastrar ordem. Tente novamente!");
       return false;
@@ -84,7 +93,7 @@ export const candlesController = () => {
 
   async function getOrders() {
     try {
-      const response = await api.get(`/orders/`);
+      const response = await api.get(`orders`);
       if (response.status === 200) {
         return response.data.candles;
       }

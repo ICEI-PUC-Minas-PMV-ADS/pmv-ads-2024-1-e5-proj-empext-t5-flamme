@@ -5,6 +5,8 @@ export interface IProvider {
 }
 
 export interface IStoreContext {
+  id: number;
+  setId: any;
   products: Array<IProduct>;
   product: IProduct;
   user: IData;

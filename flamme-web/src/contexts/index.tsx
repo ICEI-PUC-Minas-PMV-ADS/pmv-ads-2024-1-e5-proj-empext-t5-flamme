@@ -11,7 +11,7 @@ export const StoreProvider: React.FC<IProvider> = ({ children }) => {
     [] as Array<IProduct>
   );
   const [product, setProduct] = useState<IProduct>({} as IProduct);
-
+  const [id, setId] = useState<number>(0);
   const {
     get: getCandles,
     getForId: getCandleId,
@@ -56,6 +56,8 @@ export const StoreProvider: React.FC<IProvider> = ({ children }) => {
       products,
       product,
       user,
+      id,
+      setId,
       setUser,
       setProduct,
       getProducts,
@@ -68,6 +70,8 @@ export const StoreProvider: React.FC<IProvider> = ({ children }) => {
       products,
       product,
       user,
+      id,
+      setId,
       setUser,
       setProduct,
       getProducts,

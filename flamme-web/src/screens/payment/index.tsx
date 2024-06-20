@@ -18,7 +18,7 @@ interface IProps {
   price: string;
 }
 
-export const CheckoutBudget = ({ cart, total, aditional, price }: IProps) => {
+const Payment = ({ cart, total, aditional, price }: IProps) => {
   const [name, setName] = useState("");
   const [cpf, setCpf] = useState("");
   const [cel, setCel] = useState("");
@@ -259,3 +259,5 @@ export const CheckoutBudget = ({ cart, total, aditional, price }: IProps) => {
     </>
   );
 };
+
+export default Payment;
