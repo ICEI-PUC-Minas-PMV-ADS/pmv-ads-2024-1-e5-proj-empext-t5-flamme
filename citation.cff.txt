@@ -1,0 +1,27 @@
+message: Please cite this software using these metadata.
+title: Flamme 
+authors:
+  - family-names: Alkmim de Oliveira 
+    given-names: Fabiana
+  - family-names: Nordson Silva dos Santos
+    given-names: Herbert 
+  - family-names: Alves dos Santos Rosolem
+    given-names: Leticia 
+  - family-names: Penido de Souza
+    given-names: Rafael 
+  - family-names: Bicalho Cruz Magalhães
+    given-names: Ramon 
+  - family-names: Ellem Teixeira Ildelfonso
+    given-names: Sarah 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Wilson
+    given-names: José
+
+keywords:
+  - Gestão
+  - Velas
+  - Orçamentos	
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme
+version: 1.0.0
+date-released: 2023-10-31
