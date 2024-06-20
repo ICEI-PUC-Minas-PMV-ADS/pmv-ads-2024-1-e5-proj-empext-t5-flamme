@@ -24,4 +24,4 @@ keywords:
   - Orçamentos	
 repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t5-flamme
 version: 1.0.0
-date-released: 2023-10-31
+date-released: 2023-06-23
