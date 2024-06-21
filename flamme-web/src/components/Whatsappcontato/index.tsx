@@ -1,7 +1,6 @@
 const WhatsAppcontato = () => {
-    return (
-
-      <div className="text-black flex items-center h-16 w-full">
+  return (
+    <div className="text-black flex items-center h-16 w-full">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="29"
@@ -17,15 +16,19 @@ const WhatsAppcontato = () => {
         </g>
         <defs>
           <clipPath id="clip0_420_573">
-            <rect width="28" height="28" fill="green" transform="translate(0.5)" />
+            <rect
+              width="28"
+              height="28"
+              fill="green"
+              transform="translate(0.5)"
+            />
           </clipPath>
         </defs>
       </svg>
 
-      <strong style={{ marginLeft: '8px' }}>Fale Conosco</strong>
-
-      </div>
-    );
-  };
+      <strong style={{ marginLeft: "8px" }}>Fale Conosco</strong>
+    </div>
+  );
+};
 
 export default WhatsAppcontato;

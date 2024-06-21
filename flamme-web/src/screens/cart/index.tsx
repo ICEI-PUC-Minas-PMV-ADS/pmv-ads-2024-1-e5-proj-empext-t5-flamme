@@ -34,17 +34,14 @@ function Cart() {
       localStorage.getItem("id") !== "undefined"
         ? localStorage.getItem("id")
         : 1;
-    console.log(userID);
+
     const response = await getForId(Number(userID));
     if (response) {
       try {
-        await orders(
-          {
-            client_name: response.name,
-            candles: cart,
-          },
-          response.id
-        );
+        await orders({
+          client_name: response.name,
+          candles: cart,
+        });
         return navigate("/checkout");
       } catch (error) {
         console.error(error);
@@ -121,9 +118,8 @@ function Cart() {
                       <Text
                         text={
                           item.extras
-                            ? item.extras[0].name +
-                              " - " +
-                              transformPricePTBR(item.extras[0].price)
+                            ? item.extras[0].name + 
+                              transformPricePTBR(item.price / item.quantity)
                             : ""
                         }
                       />

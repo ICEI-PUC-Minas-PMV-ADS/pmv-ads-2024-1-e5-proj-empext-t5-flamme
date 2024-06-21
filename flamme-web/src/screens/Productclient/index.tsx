@@ -27,6 +27,10 @@ import { Button4 } from "../../components/Button4/index.tsx";
 import ButtonNavBarAddProduct from "../../components/ButtonNavBarAddProduct/index.tsx";
 import { useState } from "react";
 import { useCartStoreContext } from "../../contexts/Cart/index.tsx";
+import { ButtonWhite } from "../../components/ButtonWhite/ButtonWhite.tsx";
+import { Button2 } from "../../components/Button2/index.tsx";
+import EditProduct from "../EditProduct/index.tsx";
+import { linkStaticWpp } from "../../utils/constants.ts";
 interface IProps {
   isAdmin: Boolean;
 }
@@ -45,7 +49,7 @@ function ViewProduct({ isAdmin }: IProps) {
     },
   };
   const navigate = useNavigate();
-  const { product } = useStoreContext();
+  const { product, deleteProduct } = useStoreContext();
   const { addToCart } = useCartStoreContext();
   const arr =
     product && product.aroma ? product.aroma.filter((el) => el.length > 0) : [];
@@ -54,15 +58,23 @@ function ViewProduct({ isAdmin }: IProps) {
   const [ex, setEx] = useState<boolean>(false);
   const [aroma, setAroma] = useState<Array<string>>([] as Array<string>);
   const [newExtra, setNewExtra] = useState<any>();
+  const [page, setPage] = useState<boolean>(false);
+  const nav = useNavigate();
 
   function back() {
-    const nav = useNavigate();
     nav("/");
+  }
+
+  async function deleteItem(id: number = 0) {
+    const response = await deleteProduct(id);
+    return response !== false
+      ? navigate("/catalogo-adm")
+      : alert("Não foi possível atualizar os dados.");
   }
 
   function calculate(qtt: number) {
     let val = 0;
-    if (product.options && qtt) {
+    if (product.options && product.options[0].min > 0 && qtt) {
       setQtty(qtt);
 
       if (qtt < product.options[0].min) {
@@ -72,6 +84,10 @@ function ViewProduct({ isAdmin }: IProps) {
 
       val = product.options[0].price * qtt;
       return setTotal(val);
+    } else {
+      setQtty(qtt);
+      setTotal(product.price * qtt);
+      return;
     }
     setQtty(0);
     return setTotal(0);
@@ -214,6 +230,24 @@ function ViewProduct({ isAdmin }: IProps) {
               />
             ))}
           </div>
+
+          {page && <EditProduct product={product} />}
+
+          {isAdmin && (
+            <div className="flex flex-col gap-2 mt-10">
+              <ButtonWhite
+                label={!page ? "Editar produto" : "Cancelar edição"}
+                classes="w-full"
+                onclick={() => setPage(!page)}
+              />
+              <Button2
+                label="Excluir produto"
+                classes="w-full"
+                onclick={() => deleteItem(product.id)}
+              />
+            </div>
+          )}
+
           {isAdmin && <ButtonNavBarAddProduct />}
 
           {!isAdmin && (
@@ -233,7 +267,9 @@ function ViewProduct({ isAdmin }: IProps) {
               </div>
 
               <div className="ml-2">
-                <Whastsappcontato />
+                <a href={linkStaticWpp}>
+                  <Whastsappcontato />
+                </a>
               </div>
 
               <div className="max-w-screen-lg mx-2">

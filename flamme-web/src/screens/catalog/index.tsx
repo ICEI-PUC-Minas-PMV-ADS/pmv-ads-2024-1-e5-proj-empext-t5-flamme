@@ -1,6 +1,4 @@
 import { Button } from "../../components/Button/Button";
-import { Button2 } from "../../components/Button2/index.tsx";
-import { ButtonWhite } from "../../components/ButtonWhite/ButtonWhite";
 import { SectionTitle } from "../../components/SectionTitle";
 import { Text } from "../../components/Text";
 import Logo from "../../assets/logo.svg";
@@ -11,14 +9,11 @@ import { useNavigate } from "react-router-dom";
 import { useStoreContext } from "../../contexts/index.tsx";
 import { Title } from "../../components/Title/index.tsx";
 import { IProduct } from "../../contexts/interface.ts";
-import { useState } from "react";
 import { transformPricePTBR } from "../../utils/scripts.ts";
 
 function Catalog() {
-  const { products, setProduct, getProduct, updateProduct, deleteProduct } =
+  const { products, setProduct } =
     useStoreContext();
-  const [name, setName] = useState("");
-  const [modal, setModal] = useState(false);
   const navigate = useNavigate();
 
   function linkToAddProduct() {
@@ -26,8 +21,8 @@ function Catalog() {
   }
 
   function handleProduct(item: IProduct) {
-    setProduct(item)
-    navigate("/visualizar-produto")
+    setProduct(item);
+    navigate("/visualizar-produto");
   }
 
   return products ? (
@@ -49,7 +44,7 @@ function Catalog() {
 
         {/* Produto */}
         {products.map((item: IProduct) => (
-          <div className="flex flex-col mt-8">
+          <div className="flex flex-col mt-8" key={item.id}>
             <div
               className="flex items-center justify-around"
               onClick={() => handleProduct(item)}
@@ -67,50 +62,6 @@ function Catalog() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-around mt-6">
-              <ButtonWhite
-                label="Excluir"
-                onclick={() => deleteProduct(item.id)}
-              />
-              <Button2
-                label="Editar"
-                onclick={() => {
-                  getProduct(item.id);
-                  setModal(!modal);
-                }}
-              />
-            </div>
-            {modal && (
-              <div className="my-4 p-7">
-                <Text text="Alterar nome do produto" />
-                <input
-                  className="border-2 border-black rounded-lg my-4 p-2"
-                  name="name"
-                  title={item.name}
-                  placeholder="Ex: Vela Suave "
-                  value={name}
-                  onChange={(ev) => setName(ev.target.value)}
-                />
-                <Button
-                  label="Alterar"
-                  onclick={() => {
-                    updateProduct({
-                      id: item.id,
-                      name,
-                      description: item.description,
-                      aroma: item.aroma,
-                      model: item.model,
-                      price: item.price,
-                      extras: [{}],
-                      options: [{}],
-                      tapes: [{}],
-                      quantity: item.quantity,
-                    });
-                    // window.location.reload();
-                  }}
-                />
-              </div>
-            )}
           </div>
         ))}
 

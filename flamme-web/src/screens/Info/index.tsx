@@ -5,11 +5,12 @@ import { TextMd } from "../../components/TextMd";
 import { BulletPointList } from "../../components/BulletPointList/index.tsx";
 import WhatsAppcontato from "../../components/Whatsappcontato/index.tsx";
 import ButtonNavBarCart from "../../components/ButtonNavBarCart/index.tsx";
+import { linkStaticWpp } from "../../utils/constants.ts";
 
 function Info() {
   return (
     <>
-      <div className="Catalog w-full p-7 pb-4">
+      <div className="Catalog w-full p-7 pb-40">
         <div className="flex justify-center items-center mt-8">
           <img className="flamme-logo" src={Logo} alt="Logo do Flamme" />
         </div>
@@ -80,7 +81,9 @@ function Info() {
             text="Em caso de dúvidas ou caso queira fazer um pedido diferente do que está no catálogo, entre em contato conosco através do nosso WhatsApp"
             classes="list-disc text-base marker:text-amber-600 translate-x-4"
           />
-          <WhatsAppcontato />
+          <a href={linkStaticWpp}>
+            <WhatsAppcontato />
+          </a>
         </div>
       </div>
 

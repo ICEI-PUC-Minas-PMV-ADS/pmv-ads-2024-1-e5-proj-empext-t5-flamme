@@ -1,4 +1,5 @@
 import { IProduct } from "../../contexts/interface";
+import { IOrder } from "../../screens/homeBudgetAdm";
 import { api } from "../api";
 
 export const candlesController = () => {
@@ -30,31 +31,31 @@ export const candlesController = () => {
 
   async function post(data: IProduct) {
     try {
-      const response = await api.post(`candles/1`, data);
+      const response = await api.post(`candles`, data);
       if (response.status === 200) {
         response.data;
-        return "Usuário criado com sucesso!";
+        return "Produto criado com sucesso!";
       }
     } catch (error: any) {
       if (error.request.status === 500 || error.code == "ERR_BAD_RESPONSE") {
-        return "Usuário criado com sucesso!";
+        return "Produto criado com sucesso!";
       }
       console.error(error);
-      alert("Não foi possível alterar produto!");
+      alert("Não foi possível criar produto!");
       return false;
     }
   }
 
   async function patch(data: IProduct) {
     try {
-      const response = await api.patch("candles", data);
+      const response = await api.patch(`candles/${data.id}`, data);
       if (response.status === 200) {
         alert("Produto atualizado com sucesso!");
         return response.data;
       }
     } catch (error: any) {
       if (error.request.status === 500 || error.code == "ERR_BAD_RESPONSE") {
-        return "Usuário atualizado com sucesso!";
+        return "Produto atualizado com sucesso!";
       }
       console.error(error);
       alert("Não foi possível alterar produto!");
@@ -68,16 +69,19 @@ export const candlesController = () => {
       if (response.status === 200) {
         return "Produto removido com sucesso.";
       }
-    } catch (error) {
+    } catch (error: any) {
+      if (error.request.status === 500 || error.code == "ERR_BAD_RESPONSE") {
+        return "Produto removido com sucesso.";
+      }
       console.error(error);
       alert("Erro ao tentar excluir produto. Tente novamente!");
       return false;
     }
   }
 
-  async function orders(data: any, id: number) {
+  async function orders(data: any) {
     try {
-      const response = await api.post(`/orders/${id}`, data);
+      const response = await api.post(`/orders`, data);
       if (response.status === 200) {
         return "Ordem cadastrada com sucesso.";
       }
@@ -95,12 +99,12 @@ export const candlesController = () => {
     try {
       const response = await api.get(`orders`);
       if (response.status === 200) {
-        return response.data.candles;
+        return response.data;
       }
     } catch (error) {
       console.error(error);
       console.log("Erro ao tentar buscar ordens. Tente novamente!");
-      return false;
+      return [] as Array<IOrder>;
     }
   }
 

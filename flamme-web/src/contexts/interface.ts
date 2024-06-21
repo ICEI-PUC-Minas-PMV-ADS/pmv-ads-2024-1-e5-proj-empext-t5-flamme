@@ -26,15 +26,19 @@ export interface IProduct {
   aroma: Array<string>;
   model: string;
   price: number;
-  options?: Array<{
-    min: number;
-    max?: number;
-    price: number;
-  }>;
-  extras: Array<{
-    name: string;
-    price: number;
-  }>;
+  options?: Array<IOptions>;
+  extras: Array<IExtra>;
   tapes?: Array<string>;
   quantity: number;
+}
+
+export interface IExtra {
+  name: string;
+  price: number;
+}
+
+export interface IOptions {
+  min: number;
+  max?: number;
+  price: number;
 }

@@ -7,20 +7,26 @@ import GrayBorder from "../../components/GrayBorder/index.tsx";
 import ButtonNavBarAddProduct from "../../components/ButtonNavBarAddProduct";
 import { candlesController } from "../../services/request/candles.ts";
 import { useEffect, useState } from "react";
+import { IProduct } from "../../contexts/interface.ts";
+import { transformPricePTBR } from "../../utils/scripts.ts";
+
+export interface IOrder {
+  client_name: string;
+  userId: number;
+  candles: Array<IProduct>;
+}
 
 function HomeBudgetAdm() {
   const { getOrders } = candlesController();
-  const [orders, setOrders] = useState<Array<any>>([] as Array<any>);
+  const [orders, setOrders] = useState<Array<IOrder>>([] as Array<IOrder>);
 
   async function getOrder() {
-    const id = localStorage.getItem("id") ?? 0;
-    try {
-      const data = await getOrders();
-      const ord = data.filter((el: any) => el.user === id);
-      setOrders(ord);
-    } catch (error) {
-      setOrders([]);
+    const data = await getOrders();
+    if (data) {
+      return setOrders(data);
     }
+
+    setOrders([]);
   }
 
   useEffect(() => {
@@ -49,6 +55,18 @@ function HomeBudgetAdm() {
 
                   <div className="mt-2 font-medium">
                     <Text text={item.name} />
+                    {item.candles.map((el: IProduct) => (
+                      <div className="max-h-24 overflow-y-auto">
+                        <Text text={el.name} />
+                        <Text text={`Quantidade: ${el.quantity}`} />
+                        <Text
+                          text={`Preço unitário: ${transformPricePTBR(
+                            el.price / el.quantity
+                          )}`}
+                        />
+                        <Text text={`Preço: ${transformPricePTBR(el.price)}`} />
+                      </div>
+                    ))}
                     <Text text="Envio em até 7 dias úteis" />
                   </div>
                 </div>

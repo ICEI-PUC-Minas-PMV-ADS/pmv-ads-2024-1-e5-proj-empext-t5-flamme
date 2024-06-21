@@ -10,6 +10,7 @@ import { Text } from "../../components/Text";
 import Product4 from "../../assets/product-img4.svg";
 import { useState } from "react";
 import { Button } from "../../components/Button/Button";
+import { candlesController } from "../../services/request/candles";
 
 interface IProps {
   cart: Array<IProduct>;
@@ -23,6 +24,45 @@ export const CheckoutBudget = ({ cart, total, aditional, price }: IProps) => {
   const [cpf, setCpf] = useState("");
   const [cel, setCel] = useState("");
   const [email, setEmail] = useState("");
+  const [cep, setCep] = useState("");
+  const [city, setCity] = useState("");
+  const [street, setStreet] = useState("");
+  const [num, setNum] = useState("");
+  const [comp, setComp] = useState("");
+  const [dist, setDist] = useState("");
+  const { orders } = candlesController();
+
+  const prods = cart.map(
+    (el: IProduct) =>
+      `*produto*: ${el.name}, *preço*: ${el.price / el.quantity}, *fitas*: ${
+        el.tapes
+      }, *acrecimos*: ${(el.extras[0].name, el.extras[0].price)}, *total*: ${
+        el.price
+      }
+        `
+  );
+
+  const msg = `Olá, me chamo ${name} e fiz um orçamento na Flamme Web App.
+    Segue meus dados: 
+    CPF - ${cpf}, Tel - ${cel}, Email - ${email}.
+    Endereço - ${street} ${num}, ${dist} - ${city} / ${cep}
+    Complemento - ${comp}
+
+    Produtos selecionados: ${prods}
+  `;
+
+  async function orderC() {
+    const data = {
+      client_name: "Marina Penido",
+      userId: 1,
+      candles: cart,
+    };
+
+    const response = await orders(data);
+    return response !== false
+      ? (window.location.href = `https://wa.me/5531987136623?text=${msg}`)
+      : "";
+  }
 
   return (
     <>
@@ -185,10 +225,10 @@ export const CheckoutBudget = ({ cart, total, aditional, price }: IProps) => {
               </label>
               <input
                 className="p-2 border-2 rounded-md w-44"
-                onChange={(ev) => setName(ev.target.value)}
+                onChange={(ev) => setCep(ev.target.value)}
                 type="text"
                 placeholder="00000-000"
-                value={name}
+                value={cep}
               />
             </div>
             <div className="flex flex-col">
@@ -197,10 +237,10 @@ export const CheckoutBudget = ({ cart, total, aditional, price }: IProps) => {
               </label>
               <input
                 className="p-2 border-2 rounded-md w-44"
-                onChange={(ev) => setCpf(ev.target.value)}
+                onChange={(ev) => setCity(ev.target.value)}
                 type="text"
                 placeholder="Sete Lagoas"
-                value={cpf}
+                value={city}
               />
             </div>
           </div>
@@ -209,10 +249,10 @@ export const CheckoutBudget = ({ cart, total, aditional, price }: IProps) => {
           </label>
           <input
             className="p-2 border-2 rounded-md"
-            onChange={(ev) => setCel(ev.target.value)}
+            onChange={(ev) => setStreet(ev.target.value)}
             type="text"
             placeholder="Digite seu endereço"
-            value={cel}
+            value={street}
           />
           <div className="flex justify-between">
             <div className="flex flex-col ">
@@ -221,10 +261,10 @@ export const CheckoutBudget = ({ cart, total, aditional, price }: IProps) => {
               </label>
               <input
                 className="p-2 border-2 rounded-md w-16"
-                onChange={(ev) => setName(ev.target.value)}
+                onChange={(ev) => setNum(ev.target.value)}
                 type="text"
                 placeholder="00"
-                value={name}
+                value={num}
               />
             </div>
             <div className="flex flex-col">
@@ -233,10 +273,10 @@ export const CheckoutBudget = ({ cart, total, aditional, price }: IProps) => {
               </label>
               <input
                 className="p-2 border-2 rounded-md w-72"
-                onChange={(ev) => setCpf(ev.target.value)}
+                onChange={(ev) => setComp(ev.target.value)}
                 type="text"
                 placeholder="Próximo ao mercado geral"
-                value={cpf}
+                value={comp}
               />
             </div>
           </div>
@@ -245,14 +285,18 @@ export const CheckoutBudget = ({ cart, total, aditional, price }: IProps) => {
           </label>
           <input
             className="p-2 border-2 rounded-md"
-            onChange={(ev) => setEmail(ev.target.value)}
+            onChange={(ev) => setDist(ev.target.value)}
             type="text"
             placeholder="Jardim da Serra"
-            value={email}
+            value={dist}
           />
         </div>
 
-        <Button label="Enviar orçamento" classes="w-full my-5 py-4" />
+        <Button
+          label="Enviar orçamento"
+          classes="w-full my-5 py-4"
+          onclick={orderC}
+        />
 
         <ButtonNavBarCart />
       </div>
