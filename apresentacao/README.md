@@ -13,5 +13,5 @@
 <a href="https://drive.google.com/file/d/1B5c8M1eR7sPsB9haA2nK0_6i_bn9wr1D/view?usp=sharing"> Apresentação final do projeto</a>
 
 ### Slides da apresentação
-[![Slides da Apresentação Final](/docs/apresentacao/Apresentação Flamme.pptx)
+[![Slides da Apresentação Final](apresentacao/Apresentação Flamme.pptx)
 
